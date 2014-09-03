@@ -72,3 +72,24 @@ and it will create a button dependant on those variables.
   } // end active
 
 } // end blue button
+
+
+// circle elements with fallbacks
+.ux{
+  border: 3px solid $f-red;
+  border-radius: 100%;
+  cursor: pointer;
+  width: 65px;
+  height: 65px;
+  
+  svg{
+    cursor: pointer;
+  }
+
+  &:hover{
+    background-color: $f-red;
+  }
+
+// TODO: modernizr fallbacks
+
+}
