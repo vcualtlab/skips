@@ -66,19 +66,19 @@ Breakpoints are now just mixed right into everything with Breakpoint so no
 need to have all the breakpoint files.
 *********************/
 
-@import "general";
-@import "wp-body-classes";
-@import "layout";
-@import "links";
-@import "headings";
-@import "header";
-@import "navigation";
-@import "content";
-@import "page-navi";
-@import "comments";
-@import "comment-form";
-@import "sidebars";
-@import "footer";
+@import "chunks/general";
+@import "chunks/wp-body-classes";
+@import "chunks/layout";
+@import "chunks/links";
+@import "chunks/headings";
+@import "chunks/header";
+@import "chunks/navigation";
+@import "chunks/content";
+@import "chunks/page-navi";
+@import "chunks/comments";
+@import "chunks/comment-form";
+@import "chunks/sidebars";
+@import "chunks/footer";
 
 /*********************
 RETINA (2x RESOLUTION DEVICES)
