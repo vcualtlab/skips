@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         compass: {
           dist: {
             options: {
-              cssDir: 'library/css/dev',
+              cssDir: 'library/css',
               sassDir: 'library/scss',
               imagesDir: 'library/images',
               javascriptsDir: 'library/js',
@@ -15,7 +15,8 @@ module.exports = function(grunt) {
               relativeAssets: true,
               outputStyle: 'expanded',
               raw: 'preferred_syntax = :scss\n',
-              require: ['susy','breakpoint']
+              require: ['susy','breakpoint'],
+              watch: true
             }
           }
         },
@@ -23,7 +24,7 @@ module.exports = function(grunt) {
         autoprefixer: {
             dist: {
                 files: {
-                    'library/css/dev/style.css' : 'library/css/dev/style.css'
+                    'library/css/style.css' : 'library/css/style.css'
                 }
             }
         },
@@ -31,7 +32,7 @@ module.exports = function(grunt) {
         cmq: {
             your_target: {
                 files: {
-                    'library/css' : 'library/css/dev/style.css'
+                    'library/css' : 'library/css/style.css'
                 }
             }
         },
@@ -78,15 +79,14 @@ module.exports = function(grunt) {
  
         watch: {
             scss: {
-                files: ['library/scss/**/*.scss'],
-                tasks: ['default']
+                files: ['library/scss/**/*.scss']
             },
             css: {
                 files: ['library/css/**/*.css']
             },
             js: {
                 files: ['library/js/**/*'],
-                tasks: ['concat', 'uglify']
+                tasks: ['concat']
             },
             livereload: {
                 files: ['**/*.html', '**/*.php', '**/*.js', '**/*.css', '!**/node_modules/**'], // add files to watch to trigger a reload
@@ -131,6 +131,15 @@ module.exports = function(grunt) {
                 env: 'production'
             }
           }
+        },
+
+        concurrent: {
+            watch: {
+                tasks: ['watch', 'compass'],
+                options: {
+                    logConcurrentOutput: true
+                }
+            }
         },
  
  
