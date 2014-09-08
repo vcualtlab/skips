@@ -176,7 +176,7 @@ module.exports = function(grunt) {
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
  
     // cleans directories, does everything for css, js, and images for deploy
-    grunt.registerTask('prod', ['clean', 'img', 'compass', 'autoprefixer', 'cmq', 'cssmin', 'concat', 'uglify']);
+    grunt.registerTask('prod', ['clean', 'img', 'autoprefixer', 'cmq', 'cssmin', 'concat', 'uglify']);
  
     // runs Sass, autoprefixer, media query combine, and minify
     grunt.registerTask('css', ['watch:sass']);
@@ -198,6 +198,6 @@ module.exports = function(grunt) {
     grunt.registerTask('delete', ['clean']);
  
     // compiles sass once
-    grunt.registerTask('default', ['compass', 'autoprefixer', 'cmq', 'cssmin']);
+    grunt.registerTask('default', ['autoprefixer', 'cmq', 'cssmin']);
  
 };
