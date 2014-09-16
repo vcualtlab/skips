@@ -1378,25 +1378,25 @@ and more scalable.
   display: block;
   position: absolute;
   z-index: 2;
-  top: 8px;
+  height: 100%;
+  line-height: 40px;
 }
-/* line 12, ../scss/chunks/_vcubar.scss */
+/* line 13, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcu {
   width: 346px;
 }
-/* line 15, ../scss/chunks/_vcubar.scss */
+/* line 16, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcu:hover .vcu-dk {
   opacity: 0;
 }
-/* line 18, ../scss/chunks/_vcubar.scss */
+/* line 19, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcu:hover .vcu-color {
   opacity: 1.0;
 }
-/* line 24, ../scss/chunks/_vcubar.scss */
+/* line 25, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcuarts {
   width: 84px;
   right: 2%;
-  top: 6px;
 }
 /* line 29, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcuarts:hover .arts-dk {
@@ -1413,6 +1413,7 @@ and more scalable.
   margin-right: auto;
   height: 2em;
   position: relative;
+  overflow: hidden;
 }
 /* line 12, ../../../../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .vcubar .inner-vcubar:after {
@@ -1421,12 +1422,12 @@ and more scalable.
   clear: both;
 }
 
-/* line 46, ../scss/chunks/_vcubar.scss */
+/* line 47, ../scss/chunks/_vcubar.scss */
 a.vcu-fallback {
   display: none;
 }
 
-/* line 49, ../scss/chunks/_vcubar.scss */
+/* line 50, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcu-fallback {
   display: block;
   background: url("../images/svg/fallbacks/logo-vcu-dk.png");
@@ -1435,7 +1436,7 @@ a.vcu-fallback {
   max-width: 60px;
 }
 @media (min-width: 481px) {
-  /* line 49, ../scss/chunks/_vcubar.scss */
+  /* line 50, ../scss/chunks/_vcubar.scss */
   .no-svg a.vcu-fallback {
     max-width: 346px;
   }
@@ -1444,17 +1445,17 @@ a.vcu-fallback {
 .no-mediaqueries .no-svg a.vcu-fallback {
   max-width: 346px;
 }
-/* line 58, ../scss/chunks/_vcubar.scss */
+/* line 59, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcu-fallback:hover {
   background: url("../images/svg/fallbacks/logo-vcu-color.png");
 }
 
-/* line 62, ../scss/chunks/_vcubar.scss */
+/* line 63, ../scss/chunks/_vcubar.scss */
 a.vcuarts-fallback {
   display: none;
 }
 
-/* line 65, ../scss/chunks/_vcubar.scss */
+/* line 66, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcuarts-fallback {
   display: block;
   background: url("../images/svg/fallbacks/logo-vcuarts.png");
@@ -1462,28 +1463,28 @@ a.vcuarts-fallback {
   height: 19px;
   right: 2%;
 }
-/* line 71, ../scss/chunks/_vcubar.scss */
+/* line 72, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcuarts-fallback:hover {
   background: url("../images/svg/fallbacks/logo-vcuarts-color.png");
 }
 
-/* line 76, ../scss/chunks/_vcubar.scss */
+/* line 77, ../scss/chunks/_vcubar.scss */
 .vcu-color, .arts-color {
   opacity: 0;
   transition: opacity .15s ease-in-out;
 }
 
-/* line 80, ../scss/chunks/_vcubar.scss */
+/* line 81, ../scss/chunks/_vcubar.scss */
 .vcu-dk, .arts-dk {
   transition: opacity .15s ease-in-out;
 }
 
-/* line 83, ../scss/chunks/_vcubar.scss */
+/* line 84, ../scss/chunks/_vcubar.scss */
 .vcu-name {
   display: none;
 }
 @media (min-width: 481px) {
-  /* line 83, ../scss/chunks/_vcubar.scss */
+  /* line 84, ../scss/chunks/_vcubar.scss */
   .vcu-name {
     display: block;
   }
