@@ -140,8 +140,7 @@ module.exports = function(grunt) {
                     logConcurrentOutput: true
                 }
             }
-        },
- 
+        } 
     });
  
     // 3. Where we tell Grunt what plugins to use
@@ -172,6 +171,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-browser-sync');
  
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
+    grunt.registerTask('init', ['build']);
     grunt.registerTask('dev', ['browserSync','watch']);
     grunt.registerTask('build', ['imagemin', 'compass:dist', 'autoprefixer', 'cmq', 'cssmin', 'concat', 'uglify','devcode:dist']);
 };
