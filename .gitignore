@@ -62,4 +62,4 @@ temp/
 
 *.codekit
 *.scssc
-library/css/
+library/css/*
