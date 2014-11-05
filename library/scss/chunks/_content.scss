@@ -13,6 +13,7 @@ POSTS & CONTENT STYLES
       border-radius: 3px;
       margin-bottom: 1.5em;
       border: 1px solid $border-color;
+      overflow: hidden;
 
       header {
         border-bottom: 1px solid $light-gray;
@@ -66,6 +67,7 @@ POSTS & CONTENT STYLES
     /* entry content */
     .entry-content {
       padding: 1.5em 1.5em 0;
+      overflow: hidden;
 
       p {
         margin: 0 0 1.5em;

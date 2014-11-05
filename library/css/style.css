@@ -1228,6 +1228,30 @@ LAYOUT & GRID STYLES
   clear: both;
 }
 
+/* line 9, ../scss/chunks/_layout.scss */
+#inner-content, #inner-footer, #inner-header {
+  max-width: 1382px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+/* line 12, ../../../../../../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+#inner-content:after, #inner-footer:after, #inner-header:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 14, ../scss/chunks/_layout.scss */
+#main {
+  overflow: hidden;
+}
+
+/* line 18, ../scss/chunks/_layout.scss */
+.article-footer {
+  overflow: hidden;
+}
+
 /*********************
 LINK STYLES
 *********************/
@@ -1508,24 +1532,25 @@ POSTS & CONTENT STYLES
   border-radius: 3px;
   margin-bottom: 1.5em;
   border: 1px solid #ccc;
+  overflow: hidden;
 }
-/* line 17, ../scss/chunks/_content.scss */
+/* line 18, ../scss/chunks/_content.scss */
 .hentry header {
   border-bottom: 1px solid #f8f9fa;
   padding: 1.5em;
 }
-/* line 22, ../scss/chunks/_content.scss */
+/* line 23, ../scss/chunks/_content.scss */
 .hentry footer {
   padding: 1.5em;
   border-top: 1px solid #f8f9fa;
 }
-/* line 26, ../scss/chunks/_content.scss */
+/* line 27, ../scss/chunks/_content.scss */
 .hentry footer p {
   margin: 0;
 }
 
 /* end .hentry */
-/* line 33, ../scss/chunks/_content.scss */
+/* line 34, ../scss/chunks/_content.scss */
 .single-title,
 .page-title,
 .entry-title {
@@ -1542,7 +1567,7 @@ POSTS & CONTENT STYLES
 /* style by category (i.e. category-videos) */
 /* style by tag (i.e. tag-news) */
 /* post meta */
-/* line 58, ../scss/chunks/_content.scss */
+/* line 59, ../scss/chunks/_content.scss */
 .byline {
   color: #9fa6b4;
   font-style: italic;
@@ -1550,9 +1575,10 @@ POSTS & CONTENT STYLES
 }
 
 /* entry content */
-/* line 67, ../scss/chunks/_content.scss */
+/* line 68, ../scss/chunks/_content.scss */
 .entry-content {
   padding: 1.5em 1.5em 0;
+  overflow: hidden;
   /*
   image alignment on a screen this size may be
   a bit difficult. It's set to start aligning
@@ -1560,17 +1586,17 @@ POSTS & CONTENT STYLES
   but it's up to you. Feel free to change it up.
   */
 }
-/* line 70, ../scss/chunks/_content.scss */
+/* line 72, ../scss/chunks/_content.scss */
 .entry-content p {
   margin: 0 0 1.5em;
 }
-/* line 95, ../scss/chunks/_content.scss */
+/* line 97, ../scss/chunks/_content.scss */
 .entry-content table {
   width: 100%;
   border: 1px solid #eaedf2;
   margin-bottom: 1.5em;
 }
-/* line 100, ../scss/chunks/_content.scss */
+/* line 102, ../scss/chunks/_content.scss */
 .entry-content table caption {
   margin: 0 0 7px;
   font-size: 0.75em;
@@ -1578,34 +1604,34 @@ POSTS & CONTENT STYLES
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 109, ../scss/chunks/_content.scss */
+/* line 111, ../scss/chunks/_content.scss */
 .entry-content tr {
   border-bottom: 1px solid #eaedf2;
 }
-/* line 112, ../scss/chunks/_content.scss */
+/* line 114, ../scss/chunks/_content.scss */
 .entry-content tr:nth-child(even) {
   background-color: #f8f9fa;
 }
-/* line 117, ../scss/chunks/_content.scss */
+/* line 119, ../scss/chunks/_content.scss */
 .entry-content td {
   padding: 7px;
   border-right: 1px solid #eaedf2;
 }
-/* line 121, ../scss/chunks/_content.scss */
+/* line 123, ../scss/chunks/_content.scss */
 .entry-content td:last-child {
   border-right: 0;
 }
-/* line 126, ../scss/chunks/_content.scss */
+/* line 128, ../scss/chunks/_content.scss */
 .entry-content th {
   background-color: #f8f9fa;
   border-bottom: 1px solid #eaedf2;
   border-right: 1px solid #eaedf2;
 }
-/* line 131, ../scss/chunks/_content.scss */
+/* line 133, ../scss/chunks/_content.scss */
 .entry-content th:last-child {
   border-right: 0;
 }
-/* line 136, ../scss/chunks/_content.scss */
+/* line 138, ../scss/chunks/_content.scss */
 .entry-content blockquote {
   margin: 0 0 1.5em 0.75em;
   padding: 0 0 0 0.75em;
@@ -1613,20 +1639,20 @@ POSTS & CONTENT STYLES
   font-style: italic;
   color: #9fa6b4;
 }
-/* line 151, ../scss/chunks/_content.scss */
+/* line 153, ../scss/chunks/_content.scss */
 .entry-content dd {
   margin-left: 0;
   font-size: 0.9em;
   color: #787878;
   margin-bottom: 1.5em;
 }
-/* line 158, ../scss/chunks/_content.scss */
+/* line 160, ../scss/chunks/_content.scss */
 .entry-content img {
   margin: 0 0 1.5em 0;
   max-width: 100%;
   height: auto;
 }
-/* line 174, ../scss/chunks/_content.scss */
+/* line 176, ../scss/chunks/_content.scss */
 .entry-content .size-auto,
 .entry-content .size-full,
 .entry-content .size-large,
@@ -1635,7 +1661,7 @@ POSTS & CONTENT STYLES
   max-width: 100%;
   height: auto;
 }
-/* line 183, ../scss/chunks/_content.scss */
+/* line 185, ../scss/chunks/_content.scss */
 .entry-content pre {
   background: #323944;
   color: #f8f9fa;
@@ -1646,20 +1672,20 @@ POSTS & CONTENT STYLES
 }
 
 /* end .entry-content */
-/* line 194, ../scss/chunks/_content.scss */
+/* line 196, ../scss/chunks/_content.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
   /* images inside wp-caption */
 }
-/* line 200, ../scss/chunks/_content.scss */
+/* line 202, ../scss/chunks/_content.scss */
 .wp-caption img {
   max-width: 100%;
   margin-bottom: 0;
   width: 100%;
 }
-/* line 206, ../scss/chunks/_content.scss */
+/* line 208, ../scss/chunks/_content.scss */
 .wp-caption p.wp-caption-text {
   font-size: 0.85em;
   margin: 4px 0 7px;
@@ -1670,7 +1696,7 @@ POSTS & CONTENT STYLES
 /* image gallery styles */
 /* end .gallery */
 /* gallery caption styles */
-/* line 240, ../scss/chunks/_content.scss */
+/* line 242, ../scss/chunks/_content.scss */
 .tags {
   margin: 0;
 }
