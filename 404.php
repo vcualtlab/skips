@@ -4,7 +4,7 @@
 
 				<div id="inner-content">
 
-					<div id="main" role="main">
+					<main id="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 						<article id="post-not-found" class="hentry">
 
@@ -34,7 +34,7 @@
 
 						</article>
 
-					</div>
+					</main>
 
 				</div>
 

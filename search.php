@@ -4,7 +4,8 @@
 
 				<div id="inner-content">
 
-					<div id="main" role="main">
+					<main id="main" role="main">
+					
 						<h1 class="archive-title"><span><?php _e( 'Search Results for:', 'bonestheme' ); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -58,7 +59,7 @@
 
 							<?php endif; ?>
 
-						</div>
+						</main>
 
 							<?php get_sidebar(); ?>
 

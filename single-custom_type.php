@@ -21,7 +21,7 @@
 
 				<div id="inner-content">
 
-						<div id="main" role="main">
+					<main id="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -89,7 +89,7 @@
 
 							<?php endif; ?>
 
-						</div>
+						</main>
 
 						<?php get_sidebar(); ?>
 

@@ -18,7 +18,7 @@
 
 				<div id="inner-content">
 
-						<div id="main" role="main">
+					<main id="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 						<h1 class="archive-title h2"><?php post_type_archive_title(); ?></h1>
 
@@ -67,7 +67,7 @@
 
 							<?php endif; ?>
 
-						</div>
+						</main>
 
 					<?php get_sidebar(); ?>
 
