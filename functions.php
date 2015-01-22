@@ -374,5 +374,11 @@ function get_development_scripts(){
 
 
 
+// Enable support for HTML5 markup.
+	add_theme_support( 'html5', array(
+		'comment-list',
+		'search-form',
+		'comment-form'
+	) );
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
