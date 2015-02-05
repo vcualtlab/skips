@@ -1,9 +1,17 @@
 /*********************
 LAYOUT & GRID STYLES
 *********************/
-
-.wrap {
+// What does all of this mean? so many ids and other junk get that mess out of here!!
+#container {
   @include container();
+}
+
+.header{
+  @include span(first 3 of 12 );
+}
+
+#content{
+  @include span(last 9 of 12);
 }
 
 #inner-content, #inner-footer, #inner-header {
@@ -18,3 +26,4 @@ LAYOUT & GRID STYLES
 .article-footer {
   overflow: hidden;
 }
+

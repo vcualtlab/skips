@@ -2,7 +2,9 @@
 SIDEBARS & ASIDES
 *********************/
 
-.sidebar {}
+.sidebar {
+  @include span(first 3 of 12);
+}
 
   .widgettitle {}
 
