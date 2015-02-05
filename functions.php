@@ -438,6 +438,9 @@ class skips_walker extends Walker_Page {
       
       $css_class = implode( ' ', apply_filters( 'page_css_class', $css_class, $page, $depth, $args, $current_page ) );
       
+
+
+      // in here I need to get the parent page permalink and append the #post-ID to it properly.
       if ($page->post_parent){
         $output .= $indent . '<li class="' . $css_class . '"><a href="#post-' . $page->ID . '">' . $link_before . apply_filters( 'the_title', $page->post_title, $page->ID ) . $link_after . '</a>';
       } else {
