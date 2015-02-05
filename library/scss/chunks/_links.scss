@@ -4,6 +4,7 @@ LINK STYLES
 
 a, a:visited {
   color: $link-color;
+  text-decoration: none;
 
   /* on hover */
   &:hover, &:focus {
