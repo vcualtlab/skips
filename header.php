@@ -80,7 +80,44 @@
 						)); ?>
 
 
-            <?php $args = array(
+<?php
+// // Wrap in a function, for later output;
+// function wpse47989_list_pages() {
+//     // Get an array of pages using default arguments
+//     // See Codex for list of arguments
+//     $wpse47989_pages = get_pages();
+
+//     // print_r($wpse47989_pages);
+
+//     // Open the unordered list
+//     $page_list = '<ul>';
+
+//     // Loop through the results, and output an HTML list
+//     foreach ( $wpse47989_pages as $wpse47989_page ) {
+//         // Open the list item
+//         $page_list .= '<li>';
+//         // Open the link
+//         $page_list .= '<a href="#post-' . $wpse47989_page->ID . '">';
+//         // Link anchor text (post slug)
+//         $page_list .= $wpse47989_page->post_name;
+//         // Close the link
+//         $page_list .= '</a>';
+//         // Close the list item
+//         $page_list .= '</li>';
+//     }
+
+//     // Close the unordered list
+//     $page_list .= '</ul>';
+
+//     return $page_list;
+// }
+
+// echo wpse47989_list_pages();
+
+?>
+
+            <?php 
+            $args = array(
               'child_of'     => 0,
               'depth'        => 0,
               'echo'         => 1,
@@ -93,9 +130,10 @@
               'sort_column'  => 'menu_order, post_title',
                     'sort_order'   => '',
               'title_li'     => __(''), 
-            ); ?>
-
-            <?php wp_list_pages( $args ); ?>
+              'walker' => new skips_walker()
+            ); 
+            wp_list_pages( $args ); 
+            ?>
 
 					</nav>
 
