@@ -1,4 +1,24 @@
-# Bones
+# Skips
+A simple wordpress for documentation.
+
+*Usage:*
+
+```bash
+grunt init
+```
+
+```bash
+grunt dev
+```
+
+```bash
+grunt build
+```
+
+## Why Skips?
+Because he is very wise, and has a knowing of many things to those of the unknown, due to his past of immortality. [http://regularshow.wikia.com/wiki/Skips](source)
+
+## Bones
 A Lightweight Wordpress Development Theme
 
 Bones is designed to make the life of developers easier. It's built
