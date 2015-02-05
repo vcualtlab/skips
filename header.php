@@ -79,7 +79,37 @@
     					'fallback_cb' => ''                             // fallback function (if there is one)
 						)); ?>
 
+
+            <?php $args = array(
+              'child_of'     => 0,
+              'depth'        => 0,
+              'echo'         => 1,
+              'exclude'      => '',
+              'include'      => '',
+              'link_after'   => '',
+              'link_before'  => '',
+              'post_type'    => 'page',
+              'post_status'  => 'publish',
+              'sort_column'  => 'menu_order, post_title',
+                    'sort_order'   => '',
+              'title_li'     => __(''), 
+            ); ?>
+
+            <?php wp_list_pages( $args ); ?>
+
 					</nav>
+
+
+
+
+          
+
+
+
+
+
+
+
 
 				</div>
 
