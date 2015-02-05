@@ -361,10 +361,10 @@ use [grunt sync] to get ports for the last three scripts
 */
 function get_development_scripts(){
 
-  if ( !are_we_live() ){
+ /* if ( !are_we_live() ){
     $descripts = include( 'library/dev-scripts.php' );
     return $devscripts;
-  }
+  }*/
 
 }
 

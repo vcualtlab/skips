@@ -2,6 +2,7 @@
   background: $white;
   border-top: 3px solid #ccc;
   border-bottom: 3px solid #ccc;
+  position:relative;
   
   a{
     display: block;
@@ -41,6 +42,8 @@
     position: relative;
     overflow: hidden;
     background:$white;
+    padding-left:1em;
+    padding-right:1em;
   }
 }
 

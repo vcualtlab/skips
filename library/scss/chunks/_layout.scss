@@ -10,17 +10,20 @@ LAYOUT & GRID STYLES
   @include span(first 3 of 12 );
   position:fixed;
   height: 100vh;
-  margin-top:-38px;
-  padding-top:38px;
 }
 
 #content{
+  @include span(last 9 of 12);}
+
+#inner-footer{
   @include span(last 9 of 12);
 }
 
-#inner-content, #inner-footer, #inner-header {
-  @include container();
-  overflow: hidden;
+#footer {
+}
+
+#inner-header {
+	padding-top:1em;
 }
 
 #main {
