@@ -274,7 +274,7 @@ dl,
 menu,
 ol,
 ul {
-  margin: 1em 0;
+  margin: 0em 0;
 }
 
 /* line 257, ../scss/partials/_normalize.scss */
@@ -1221,7 +1221,7 @@ LAYOUT & GRID STYLES
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../../.rvm/gems/ruby-2.1.2/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
 #container:after {
   content: " ";
   display: block;
@@ -1233,35 +1233,36 @@ LAYOUT & GRID STYLES
   width: 22.85714%;
   float: left;
   margin-right: 2.85714%;
+  position: fixed;
+  height: 100vh;
 }
 
-/* line 13, ../scss/chunks/_layout.scss */
+/* line 15, ../scss/chunks/_layout.scss */
 #content {
   width: 74.28571%;
   float: right;
   margin-right: 0;
 }
 
-/* line 17, ../scss/chunks/_layout.scss */
-#inner-content, #inner-footer, #inner-header {
-  max-width: 1382px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-}
-/* line 12, ../../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
-#inner-content:after, #inner-footer:after, #inner-header:after {
-  content: " ";
-  display: block;
-  clear: both;
+/* line 18, ../scss/chunks/_layout.scss */
+#inner-footer {
+  width: 74.28571%;
+  float: right;
+  margin-right: 0;
+  padding-left: 1.5em;
 }
 
-/* line 22, ../scss/chunks/_layout.scss */
+/* line 26, ../scss/chunks/_layout.scss */
+#inner-header {
+  padding-top: 1em;
+}
+
+/* line 30, ../scss/chunks/_layout.scss */
 #main {
   overflow: hidden;
 }
 
-/* line 26, ../scss/chunks/_layout.scss */
+/* line 34, ../scss/chunks/_layout.scss */
 .article-footer {
   overflow: hidden;
 }
@@ -1347,10 +1348,17 @@ HEADER STYLES
 /* line 5, ../scss/chunks/_header.scss */
 .header {
   background-color: #333333;
-  padding: 1em;
+}
+/* line 9, ../scss/chunks/_header.scss */
+.header nav a {
+  color: #f8f9fa;
 }
 
-/* line 12, ../scss/chunks/_header.scss */
+/* line 15, ../scss/chunks/_header.scss */
+#logo {
+  margin: 50px 0px 20px 20px;
+}
+/* line 17, ../scss/chunks/_header.scss */
 #logo a {
   color: white;
 }
@@ -1366,7 +1374,7 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 /* line 14, ../scss/chunks/_navigation.scss */
-.nav {
+.header nav {
   border-bottom: 0;
   margin: 0;
   /* end .menu li */
@@ -1374,7 +1382,8 @@ and more scalable.
   /* end current highlighters */
 }
 /* line 18, ../scss/chunks/_navigation.scss */
-.nav li {
+.header nav li {
+  list-style-type: none;
   /*
   so you really have to rethink your dropdowns for mobile.
   you don't want to have it expand too much because the
@@ -1383,12 +1392,12 @@ and more scalable.
   http://www.alistapart.com/articles/organizing-mobile/
   */
 }
-/* line 20, ../scss/chunks/_navigation.scss */
-.nav li a {
+/* line 21, ../scss/chunks/_navigation.scss */
+.header nav li a {
   display: block;
   color: white;
   text-decoration: none;
-  padding: 0.75em;
+  padding: 0.5em 1.5em;
   /*
   remember this is for mobile ONLY, so there's no need
   to even declare hover styles here, you can do it in
@@ -1396,20 +1405,36 @@ and more scalable.
   keep this file as small as possible!
   */
 }
-/* line 53, ../scss/chunks/_navigation.scss */
-.nav li ul.sub-menu li a,
-.nav li ul.children li a {
-  padding-left: 30px;
+/* line 33, ../scss/chunks/_navigation.scss */
+.header nav li a:hover, .header nav li a:focus {
+  color: white;
+  background: #777;
+}
+/* line 55, ../scss/chunks/_navigation.scss */
+.header nav li ul.sub-menu li a,
+.header nav li ul.children li a {
+  padding-left: 50px;
+  color: #ccc;
+}
+/* line 81, ../scss/chunks/_navigation.scss */
+.header nav li.current_page_item a {
+  background: white;
+  color: #333333;
+}
+/* line 85, ../scss/chunks/_navigation.scss */
+.header nav li.current_page_item ul li a {
+  background: #555;
 }
 
 /* end .nav */
 /* line 1, ../scss/chunks/_vcubar.scss */
 .vcubar {
   background: white;
-  border-top: 3px solid #474d4d;
-  border-bottom: 3px solid #474d4d;
+  border-top: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
+  position: relative;
 }
-/* line 6, ../scss/chunks/_vcubar.scss */
+/* line 7, ../scss/chunks/_vcubar.scss */
 .vcubar a {
   display: block;
   position: absolute;
@@ -1417,53 +1442,47 @@ and more scalable.
   height: 100%;
   line-height: 40px;
 }
-/* line 13, ../scss/chunks/_vcubar.scss */
+/* line 14, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcu {
   width: 346px;
 }
-/* line 16, ../scss/chunks/_vcubar.scss */
+/* line 17, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcu:hover .vcu-dk {
   opacity: 0;
 }
-/* line 19, ../scss/chunks/_vcubar.scss */
+/* line 20, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcu:hover .vcu-color {
   opacity: 1.0;
 }
-/* line 25, ../scss/chunks/_vcubar.scss */
+/* line 26, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcuarts {
   width: 84px;
   right: 2%;
 }
-/* line 29, ../scss/chunks/_vcubar.scss */
+/* line 30, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcuarts:hover .arts-dk {
   opacity: 0;
 }
-/* line 32, ../scss/chunks/_vcubar.scss */
+/* line 33, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcuarts:hover .arts-color {
   opacity: 1.0;
 }
-/* line 39, ../scss/chunks/_vcubar.scss */
+/* line 40, ../scss/chunks/_vcubar.scss */
 .vcubar .inner-vcubar {
-  max-width: 1382px;
-  margin-left: auto;
-  margin-right: auto;
   height: 2em;
   position: relative;
   overflow: hidden;
-}
-/* line 12, ../../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
-.vcubar .inner-vcubar:after {
-  content: " ";
-  display: block;
-  clear: both;
+  background: white;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-/* line 47, ../scss/chunks/_vcubar.scss */
+/* line 50, ../scss/chunks/_vcubar.scss */
 a.vcu-fallback {
   display: none;
 }
 
-/* line 50, ../scss/chunks/_vcubar.scss */
+/* line 53, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcu-fallback {
   display: block;
   background: url("../images/svg/fallbacks/logo-vcu-dk.png");
@@ -1472,26 +1491,26 @@ a.vcu-fallback {
   max-width: 60px;
 }
 @media (min-width: 481px) {
-  /* line 50, ../scss/chunks/_vcubar.scss */
+  /* line 53, ../scss/chunks/_vcubar.scss */
   .no-svg a.vcu-fallback {
     max-width: 346px;
   }
 }
-/* line 92, ../../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.4.2/stylesheets/_breakpoint.scss */
+/* line 92, ../../../../../../../../.rvm/gems/ruby-2.1.2/gems/breakpoint-2.4.2/stylesheets/_breakpoint.scss */
 .no-mediaqueries .no-svg a.vcu-fallback {
   max-width: 346px;
 }
-/* line 59, ../scss/chunks/_vcubar.scss */
+/* line 62, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcu-fallback:hover {
   background: url("../images/svg/fallbacks/logo-vcu-color.png");
 }
 
-/* line 63, ../scss/chunks/_vcubar.scss */
+/* line 66, ../scss/chunks/_vcubar.scss */
 a.vcuarts-fallback {
   display: none;
 }
 
-/* line 66, ../scss/chunks/_vcubar.scss */
+/* line 69, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcuarts-fallback {
   display: block;
   background: url("../images/svg/fallbacks/logo-vcuarts.png");
@@ -1499,33 +1518,33 @@ a.vcuarts-fallback {
   height: 19px;
   right: 2%;
 }
-/* line 72, ../scss/chunks/_vcubar.scss */
+/* line 75, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcuarts-fallback:hover {
   background: url("../images/svg/fallbacks/logo-vcuarts-color.png");
 }
 
-/* line 77, ../scss/chunks/_vcubar.scss */
+/* line 80, ../scss/chunks/_vcubar.scss */
 .vcu-color, .arts-color {
   opacity: 0;
   transition: opacity .15s ease-in-out;
 }
 
-/* line 81, ../scss/chunks/_vcubar.scss */
+/* line 84, ../scss/chunks/_vcubar.scss */
 .vcu-dk, .arts-dk {
   transition: opacity .15s ease-in-out;
 }
 
-/* line 84, ../scss/chunks/_vcubar.scss */
+/* line 87, ../scss/chunks/_vcubar.scss */
 .vcu-name {
   display: none;
 }
 @media (min-width: 481px) {
-  /* line 84, ../scss/chunks/_vcubar.scss */
+  /* line 87, ../scss/chunks/_vcubar.scss */
   .vcu-name {
     display: block;
   }
 }
-/* line 92, ../../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/breakpoint-2.4.2/stylesheets/_breakpoint.scss */
+/* line 92, ../../../../../../../../.rvm/gems/ruby-2.1.2/gems/breakpoint-2.4.2/stylesheets/_breakpoint.scss */
 .no-mediaqueries .vcu-name {
   display: block;
 }
@@ -1533,33 +1552,23 @@ a.vcuarts-fallback {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 7, ../scss/chunks/_content.scss */
-#content {
-  margin-top: 1.5em;
-}
-
 /* line 11, ../scss/chunks/_content.scss */
 .hentry {
   margin-bottom: 1.5em;
   overflow: hidden;
+  max-width: 900px;
 }
-/* line 15, ../scss/chunks/_content.scss */
+/* line 16, ../scss/chunks/_content.scss */
 .hentry header {
-  border-bottom: 1px solid #f8f9fa;
-  padding: 1.5em;
+  padding: 1.5em 1.5em 0em 1.5em;
 }
-/* line 20, ../scss/chunks/_content.scss */
-.hentry footer {
-  padding: 1.5em;
-  border-top: 1px solid #f8f9fa;
-}
-/* line 24, ../scss/chunks/_content.scss */
+/* line 22, ../scss/chunks/_content.scss */
 .hentry footer p {
   margin: 0;
 }
 
 /* end .hentry */
-/* line 31, ../scss/chunks/_content.scss */
+/* line 29, ../scss/chunks/_content.scss */
 .single-title,
 .page-title,
 .entry-title {
@@ -1576,7 +1585,7 @@ POSTS & CONTENT STYLES
 /* style by category (i.e. category-videos) */
 /* style by tag (i.e. tag-news) */
 /* post meta */
-/* line 56, ../scss/chunks/_content.scss */
+/* line 54, ../scss/chunks/_content.scss */
 .byline {
   color: #9fa6b4;
   font-style: italic;
@@ -1584,7 +1593,7 @@ POSTS & CONTENT STYLES
 }
 
 /* entry content */
-/* line 65, ../scss/chunks/_content.scss */
+/* line 63, ../scss/chunks/_content.scss */
 .entry-content {
   padding: 1.5em 1.5em 0;
   overflow: hidden;
@@ -1595,17 +1604,17 @@ POSTS & CONTENT STYLES
   but it's up to you. Feel free to change it up.
   */
 }
-/* line 69, ../scss/chunks/_content.scss */
+/* line 67, ../scss/chunks/_content.scss */
 .entry-content p {
   margin: 0 0 1.5em;
 }
-/* line 94, ../scss/chunks/_content.scss */
+/* line 92, ../scss/chunks/_content.scss */
 .entry-content table {
   width: 100%;
   border: 1px solid #ebebeb;
   margin-bottom: 1.5em;
 }
-/* line 99, ../scss/chunks/_content.scss */
+/* line 97, ../scss/chunks/_content.scss */
 .entry-content table caption {
   margin: 0 0 7px;
   font-size: 0.75em;
@@ -1613,34 +1622,34 @@ POSTS & CONTENT STYLES
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 108, ../scss/chunks/_content.scss */
+/* line 106, ../scss/chunks/_content.scss */
 .entry-content tr {
   border-bottom: 1px solid #ebebeb;
 }
-/* line 111, ../scss/chunks/_content.scss */
+/* line 109, ../scss/chunks/_content.scss */
 .entry-content tr:nth-child(even) {
   background-color: #f8f9fa;
 }
-/* line 116, ../scss/chunks/_content.scss */
+/* line 114, ../scss/chunks/_content.scss */
 .entry-content td {
   padding: 7px;
   border-right: 1px solid #ebebeb;
 }
-/* line 120, ../scss/chunks/_content.scss */
+/* line 118, ../scss/chunks/_content.scss */
 .entry-content td:last-child {
   border-right: 0;
 }
-/* line 125, ../scss/chunks/_content.scss */
+/* line 123, ../scss/chunks/_content.scss */
 .entry-content th {
   background-color: #f8f9fa;
   border-bottom: 1px solid #ebebeb;
   border-right: 1px solid #ebebeb;
 }
-/* line 130, ../scss/chunks/_content.scss */
+/* line 128, ../scss/chunks/_content.scss */
 .entry-content th:last-child {
   border-right: 0;
 }
-/* line 135, ../scss/chunks/_content.scss */
+/* line 133, ../scss/chunks/_content.scss */
 .entry-content blockquote {
   margin: 0 0 1.5em 0.75em;
   padding: 0 0 0 0.75em;
@@ -1648,20 +1657,20 @@ POSTS & CONTENT STYLES
   font-style: italic;
   color: #9fa6b4;
 }
-/* line 150, ../scss/chunks/_content.scss */
+/* line 148, ../scss/chunks/_content.scss */
 .entry-content dd {
   margin-left: 0;
   font-size: 0.9em;
   color: #787878;
   margin-bottom: 1.5em;
 }
-/* line 157, ../scss/chunks/_content.scss */
+/* line 155, ../scss/chunks/_content.scss */
 .entry-content img {
   margin: 0 0 1.5em 0;
   max-width: 100%;
   height: auto;
 }
-/* line 173, ../scss/chunks/_content.scss */
+/* line 171, ../scss/chunks/_content.scss */
 .entry-content .size-auto,
 .entry-content .size-full,
 .entry-content .size-large,
@@ -1670,7 +1679,7 @@ POSTS & CONTENT STYLES
   max-width: 100%;
   height: auto;
 }
-/* line 182, ../scss/chunks/_content.scss */
+/* line 180, ../scss/chunks/_content.scss */
 .entry-content pre {
   background: #333333;
   color: #f8f9fa;
@@ -1681,20 +1690,20 @@ POSTS & CONTENT STYLES
 }
 
 /* end .entry-content */
-/* line 193, ../scss/chunks/_content.scss */
+/* line 191, ../scss/chunks/_content.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
   /* images inside wp-caption */
 }
-/* line 199, ../scss/chunks/_content.scss */
+/* line 197, ../scss/chunks/_content.scss */
 .wp-caption img {
   max-width: 100%;
   margin-bottom: 0;
   width: 100%;
 }
-/* line 205, ../scss/chunks/_content.scss */
+/* line 203, ../scss/chunks/_content.scss */
 .wp-caption p.wp-caption-text {
   font-size: 0.85em;
   margin: 4px 0 7px;
@@ -1705,7 +1714,7 @@ POSTS & CONTENT STYLES
 /* image gallery styles */
 /* end .gallery */
 /* gallery caption styles */
-/* line 239, ../scss/chunks/_content.scss */
+/* line 237, ../scss/chunks/_content.scss */
 .tags {
   margin: 0;
 }
@@ -2003,8 +2012,6 @@ FOOTER STYLES
 /* line 5, ../scss/chunks/_footer.scss */
 .footer {
   clear: both;
-  background-color: #333333;
-  color: #f8f9fa;
 }
 
 /*

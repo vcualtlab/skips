@@ -4,7 +4,12 @@ HEADER STYLES
 
 .header {
   background-color: $black;
-  padding:1em;
+
+  nav {
+  	a {
+  		color:$light-gray;
+  	}
+  }
 }
 
   #logo {
@@ -12,4 +17,5 @@ HEADER STYLES
     a {
       color: $white;
     }
+    margin:50px 0px 20px 20px;
   }
