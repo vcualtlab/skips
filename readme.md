@@ -7,7 +7,11 @@ A simple wordpress for documentation.
 grunt init
 ```
 
-rename library/dev-scripts.example.php to library/dev-scripts.php
+make a copy of library/dev-scripts.example.php at library/dev-scripts.php
+
+```bash
+cp library/dev-scripts.example.php library/dev-scripts.php
+```
 
 ```bash
 grunt dev
