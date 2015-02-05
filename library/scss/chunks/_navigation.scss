@@ -79,7 +79,8 @@ and more scalable.
   }
   li.current_page_item {
         a {
-      background:#777;
+      background:$white;
+      color:$black;
     }
     ul li a {
       background:#555;

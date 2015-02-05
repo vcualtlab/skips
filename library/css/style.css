@@ -1169,7 +1169,7 @@ body {
   font-size: 100%;
   line-height: 1.5;
   color: #333333;
-  background-color: #f5f5f5;
+  background-color: white;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1249,19 +1249,20 @@ LAYOUT & GRID STYLES
   width: 74.28571%;
   float: right;
   margin-right: 0;
+  padding-left: 1.5em;
 }
 
-/* line 25, ../scss/chunks/_layout.scss */
+/* line 26, ../scss/chunks/_layout.scss */
 #inner-header {
   padding-top: 1em;
 }
 
-/* line 29, ../scss/chunks/_layout.scss */
+/* line 30, ../scss/chunks/_layout.scss */
 #main {
   overflow: hidden;
 }
 
-/* line 33, ../scss/chunks/_layout.scss */
+/* line 34, ../scss/chunks/_layout.scss */
 .article-footer {
   overflow: hidden;
 }
@@ -1417,9 +1418,10 @@ and more scalable.
 }
 /* line 81, ../scss/chunks/_navigation.scss */
 .header nav li.current_page_item a {
-  background: #777;
+  background: white;
+  color: #333333;
 }
-/* line 84, ../scss/chunks/_navigation.scss */
+/* line 85, ../scss/chunks/_navigation.scss */
 .header nav li.current_page_item ul li a {
   background: #555;
 }
@@ -1550,11 +1552,6 @@ a.vcuarts-fallback {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 7, ../scss/chunks/_content.scss */
-#content {
-  margin-top: 1.5em;
-}
-
 /* line 11, ../scss/chunks/_content.scss */
 .hentry {
   margin-bottom: 1.5em;

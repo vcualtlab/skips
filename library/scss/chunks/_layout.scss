@@ -17,6 +17,7 @@ LAYOUT & GRID STYLES
 
 #inner-footer{
   @include span(last 9 of 12);
+  padding-left:1.5em;
 }
 
 #footer {
