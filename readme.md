@@ -18,7 +18,7 @@ grunt build
 ## Why Skips?
 Because he is very wise, and has a knowing of many things to those of the unknown, due to his past of immortality. [[source]](http://regularshow.wikia.com/wiki/Skips)
 
-[Imgur](http://i.imgur.com/B02EtAl.png)
+![skips](http://i.imgur.com/B02EtAl.png)
 
 ## Bones
 A Lightweight Wordpress Development Theme
