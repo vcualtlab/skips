@@ -8,6 +8,10 @@ LAYOUT & GRID STYLES
 
 .header{
   @include span(first 3 of 12 );
+  position:fixed;
+  height: 100vh;
+  margin-top:-38px;
+  padding-top:38px;
 }
 
 #content{

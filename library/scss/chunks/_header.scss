@@ -5,6 +5,12 @@ HEADER STYLES
 .header {
   background-color: $black;
   padding:1em;
+
+  nav {
+  	a {
+  		color:$light-gray;
+  	}
+  }
 }
 
   #logo {

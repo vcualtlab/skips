@@ -1,7 +1,7 @@
 .vcubar{
   background: $white;
-  border-top: 3px solid $f-gray;
-  border-bottom: 3px solid $f-gray;
+  border-top: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
   
   a{
     display: block;
@@ -37,10 +37,10 @@
   }
 
   .inner-vcubar{
-    @include container();
     height: 2em;
     position: relative;
     overflow: hidden;
+    background:$white;
   }
 }
 
