@@ -61,7 +61,6 @@
 					<div id="logo" itemscope itemtype="http://schema.org/Organization">
 						<a class="h2" href="<?php echo home_url(); ?>" rel="nofollow">
 						<?php bloginfo('name'); ?></a>
-						<?php get_sidebar(); ?>
 					</div>
 
 
@@ -86,10 +85,11 @@
 		              ); 
 		              wp_list_pages( $args ); 
 		            ?>
-							
+								<?php get_sidebar(); ?>
 		          </nav>
 
-		      
+		      					
+
 
 				</div>
 

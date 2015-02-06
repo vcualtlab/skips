@@ -1290,7 +1290,11 @@ a:hover, a:focus, a:visited:hover, a:visited:focus {
   color: #996f15;
   outline: none;
 }
-/* line 22, ../scss/chunks/_links.scss */
+/* line 17, ../scss/chunks/_links.scss */
+a:active, a:visited:active {
+  outline: none;
+}
+/* line 23, ../scss/chunks/_links.scss */
 a:link, a:visited:link {
   /*
   this highlights links on iPhones/iPads.
@@ -1386,10 +1390,15 @@ HEADER STYLES
   padding: 20px 20px 20px 20px;
   background: #fdbb2a;
   margin: 0;
+  transition: background-color 0.7s ease;
 }
 /* line 17, ../scss/chunks/_header.scss */
 #logo a {
-  color: #333333;
+  color: white;
+}
+/* line 25, ../scss/chunks/_header.scss */
+#logo:hover {
+  background: #ed3043;
 }
 
 /*********************
@@ -1492,7 +1501,7 @@ body.active-mobile .header-nav {
   width: 45px;
   position: absolute;
   top: 53px;
-  right: 30px;
+  right: 15px;
   text-align: center;
   line-height: 35px;
   font-size: 35px;
@@ -1652,38 +1661,45 @@ POSTS & CONTENT STYLES
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
+@media (max-width: 767px) {
+  /* line 7, ../scss/chunks/_content.scss */
+  #content {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
 
-/* line 12, ../scss/chunks/_content.scss */
+/* line 16, ../scss/chunks/_content.scss */
 .hentry {
   margin-bottom: 0em;
   overflow: hidden;
   max-width: 900px;
 }
-/* line 17, ../scss/chunks/_content.scss */
+/* line 21, ../scss/chunks/_content.scss */
 .hentry header {
   padding: 1em 1.5em 0em 0.5em;
 }
-/* line 23, ../scss/chunks/_content.scss */
+/* line 27, ../scss/chunks/_content.scss */
 .hentry footer p {
   margin: 0;
 }
 
 /* end .hentry */
-/* line 30, ../scss/chunks/_content.scss */
+/* line 34, ../scss/chunks/_content.scss */
 .single-title,
 .page-title,
 .entry-title {
   margin: 0;
 }
 
-/* line 39, ../scss/chunks/_content.scss */
+/* line 43, ../scss/chunks/_content.scss */
 .page-title-head {
   font-size: 2.5em;
   padding: 0;
   margin: 0;
 }
 
-/* line 45, ../scss/chunks/_content.scss */
+/* line 49, ../scss/chunks/_content.scss */
 .page-title, h2 {
   font-size: 1.8em;
   border-top: 1px solid #ddd;
@@ -1700,7 +1716,7 @@ POSTS & CONTENT STYLES
 /* style by category (i.e. category-videos) */
 /* style by tag (i.e. tag-news) */
 /* post meta */
-/* line 66, ../scss/chunks/_content.scss */
+/* line 70, ../scss/chunks/_content.scss */
 .byline {
   color: #9fa6b4;
   font-style: italic;
@@ -1708,7 +1724,7 @@ POSTS & CONTENT STYLES
 }
 
 /* entry content */
-/* line 75, ../scss/chunks/_content.scss */
+/* line 79, ../scss/chunks/_content.scss */
 .entry-content {
   padding: 1.5em 0.5em 0;
   overflow: hidden;
@@ -1719,39 +1735,39 @@ POSTS & CONTENT STYLES
   but it's up to you. Feel free to change it up.
   */
 }
-/* line 79, ../scss/chunks/_content.scss */
+/* line 83, ../scss/chunks/_content.scss */
 .entry-content p {
   margin: 0 0 1.5em;
 }
-/* line 92, ../scss/chunks/_content.scss */
+/* line 96, ../scss/chunks/_content.scss */
 .entry-content ul {
   margin-bottom: 1.5em;
 }
-/* line 95, ../scss/chunks/_content.scss */
+/* line 99, ../scss/chunks/_content.scss */
 .entry-content ul li {
   font-size: 1.2em;
   line-height: 1.8em;
   padding-left: 0.7em;
   text-indent: -.7em;
 }
-/* line 101, ../scss/chunks/_content.scss */
+/* line 105, ../scss/chunks/_content.scss */
 .entry-content ul li:before {
   content: "• ";
   color: #fdbb2a;
 }
-/* line 106, ../scss/chunks/_content.scss */
+/* line 110, ../scss/chunks/_content.scss */
 .entry-content ul li em {
   font-size: 0.8em;
   line-height: 0.5em;
   padding-bottom: 0.8em;
 }
-/* line 121, ../scss/chunks/_content.scss */
+/* line 125, ../scss/chunks/_content.scss */
 .entry-content table {
   width: 100%;
   border: 1px solid #ebebeb;
   margin-bottom: 1.5em;
 }
-/* line 126, ../scss/chunks/_content.scss */
+/* line 130, ../scss/chunks/_content.scss */
 .entry-content table caption {
   margin: 0 0 7px;
   font-size: 0.75em;
@@ -1759,34 +1775,34 @@ POSTS & CONTENT STYLES
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 135, ../scss/chunks/_content.scss */
+/* line 139, ../scss/chunks/_content.scss */
 .entry-content tr {
   border-bottom: 1px solid #ebebeb;
 }
-/* line 138, ../scss/chunks/_content.scss */
+/* line 142, ../scss/chunks/_content.scss */
 .entry-content tr:nth-child(even) {
   background-color: #f8f9fa;
 }
-/* line 143, ../scss/chunks/_content.scss */
+/* line 147, ../scss/chunks/_content.scss */
 .entry-content td {
   padding: 7px;
   border-right: 1px solid #ebebeb;
 }
-/* line 147, ../scss/chunks/_content.scss */
+/* line 151, ../scss/chunks/_content.scss */
 .entry-content td:last-child {
   border-right: 0;
 }
-/* line 152, ../scss/chunks/_content.scss */
+/* line 156, ../scss/chunks/_content.scss */
 .entry-content th {
   background-color: #f8f9fa;
   border-bottom: 1px solid #ebebeb;
   border-right: 1px solid #ebebeb;
 }
-/* line 157, ../scss/chunks/_content.scss */
+/* line 161, ../scss/chunks/_content.scss */
 .entry-content th:last-child {
   border-right: 0;
 }
-/* line 162, ../scss/chunks/_content.scss */
+/* line 166, ../scss/chunks/_content.scss */
 .entry-content blockquote {
   margin: 0 0 1.5em 0.75em;
   padding: 0 0 0 0.75em;
@@ -1794,20 +1810,20 @@ POSTS & CONTENT STYLES
   font-style: italic;
   color: #9fa6b4;
 }
-/* line 177, ../scss/chunks/_content.scss */
+/* line 181, ../scss/chunks/_content.scss */
 .entry-content dd {
   margin-left: 0;
   font-size: 0.9em;
   color: #787878;
   margin-bottom: 1.5em;
 }
-/* line 184, ../scss/chunks/_content.scss */
+/* line 188, ../scss/chunks/_content.scss */
 .entry-content img {
   margin: 0 0 1.5em 0;
   max-width: 100%;
   height: auto;
 }
-/* line 200, ../scss/chunks/_content.scss */
+/* line 204, ../scss/chunks/_content.scss */
 .entry-content .size-auto,
 .entry-content .size-full,
 .entry-content .size-large,
@@ -1816,7 +1832,7 @@ POSTS & CONTENT STYLES
   max-width: 100%;
   height: auto;
 }
-/* line 209, ../scss/chunks/_content.scss */
+/* line 213, ../scss/chunks/_content.scss */
 .entry-content pre {
   background: #333333;
   color: #f8f9fa;
@@ -1827,20 +1843,20 @@ POSTS & CONTENT STYLES
 }
 
 /* end .entry-content */
-/* line 220, ../scss/chunks/_content.scss */
+/* line 224, ../scss/chunks/_content.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
   /* images inside wp-caption */
 }
-/* line 226, ../scss/chunks/_content.scss */
+/* line 230, ../scss/chunks/_content.scss */
 .wp-caption img {
   max-width: 100%;
   margin-bottom: 0;
   width: 100%;
 }
-/* line 232, ../scss/chunks/_content.scss */
+/* line 236, ../scss/chunks/_content.scss */
 .wp-caption p.wp-caption-text {
   font-size: 0.85em;
   margin: 4px 0 7px;
@@ -1851,39 +1867,39 @@ POSTS & CONTENT STYLES
 /* image gallery styles */
 /* end .gallery */
 /* gallery caption styles */
-/* line 266, ../scss/chunks/_content.scss */
+/* line 270, ../scss/chunks/_content.scss */
 .tags {
   margin: 0;
 }
 
-/* line 271, ../scss/chunks/_content.scss */
+/* line 275, ../scss/chunks/_content.scss */
 .archive-title em {
   font-style: normal;
   border-bottom: 2px dashed #fdbb2a;
 }
-/* line 275, ../scss/chunks/_content.scss */
+/* line 279, ../scss/chunks/_content.scss */
 .archive-title span {
   color: #777;
 }
 
-/* line 280, ../scss/chunks/_content.scss */
+/* line 284, ../scss/chunks/_content.scss */
 .paddings {
   padding-left: 0em;
 }
 
-/* line 284, ../scss/chunks/_content.scss */
+/* line 288, ../scss/chunks/_content.scss */
 .note {
   background: #fff6e4;
   padding: 1em;
 }
 
-/* line 289, ../scss/chunks/_content.scss */
+/* line 293, ../scss/chunks/_content.scss */
 .never {
   background: #fcddd6;
   padding: 1em;
 }
 
-/* line 293, ../scss/chunks/_content.scss */
+/* line 297, ../scss/chunks/_content.scss */
 .ok {
   background: #eef5c1;
   padding: 1em;
@@ -2158,7 +2174,7 @@ SIDEBARS & ASIDES
 .sidebar {
   color: white;
   font-size: 1em;
-  padding-top: 1.5em;
+  padding: 1.5em;
 }
 
 /* line 13, ../scss/chunks/_sidebars.scss */
@@ -2187,11 +2203,12 @@ SIDEBARS & ASIDES
 /* line 48, ../scss/chunks/_sidebars.scss */
 .widget_search input#s {
   max-width: 93%;
-  background: #fdedcb;
+  background: #555;
   border-radius: 5px;
-  color: #333333;
+  color: white;
+  font-size: 0.8em;
 }
-/* line 54, ../scss/chunks/_sidebars.scss */
+/* line 55, ../scss/chunks/_sidebars.scss */
 .widget_search #searchsubmit {
   display: none;
 }
@@ -2207,6 +2224,13 @@ FOOTER STYLES
   border-top: 1px solid #eee;
   color: #333;
 }
+@media (max-width: 767px) {
+  /* line 5, ../scss/chunks/_footer.scss */
+  .footer {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
 
 /*
 if you checked out the link above:
@@ -2218,7 +2242,7 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
-/* line 35, ../scss/chunks/_footer.scss */
+/* line 39, ../scss/chunks/_footer.scss */
 .lmf_generated_text {
   display: none;
 }
