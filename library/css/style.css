@@ -1252,11 +1252,6 @@ LAYOUT & GRID STYLES
   padding-left: 1.5em;
 }
 
-/* line 26, ../scss/chunks/_layout.scss */
-#inner-header {
-  padding-top: 1em;
-}
-
 /* line 30, ../scss/chunks/_layout.scss */
 #main {
   overflow: hidden;
@@ -1356,11 +1351,13 @@ HEADER STYLES
 
 /* line 15, ../scss/chunks/_header.scss */
 #logo {
-  margin: 50px 0px 20px 20px;
+  padding: 65px 0px 20px 20px;
+  background: #ddd;
+  margin: 0;
 }
 /* line 17, ../scss/chunks/_header.scss */
 #logo a {
-  color: white;
+  color: #333333;
 }
 
 /*********************
