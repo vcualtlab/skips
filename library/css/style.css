@@ -1267,7 +1267,7 @@ LINK STYLES
 *********************/
 /* line 5, ../scss/chunks/_links.scss */
 a, a:visited {
-  color: #ed3043;
+  color: #c18d1a;
   text-decoration: none;
   /* on hover */
   /* on click */
@@ -1275,7 +1275,7 @@ a, a:visited {
 }
 /* line 10, ../scss/chunks/_links.scss */
 a:hover, a:focus, a:visited:hover, a:visited:focus {
-  color: #dc1327;
+  color: #996f15;
 }
 /* line 20, ../scss/chunks/_links.scss */
 a:link, a:visited:link {
@@ -1352,13 +1352,15 @@ HEADER STYLES
 
 /* line 15, ../scss/chunks/_header.scss */
 #logo {
-  padding: 65px 0px 20px 20px;
-  background: #ddd;
+  padding: 65px 20px 20px 20px;
+  background: #fdbb2a;
   margin: 0;
 }
 /* line 17, ../scss/chunks/_header.scss */
 #logo a {
   color: #333333;
+  border-left: 5px solid #333333;
+  padding-left: 10px;
 }
 
 /*********************
@@ -1425,7 +1427,13 @@ and more scalable.
 }
 /* line 89, ../scss/chunks/_navigation.scss */
 .header nav li.current_page_item ul li a {
-  background: #555;
+  color: #333333;
+  background: #ccc;
+}
+/* line 92, ../scss/chunks/_navigation.scss */
+.header nav li.current_page_item ul li a:hover {
+  color: white;
+  background: #888;
 }
 
 /* end .nav */
@@ -1554,37 +1562,32 @@ a.vcuarts-fallback {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 11, ../scss/chunks/_content.scss */
+/* line 7, ../scss/chunks/_content.scss */
+#content {
+  padding-top: 0.5em;
+}
+
+/* line 12, ../scss/chunks/_content.scss */
 .hentry {
-  margin-bottom: 1em;
+  margin-bottom: 0em;
   overflow: hidden;
   max-width: 900px;
 }
-/* line 16, ../scss/chunks/_content.scss */
+/* line 17, ../scss/chunks/_content.scss */
 .hentry header {
-  padding: 1.5em 1.5em 0em 1.5em;
+  padding: 1em 1.5em 0em 1.5em;
 }
-/* line 22, ../scss/chunks/_content.scss */
+/* line 23, ../scss/chunks/_content.scss */
 .hentry footer p {
   margin: 0;
 }
 
 /* end .hentry */
-/* line 29, ../scss/chunks/_content.scss */
+/* line 30, ../scss/chunks/_content.scss */
 .single-title,
 .page-title,
 .entry-title {
   margin: 0;
-}
-
-/* line 35, ../scss/chunks/_content.scss */
-.single-title::after, .page-title::after, .entry-title::after {
-  content: '';
-  display: block;
-  border-top: 3px solid #dddddd;
-  width: 3em;
-  margin-top: 0.1em;
-  margin-bottom: 0.5em;
 }
 
 /* want to style individual post classes? Booya! */
@@ -1597,7 +1600,7 @@ POSTS & CONTENT STYLES
 /* style by category (i.e. category-videos) */
 /* style by tag (i.e. tag-news) */
 /* post meta */
-/* line 63, ../scss/chunks/_content.scss */
+/* line 56, ../scss/chunks/_content.scss */
 .byline {
   color: #9fa6b4;
   font-style: italic;
@@ -1605,7 +1608,7 @@ POSTS & CONTENT STYLES
 }
 
 /* entry content */
-/* line 72, ../scss/chunks/_content.scss */
+/* line 65, ../scss/chunks/_content.scss */
 .entry-content {
   padding: 1.5em 1.5em 0;
   overflow: hidden;
@@ -1616,17 +1619,17 @@ POSTS & CONTENT STYLES
   but it's up to you. Feel free to change it up.
   */
 }
-/* line 76, ../scss/chunks/_content.scss */
+/* line 69, ../scss/chunks/_content.scss */
 .entry-content p {
   margin: 0 0 1.5em;
 }
-/* line 101, ../scss/chunks/_content.scss */
+/* line 94, ../scss/chunks/_content.scss */
 .entry-content table {
   width: 100%;
   border: 1px solid #ebebeb;
   margin-bottom: 1.5em;
 }
-/* line 106, ../scss/chunks/_content.scss */
+/* line 99, ../scss/chunks/_content.scss */
 .entry-content table caption {
   margin: 0 0 7px;
   font-size: 0.75em;
@@ -1634,34 +1637,34 @@ POSTS & CONTENT STYLES
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 115, ../scss/chunks/_content.scss */
+/* line 108, ../scss/chunks/_content.scss */
 .entry-content tr {
   border-bottom: 1px solid #ebebeb;
 }
-/* line 118, ../scss/chunks/_content.scss */
+/* line 111, ../scss/chunks/_content.scss */
 .entry-content tr:nth-child(even) {
   background-color: #f8f9fa;
 }
-/* line 123, ../scss/chunks/_content.scss */
+/* line 116, ../scss/chunks/_content.scss */
 .entry-content td {
   padding: 7px;
   border-right: 1px solid #ebebeb;
 }
-/* line 127, ../scss/chunks/_content.scss */
+/* line 120, ../scss/chunks/_content.scss */
 .entry-content td:last-child {
   border-right: 0;
 }
-/* line 132, ../scss/chunks/_content.scss */
+/* line 125, ../scss/chunks/_content.scss */
 .entry-content th {
   background-color: #f8f9fa;
   border-bottom: 1px solid #ebebeb;
   border-right: 1px solid #ebebeb;
 }
-/* line 137, ../scss/chunks/_content.scss */
+/* line 130, ../scss/chunks/_content.scss */
 .entry-content th:last-child {
   border-right: 0;
 }
-/* line 142, ../scss/chunks/_content.scss */
+/* line 135, ../scss/chunks/_content.scss */
 .entry-content blockquote {
   margin: 0 0 1.5em 0.75em;
   padding: 0 0 0 0.75em;
@@ -1669,20 +1672,20 @@ POSTS & CONTENT STYLES
   font-style: italic;
   color: #9fa6b4;
 }
-/* line 157, ../scss/chunks/_content.scss */
+/* line 150, ../scss/chunks/_content.scss */
 .entry-content dd {
   margin-left: 0;
   font-size: 0.9em;
   color: #787878;
   margin-bottom: 1.5em;
 }
-/* line 164, ../scss/chunks/_content.scss */
+/* line 157, ../scss/chunks/_content.scss */
 .entry-content img {
   margin: 0 0 1.5em 0;
   max-width: 100%;
   height: auto;
 }
-/* line 180, ../scss/chunks/_content.scss */
+/* line 173, ../scss/chunks/_content.scss */
 .entry-content .size-auto,
 .entry-content .size-full,
 .entry-content .size-large,
@@ -1691,7 +1694,7 @@ POSTS & CONTENT STYLES
   max-width: 100%;
   height: auto;
 }
-/* line 189, ../scss/chunks/_content.scss */
+/* line 182, ../scss/chunks/_content.scss */
 .entry-content pre {
   background: #333333;
   color: #f8f9fa;
@@ -1702,20 +1705,20 @@ POSTS & CONTENT STYLES
 }
 
 /* end .entry-content */
-/* line 200, ../scss/chunks/_content.scss */
+/* line 193, ../scss/chunks/_content.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
   /* images inside wp-caption */
 }
-/* line 206, ../scss/chunks/_content.scss */
+/* line 199, ../scss/chunks/_content.scss */
 .wp-caption img {
   max-width: 100%;
   margin-bottom: 0;
   width: 100%;
 }
-/* line 212, ../scss/chunks/_content.scss */
+/* line 205, ../scss/chunks/_content.scss */
 .wp-caption p.wp-caption-text {
   font-size: 0.85em;
   margin: 4px 0 7px;
@@ -1726,7 +1729,7 @@ POSTS & CONTENT STYLES
 /* image gallery styles */
 /* end .gallery */
 /* gallery caption styles */
-/* line 246, ../scss/chunks/_content.scss */
+/* line 239, ../scss/chunks/_content.scss */
 .tags {
   margin: 0;
 }
