@@ -31,8 +31,6 @@
 								$parent = $post->ID;
 							}
 
-
-
 							$args = array( 
 								'posts_per_page' => 1,
 								'post_type' => 'page',

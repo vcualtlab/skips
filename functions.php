@@ -380,30 +380,7 @@ function get_development_scripts(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Custom walker for Skips theme to spit out anchors instead of permalinks for child pages
 class skips_walker extends Walker_Page {
   function start_lvl( &$output, $depth = 0, $args = array() ) {
       $indent = str_repeat("\t", $depth);
@@ -438,11 +415,14 @@ class skips_walker extends Walker_Page {
       
       $css_class = implode( ' ', apply_filters( 'page_css_class', $css_class, $page, $depth, $args, $current_page ) );
       
+      if ($page->post_parent){          
+          // figure out the parent such that we will get the right links even if we are not in family tree
+          $ancestors=get_post_ancestors($page->ID);
+          $root=count($ancestors)-1;
+          $parent = $ancestors[$root];
+          $permalink = get_permalink($parent);
 
-
-      // in here I need to get the parent page permalink and append the #post-ID to it properly.
-      if ($page->post_parent){
-        $output .= $indent . '<li class="' . $css_class . '"><a href="#post-' . $page->ID . '">' . $link_before . apply_filters( 'the_title', $page->post_title, $page->ID ) . $link_after . '</a>';
+        $output .= $indent . '<li class="' . $css_class . '"><a href="' . $permalink . '#post-' . $page->ID . '">' . $link_before . apply_filters( 'the_title', $page->post_title, $page->ID ) . $link_after . '</a>';
       } else {
         $output .= $indent . '<li class="' . $css_class . '"><a href="' . get_permalink($page->ID) . '">' . $link_before . apply_filters( 'the_title', $page->post_title, $page->ID ) . $link_after . '</a>';
       }
