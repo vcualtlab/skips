@@ -42,8 +42,10 @@ POSTS & CONTENT STYLES
       margin:0;
     }
 
-    .page-title {
-      font-size:1.5em;
+    .page-title, h2 {
+      font-size:1.8em;
+       border-top:1px solid #ddd;
+       padding-top:0.5em;
     }
 
     .entry-title {}
@@ -99,6 +101,12 @@ POSTS & CONTENT STYLES
             &:before {
               content:"• ";
               color:$gold;
+            }
+
+            em {
+              font-size:0.8em;
+              line-height:0.5em;
+              padding-bottom:0.8em;
             }
         }
 
@@ -275,5 +283,14 @@ POSTS & CONTENT STYLES
 
   .note {
     background:#fff6e4;
+    padding:1em;
+  }
+
+  .never {
+    background:#fcddd6;
+    padding:1em;
+  }
+  .ok {
+    background:#eef5c1;
     padding:1em;
   }
