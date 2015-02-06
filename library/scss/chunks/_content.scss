@@ -5,16 +5,17 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
+  padding-top:0.5em;
 
 }
 
     .hentry {
-      margin-bottom: 1em;
+      margin-bottom: 0em;
       overflow: hidden;
       max-width:900px;
 
       header {
-        padding: 1.5em 1.5em 0em 1.5em;
+        padding: 1em 1.5em 0em 1.5em;
       }
 
       footer {
@@ -32,14 +33,6 @@ POSTS & CONTENT STYLES
       margin: 0;
     }
 
-  .single-title::after, .page-title::after, .entry-title::after {
-  content: '';
-  display: block;
-  border-top:3px solid $beige;
-  width:3em;
-  margin-top:0.1em;
-  margin-bottom:0.5em;
-}
 
     .single-title {}
 

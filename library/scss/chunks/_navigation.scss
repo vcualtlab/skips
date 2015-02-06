@@ -79,20 +79,24 @@ and more scalable.
 
   /* highlight current page */
   li.current-menu-item {
-
   }
+
   li.current_page_item {
-        a {
+    a {
       background:$white;
       color:$black;
     }
     ul li a {
-      background:#555;
+      color:$black;
+      background:#ccc;
+        &:hover {
+          color:$white;
+          background:#888;
+        }
     }
   }
+
   li.current_page_ancestor {
-
-
   }  /* end current highlighters */
 
 } /* end .nav */
