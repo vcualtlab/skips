@@ -26,7 +26,6 @@ and more scalable.
   }
 
   @include breakpoint($breakpoint-desktop) {
-
   }
 
 }
@@ -46,6 +45,8 @@ and more scalable.
       color: $white;
       text-decoration: none;
       padding:0.5em 1.5em;
+      transition:0.1s ease;
+      outline:none;
 
 
       /*
@@ -57,6 +58,9 @@ and more scalable.
       &:hover, &:focus {
         color:$white;
         background:#777;
+      }
+      &:active {
+        background:$gold;
       }
     }
 

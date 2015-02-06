@@ -1251,7 +1251,7 @@ LAYOUT & GRID STYLES
 
 /* line 23, ../scss/chunks/_layout.scss */
 #inner-footer {
-  padding-left: 1.5em;
+  padding-left: 0.5em;
 }
 @media (min-width: 768px) {
   /* line 23, ../scss/chunks/_layout.scss */
@@ -1412,7 +1412,7 @@ body.active-mobile .header-nav {
   display: block;
 }
 
-/* line 35, ../scss/chunks/_navigation.scss */
+/* line 34, ../scss/chunks/_navigation.scss */
 .header nav {
   border-bottom: 0;
   margin: 0;
@@ -1420,7 +1420,7 @@ body.active-mobile .header-nav {
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 39, ../scss/chunks/_navigation.scss */
+/* line 38, ../scss/chunks/_navigation.scss */
 .header nav li {
   list-style-type: none;
   font-family: "Abel", Cambria, Times New Roman, Times, serif;
@@ -1433,12 +1433,14 @@ body.active-mobile .header-nav {
   http://www.alistapart.com/articles/organizing-mobile/
   */
 }
-/* line 44, ../scss/chunks/_navigation.scss */
+/* line 43, ../scss/chunks/_navigation.scss */
 .header nav li a {
   display: block;
   color: white;
   text-decoration: none;
   padding: 0.5em 1.5em;
+  transition: 0.1s ease;
+  outline: none;
   /*
   remember this is for mobile ONLY, so there's no need
   to even declare hover styles here, you can do it in
@@ -1446,12 +1448,16 @@ body.active-mobile .header-nav {
   keep this file as small as possible!
   */
 }
-/* line 57, ../scss/chunks/_navigation.scss */
+/* line 58, ../scss/chunks/_navigation.scss */
 .header nav li a:hover, .header nav li a:focus {
   color: white;
   background: #777;
 }
-/* line 79, ../scss/chunks/_navigation.scss */
+/* line 62, ../scss/chunks/_navigation.scss */
+.header nav li a:active {
+  background: #fdbb2a;
+}
+/* line 83, ../scss/chunks/_navigation.scss */
 .header nav li ul.sub-menu li a,
 .header nav li ul.children li a {
   padding-left: 50px;
@@ -1459,25 +1465,25 @@ body.active-mobile .header-nav {
   font-size: 0.9em;
   line-height: 0.8;
 }
-/* line 109, ../scss/chunks/_navigation.scss */
+/* line 113, ../scss/chunks/_navigation.scss */
 .header nav li.current_page_item a {
   background: white;
   color: #333333;
 }
-/* line 113, ../scss/chunks/_navigation.scss */
+/* line 117, ../scss/chunks/_navigation.scss */
 .header nav li.current_page_item ul li a {
   color: #333333;
   background: #ccc;
   border: none;
 }
-/* line 117, ../scss/chunks/_navigation.scss */
+/* line 121, ../scss/chunks/_navigation.scss */
 .header nav li.current_page_item ul li a:hover {
   color: white;
   background: #888;
 }
 
 /* end .nav */
-/* line 131, ../scss/chunks/_navigation.scss */
+/* line 135, ../scss/chunks/_navigation.scss */
 .show-nav {
   height: 45px;
   width: 45px;
@@ -1491,16 +1497,16 @@ body.active-mobile .header-nav {
   cursor: pointer;
   transition: .2s ease-in-out;
 }
-/* line 143, ../scss/chunks/_navigation.scss */
+/* line 147, ../scss/chunks/_navigation.scss */
 .show-nav:hover {
   color: white;
 }
-/* line 147, ../scss/chunks/_navigation.scss */
+/* line 151, ../scss/chunks/_navigation.scss */
 .active-mobile .show-nav {
   transform: rotate(90deg);
 }
 @media (min-width: 768px) {
-  /* line 131, ../scss/chunks/_navigation.scss */
+  /* line 135, ../scss/chunks/_navigation.scss */
   .show-nav {
     display: none;
     visibility: hidden;
@@ -1559,8 +1565,8 @@ body.active-mobile .header-nav {
   position: relative;
   overflow: hidden;
   background: white;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 0em;
+  padding-right: 0em;
 }
 
 /* line 51, ../scss/chunks/_vcubar.scss */
@@ -1652,7 +1658,7 @@ POSTS & CONTENT STYLES
 }
 /* line 17, ../scss/chunks/_content.scss */
 .hentry header {
-  padding: 1em 1.5em 0em 1.5em;
+  padding: 1em 1.5em 0em 0.5em;
 }
 /* line 23, ../scss/chunks/_content.scss */
 .hentry footer p {
@@ -1699,7 +1705,7 @@ POSTS & CONTENT STYLES
 /* entry content */
 /* line 73, ../scss/chunks/_content.scss */
 .entry-content {
-  padding: 1.5em 1.5em 0;
+  padding: 1.5em 0.5em 0;
   overflow: hidden;
   /*
   image alignment on a screen this size may be
@@ -1851,7 +1857,7 @@ POSTS & CONTENT STYLES
 
 /* line 272, ../scss/chunks/_content.scss */
 .paddings {
-  padding-left: 1em;
+  padding-left: 0em;
 }
 
 /* line 276, ../scss/chunks/_content.scss */

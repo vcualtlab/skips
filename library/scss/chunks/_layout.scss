@@ -24,7 +24,7 @@ LAYOUT & GRID STYLES
   @include breakpoint($breakpoint-desktop) {
     @include span(last 9 of 12);
   }
-     padding-left:1.5em;
+     padding-left:0.5em;
 }
 
 #footer {
