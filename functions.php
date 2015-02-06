@@ -377,13 +377,6 @@ function get_development_scripts(){
 		'comment-form'
 	) );
 
-
-
-
-
-// Strict Standards: Declaration of skips_walker::start_el() should be compatible with Walker_Page::start_el(&$output, $page, $depth = 0, $args = Array, $current_page = 0) in /srv/www/artdocs/htdocs/wp-content/themes/artdocs/functions.php on line 445
-
-
 // Custom walker for Skips theme to spit out anchors instead of permalinks for child pages
 class skips_walker extends Walker_Page {
   function start_lvl( &$output, $depth = 0, $args = array() ) {
