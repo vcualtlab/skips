@@ -2094,6 +2094,11 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
+/* line 35, ../scss/chunks/_footer.scss */
+.lmf_generated_text {
+  display: none;
+}
+
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with
