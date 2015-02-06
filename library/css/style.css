@@ -1359,8 +1359,7 @@ HEADER STYLES
 /* line 17, ../scss/chunks/_header.scss */
 #logo a {
   color: #333333;
-  border-left: 5px solid #333333;
-  padding-left: 10px;
+  text-shadow: 1px 1px 1px #ffde96;
 }
 
 /*********************
@@ -1407,12 +1406,12 @@ and more scalable.
   keep this file as small as possible!
   */
 }
-/* line 35, ../scss/chunks/_navigation.scss */
+/* line 36, ../scss/chunks/_navigation.scss */
 .header nav li a:hover, .header nav li a:focus {
   color: white;
   background: #777;
 }
-/* line 57, ../scss/chunks/_navigation.scss */
+/* line 58, ../scss/chunks/_navigation.scss */
 .header nav li ul.sub-menu li a,
 .header nav li ul.children li a {
   padding-left: 50px;
@@ -1420,17 +1419,17 @@ and more scalable.
   font-size: 0.9em;
   line-height: 0.8;
 }
-/* line 85, ../scss/chunks/_navigation.scss */
+/* line 86, ../scss/chunks/_navigation.scss */
 .header nav li.current_page_item a {
   background: white;
   color: #333333;
 }
-/* line 89, ../scss/chunks/_navigation.scss */
+/* line 90, ../scss/chunks/_navigation.scss */
 .header nav li.current_page_item ul li a {
   color: #333333;
   background: #ccc;
 }
-/* line 92, ../scss/chunks/_navigation.scss */
+/* line 93, ../scss/chunks/_navigation.scss */
 .header nav li.current_page_item ul li a:hover {
   color: white;
   background: #888;
