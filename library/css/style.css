@@ -1228,36 +1228,45 @@ LAYOUT & GRID STYLES
   clear: both;
 }
 
-/* line 9, ../scss/chunks/_layout.scss */
-.header {
-  width: 22.85714%;
-  float: left;
-  margin-right: 2.85714%;
-  position: fixed;
-  height: 100vh;
+@media (min-width: 768px) {
+  /* line 9, ../scss/chunks/_layout.scss */
+  .header {
+    width: 22.85714%;
+    float: left;
+    margin-right: 2.85714%;
+    position: fixed;
+    height: 100vh;
+  }
 }
 
-/* line 15, ../scss/chunks/_layout.scss */
-#content {
-  width: 74.28571%;
-  float: right;
-  margin-right: 0;
+@media (min-width: 768px) {
+  /* line 17, ../scss/chunks/_layout.scss */
+  #content {
+    width: 74.28571%;
+    float: right;
+    margin-right: 0;
+  }
 }
 
-/* line 18, ../scss/chunks/_layout.scss */
+/* line 23, ../scss/chunks/_layout.scss */
 #inner-footer {
-  width: 74.28571%;
-  float: right;
-  margin-right: 0;
   padding-left: 1.5em;
 }
+@media (min-width: 768px) {
+  /* line 23, ../scss/chunks/_layout.scss */
+  #inner-footer {
+    width: 74.28571%;
+    float: right;
+    margin-right: 0;
+  }
+}
 
-/* line 30, ../scss/chunks/_layout.scss */
+/* line 37, ../scss/chunks/_layout.scss */
 #main {
   overflow: hidden;
 }
 
-/* line 34, ../scss/chunks/_layout.scss */
+/* line 41, ../scss/chunks/_layout.scss */
 .article-footer {
   overflow: hidden;
 }
@@ -1438,12 +1447,17 @@ and more scalable.
 /* end .nav */
 /* line 1, ../scss/chunks/_vcubar.scss */
 .vcubar {
-  width: 74.28571%;
-  float: right;
-  margin-right: 0;
   position: relative;
 }
-/* line 6, ../scss/chunks/_vcubar.scss */
+@media (min-width: 768px) {
+  /* line 1, ../scss/chunks/_vcubar.scss */
+  .vcubar {
+    width: 74.28571%;
+    float: right;
+    margin-right: 0;
+  }
+}
+/* line 8, ../scss/chunks/_vcubar.scss */
 .vcubar a {
   display: block;
   position: absolute;
@@ -1451,32 +1465,32 @@ and more scalable.
   height: 100%;
   line-height: 40px;
 }
-/* line 13, ../scss/chunks/_vcubar.scss */
+/* line 15, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcu {
   width: 346px;
 }
-/* line 16, ../scss/chunks/_vcubar.scss */
+/* line 18, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcu:hover .vcu-dk {
   opacity: 0;
 }
-/* line 19, ../scss/chunks/_vcubar.scss */
+/* line 21, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcu:hover .vcu-color {
   opacity: 1.0;
 }
-/* line 25, ../scss/chunks/_vcubar.scss */
+/* line 27, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcuarts {
   width: 84px;
   right: 2%;
 }
-/* line 29, ../scss/chunks/_vcubar.scss */
+/* line 31, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcuarts:hover .arts-dk {
   opacity: 0;
 }
-/* line 32, ../scss/chunks/_vcubar.scss */
+/* line 34, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcuarts:hover .arts-color {
   opacity: 1.0;
 }
-/* line 39, ../scss/chunks/_vcubar.scss */
+/* line 41, ../scss/chunks/_vcubar.scss */
 .vcubar .inner-vcubar {
   height: 2em;
   position: relative;
@@ -1486,12 +1500,12 @@ and more scalable.
   padding-right: 1em;
 }
 
-/* line 49, ../scss/chunks/_vcubar.scss */
+/* line 51, ../scss/chunks/_vcubar.scss */
 a.vcu-fallback {
   display: none;
 }
 
-/* line 52, ../scss/chunks/_vcubar.scss */
+/* line 54, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcu-fallback {
   display: block;
   background: url("../images/svg/fallbacks/logo-vcu-dk.png");
@@ -1500,7 +1514,7 @@ a.vcu-fallback {
   max-width: 60px;
 }
 @media (min-width: 481px) {
-  /* line 52, ../scss/chunks/_vcubar.scss */
+  /* line 54, ../scss/chunks/_vcubar.scss */
   .no-svg a.vcu-fallback {
     max-width: 346px;
   }
@@ -1509,17 +1523,17 @@ a.vcu-fallback {
 .no-mediaqueries .no-svg a.vcu-fallback {
   max-width: 346px;
 }
-/* line 61, ../scss/chunks/_vcubar.scss */
+/* line 63, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcu-fallback:hover {
   background: url("../images/svg/fallbacks/logo-vcu-color.png");
 }
 
-/* line 65, ../scss/chunks/_vcubar.scss */
+/* line 67, ../scss/chunks/_vcubar.scss */
 a.vcuarts-fallback {
   display: none;
 }
 
-/* line 68, ../scss/chunks/_vcubar.scss */
+/* line 70, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcuarts-fallback {
   display: block;
   background: url("../images/svg/fallbacks/logo-vcuarts.png");
@@ -1527,28 +1541,28 @@ a.vcuarts-fallback {
   height: 19px;
   right: 2%;
 }
-/* line 74, ../scss/chunks/_vcubar.scss */
+/* line 76, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcuarts-fallback:hover {
   background: url("../images/svg/fallbacks/logo-vcuarts-color.png");
 }
 
-/* line 79, ../scss/chunks/_vcubar.scss */
+/* line 81, ../scss/chunks/_vcubar.scss */
 .vcu-color, .arts-color {
   opacity: 0;
   transition: opacity .15s ease-in-out;
 }
 
-/* line 83, ../scss/chunks/_vcubar.scss */
+/* line 85, ../scss/chunks/_vcubar.scss */
 .vcu-dk, .arts-dk {
   transition: opacity .15s ease-in-out;
 }
 
-/* line 86, ../scss/chunks/_vcubar.scss */
+/* line 88, ../scss/chunks/_vcubar.scss */
 .vcu-name {
   display: none;
 }
 @media (min-width: 481px) {
-  /* line 86, ../scss/chunks/_vcubar.scss */
+  /* line 88, ../scss/chunks/_vcubar.scss */
   .vcu-name {
     display: block;
   }

@@ -7,17 +7,24 @@ LAYOUT & GRID STYLES
 }
 
 .header{
-  @include span(first 3 of 12 );
-  position:fixed;
-  height: 100vh;
+  @include breakpoint($breakpoint-desktop) {
+    @include span(first 3 of 12 );
+    position:fixed;
+    height: 100vh;
+  }
 }
 
 #content{
-  @include span(last 9 of 12);}
+  @include breakpoint($breakpoint-desktop) {
+    @include span(last 9 of 12);
+  }
+}
 
 #inner-footer{
-  @include span(last 9 of 12);
-  padding-left:1.5em;
+  @include breakpoint($breakpoint-desktop) {
+    @include span(last 9 of 12);
+  }
+     padding-left:1.5em;
 }
 
 #footer {

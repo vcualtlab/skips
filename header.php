@@ -42,7 +42,14 @@
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
   
-
+			<div class="vcubar">
+			    <div class="inner-vcubar">
+			      <a href="http://vcu.edu" target="_blank" class="vcu"><?php include (TEMPLATEPATH . '/library/images/svg/logo-vcu.svg'); ?></a>
+			      <a href="http://vcu.edu" target="_blank" class="vcu-fallback"></a>
+			      <a href="http://arts.vcu.edu" target="_blank" class="vcuarts"><?php include (TEMPLATEPATH . '/library/images/svg/logo-vcuarts.svg'); ?></a>
+			      <a href="http://arts.vcu.edu" target="_blank" class="vcuarts-fallback"></a>
+			    </div>
+ 			 </div>
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
@@ -132,11 +139,3 @@
 				</div>
 
 			</header>
-			  <div class="vcubar">
-    <div class="inner-vcubar">
-      <a href="http://vcu.edu" target="_blank" class="vcu"><?php include (TEMPLATEPATH . '/library/images/svg/logo-vcu.svg'); ?></a>
-      <a href="http://vcu.edu" target="_blank" class="vcu-fallback"></a>
-      <a href="http://arts.vcu.edu" target="_blank" class="vcuarts"><?php include (TEMPLATEPATH . '/library/images/svg/logo-vcuarts.svg'); ?></a>
-      <a href="http://arts.vcu.edu" target="_blank" class="vcuarts-fallback"></a>
-    </div>
-  </div>
