@@ -1450,7 +1450,7 @@ body.active-mobile .header-nav {
   display: block;
   color: white;
   text-decoration: none;
-  padding: 0.5em 1.5em;
+  padding: 0.4em 1.5em;
   transition: 0.1s ease;
   outline: none;
   /*
@@ -1579,14 +1579,22 @@ body.active-mobile .header-nav {
   background: white;
   padding-left: 0em;
   padding-right: 0em;
+  padding-top: 5px;
+}
+@media (max-width: 767px) {
+  /* line 41, ../scss/chunks/_vcubar.scss */
+  .vcubar .inner-vcubar {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
 
-/* line 51, ../scss/chunks/_vcubar.scss */
+/* line 56, ../scss/chunks/_vcubar.scss */
 a.vcu-fallback {
   display: none;
 }
 
-/* line 54, ../scss/chunks/_vcubar.scss */
+/* line 59, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcu-fallback {
   display: block;
   background: url("../images/svg/fallbacks/logo-vcu-dk.png");
@@ -1595,7 +1603,7 @@ a.vcu-fallback {
   max-width: 60px;
 }
 @media (min-width: 481px) {
-  /* line 54, ../scss/chunks/_vcubar.scss */
+  /* line 59, ../scss/chunks/_vcubar.scss */
   .no-svg a.vcu-fallback {
     max-width: 346px;
   }
@@ -1604,17 +1612,17 @@ a.vcu-fallback {
 .no-mediaqueries .no-svg a.vcu-fallback {
   max-width: 346px;
 }
-/* line 63, ../scss/chunks/_vcubar.scss */
+/* line 68, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcu-fallback:hover {
   background: url("../images/svg/fallbacks/logo-vcu-color.png");
 }
 
-/* line 67, ../scss/chunks/_vcubar.scss */
+/* line 72, ../scss/chunks/_vcubar.scss */
 a.vcuarts-fallback {
   display: none;
 }
 
-/* line 70, ../scss/chunks/_vcubar.scss */
+/* line 75, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcuarts-fallback {
   display: block;
   background: url("../images/svg/fallbacks/logo-vcuarts.png");
@@ -1622,28 +1630,28 @@ a.vcuarts-fallback {
   height: 19px;
   right: 2%;
 }
-/* line 76, ../scss/chunks/_vcubar.scss */
+/* line 81, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcuarts-fallback:hover {
   background: url("../images/svg/fallbacks/logo-vcuarts-color.png");
 }
 
-/* line 81, ../scss/chunks/_vcubar.scss */
+/* line 86, ../scss/chunks/_vcubar.scss */
 .vcu-color, .arts-color {
   opacity: 0;
   transition: opacity .15s ease-in-out;
 }
 
-/* line 85, ../scss/chunks/_vcubar.scss */
+/* line 90, ../scss/chunks/_vcubar.scss */
 .vcu-dk, .arts-dk {
   transition: opacity .15s ease-in-out;
 }
 
-/* line 88, ../scss/chunks/_vcubar.scss */
+/* line 93, ../scss/chunks/_vcubar.scss */
 .vcu-name {
   display: none;
 }
 @media (min-width: 481px) {
-  /* line 88, ../scss/chunks/_vcubar.scss */
+  /* line 93, ../scss/chunks/_vcubar.scss */
   .vcu-name {
     display: block;
   }
@@ -2175,18 +2183,19 @@ SIDEBARS & ASIDES
   color: white;
   font-size: 1em;
   padding: 1.5em;
+  margin-bottom: 1em;
 }
 
-/* line 13, ../scss/chunks/_sidebars.scss */
+/* line 14, ../scss/chunks/_sidebars.scss */
 .widget {
   max-width: 100%;
 }
-/* line 18, ../scss/chunks/_sidebars.scss */
+/* line 19, ../scss/chunks/_sidebars.scss */
 .widget ul li {
   /* deep nesting */
 }
 
-/* line 35, ../scss/chunks/_sidebars.scss */
+/* line 36, ../scss/chunks/_sidebars.scss */
 .no-widgets {
   background-color: white;
   padding: 1.5em;
@@ -2196,11 +2205,11 @@ SIDEBARS & ASIDES
   margin-bottom: 1.5em;
 }
 
-/* line 45, ../scss/chunks/_sidebars.scss */
+/* line 46, ../scss/chunks/_sidebars.scss */
 .widget_search label {
   display: none;
 }
-/* line 48, ../scss/chunks/_sidebars.scss */
+/* line 49, ../scss/chunks/_sidebars.scss */
 .widget_search input#s {
   max-width: 93%;
   background: #555;
@@ -2208,7 +2217,7 @@ SIDEBARS & ASIDES
   color: white;
   font-size: 0.8em;
 }
-/* line 55, ../scss/chunks/_sidebars.scss */
+/* line 56, ../scss/chunks/_sidebars.scss */
 .widget_search #searchsubmit {
   display: none;
 }

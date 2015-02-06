@@ -45,6 +45,11 @@
     background:$white;
     padding-left:0em;
     padding-right:0em;
+    padding-top:5px;
+    @include breakpoint($breakpoint-mobile) {
+      padding-left:1em;
+      padding-right:1em;
+    }
   }
 }
 
