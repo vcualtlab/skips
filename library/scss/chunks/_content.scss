@@ -6,7 +6,7 @@ POSTS & CONTENT STYLES
 
 #content {
   padding-top:0.5em;
-
+  padding-bottom:0.5em;
 }
 
     .hentry {
@@ -80,8 +80,19 @@ POSTS & CONTENT STYLES
       }
 
       ul {
+        margin-bottom:1.5em;
 
-        li {}
+        li {
+          font-size:1.2em;
+          line-height:1.8em;
+          padding-left:0.7em; 
+          text-indent: -.7em;
+
+            &:before {
+              content:"• ";
+              color:$gold;
+            }
+        }
 
       }
 

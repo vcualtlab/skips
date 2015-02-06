@@ -15,11 +15,15 @@ HEADER STYLES
   #logo {
 
     a {
-      color: $black;
-      text-shadow: 1px 1px 1px #ffde96;
+      color: $white;
     }
 
     padding:20px 20px 20px 20px;
     background:$gold;
     margin:0;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background:$f-red;
+    }
   }
