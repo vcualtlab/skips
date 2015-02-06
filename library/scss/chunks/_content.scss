@@ -9,7 +9,7 @@ POSTS & CONTENT STYLES
 }
 
     .hentry {
-      margin-bottom: 1.5em;
+      margin-bottom: 1em;
       overflow: hidden;
       max-width:900px;
 
@@ -31,6 +31,15 @@ POSTS & CONTENT STYLES
     .entry-title {
       margin: 0;
     }
+
+  .single-title::after, .page-title::after, .entry-title::after {
+  content: '';
+  display: block;
+  border-top:3px solid $beige;
+  width:3em;
+  margin-top:0.1em;
+  margin-bottom:0.5em;
+}
 
     .single-title {}
 
