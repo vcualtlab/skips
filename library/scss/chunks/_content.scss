@@ -250,3 +250,17 @@ POSTS & CONTENT STYLES
   .tags {
     margin: 0;
   }
+
+  .archive-title {
+    em {
+    font-style:normal;
+    border-bottom:2px dashed $gold;
+    }
+    span {
+      color:#777;
+    }
+  }
+
+  .paddings {
+    padding-left:1em;
+  }

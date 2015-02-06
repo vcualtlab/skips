@@ -1365,15 +1365,10 @@ HEADER STYLES
   padding: 20px 20px 20px 20px;
   background: #fdbb2a;
   margin: 0;
-  transition: background-color 0.5s ease;
 }
 /* line 17, ../scss/chunks/_header.scss */
 #logo a {
-  color: white;
-}
-/* line 26, ../scss/chunks/_header.scss */
-#logo:hover {
-  background: #ed3043;
+  color: #333333;
 }
 
 /*********************
@@ -1433,17 +1428,18 @@ and more scalable.
   font-size: 0.9em;
   line-height: 0.8;
 }
-/* line 86, ../scss/chunks/_navigation.scss */
+/* line 88, ../scss/chunks/_navigation.scss */
 .header nav li.current_page_item a {
   background: white;
   color: #333333;
 }
-/* line 90, ../scss/chunks/_navigation.scss */
+/* line 92, ../scss/chunks/_navigation.scss */
 .header nav li.current_page_item ul li a {
   color: #333333;
   background: #ccc;
+  border: none;
 }
-/* line 93, ../scss/chunks/_navigation.scss */
+/* line 96, ../scss/chunks/_navigation.scss */
 .header nav li.current_page_item ul li a:hover {
   color: white;
   background: #888;
@@ -1769,6 +1765,21 @@ POSTS & CONTENT STYLES
   margin: 0;
 }
 
+/* line 255, ../scss/chunks/_content.scss */
+.archive-title em {
+  font-style: normal;
+  border-bottom: 2px dashed #fdbb2a;
+}
+/* line 259, ../scss/chunks/_content.scss */
+.archive-title span {
+  color: #777;
+}
+
+/* line 264, ../scss/chunks/_content.scss */
+.paddings {
+  padding-left: 1em;
+}
+
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
@@ -2036,20 +2047,21 @@ SIDEBARS & ASIDES
 *********************/
 /* line 5, ../scss/chunks/_sidebars.scss */
 .sidebar {
-  padding: 1em;
   color: white;
+  font-size: 1em;
+  padding-top: 1.5em;
 }
 
-/* line 12, ../scss/chunks/_sidebars.scss */
+/* line 13, ../scss/chunks/_sidebars.scss */
 .widget {
   max-width: 100%;
 }
-/* line 17, ../scss/chunks/_sidebars.scss */
+/* line 18, ../scss/chunks/_sidebars.scss */
 .widget ul li {
   /* deep nesting */
 }
 
-/* line 34, ../scss/chunks/_sidebars.scss */
+/* line 35, ../scss/chunks/_sidebars.scss */
 .no-widgets {
   background-color: white;
   padding: 1.5em;
@@ -2059,17 +2071,20 @@ SIDEBARS & ASIDES
   margin-bottom: 1.5em;
 }
 
-/* line 44, ../scss/chunks/_sidebars.scss */
+/* line 45, ../scss/chunks/_sidebars.scss */
 .widget_search label {
   display: none;
 }
-/* line 47, ../scss/chunks/_sidebars.scss */
+/* line 48, ../scss/chunks/_sidebars.scss */
 .widget_search input#s {
   max-width: 90%;
-  background: #777;
+  background: #fdedcb;
   border-radius: 5px;
-  font-size: 0.8em;
-  color: #ccc;
+  color: #333333;
+}
+/* line 54, ../scss/chunks/_sidebars.scss */
+.widget_search #searchsubmit {
+  display: none;
 }
 
 /*********************

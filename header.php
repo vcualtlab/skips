@@ -56,7 +56,13 @@
 				<div id="inner-header">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<p id="logo" class="h2" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
+					<div id="logo" itemscope itemtype="http://schema.org/Organization">
+						<a class="h2" href="<?php echo home_url(); ?>" rel="nofollow">
+						<?php bloginfo('name'); ?></a>
+						<?php get_sidebar(); ?>
+					</div>
+
+
 
 
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
@@ -80,8 +86,6 @@
             ?>
 					
           </nav>
-
-          <?php get_sidebar(); ?>
 
 				</div>
 
