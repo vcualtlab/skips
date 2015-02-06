@@ -1,7 +1,6 @@
 .vcubar{
-  background: $white;
-  border-top: 3px solid #ccc;
-  border-bottom: 3px solid #ccc;
+    @include span(last 9 of 12);
+
   position:relative;
   
   a{

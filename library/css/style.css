@@ -1252,11 +1252,6 @@ LAYOUT & GRID STYLES
   padding-left: 1.5em;
 }
 
-/* line 26, ../scss/chunks/_layout.scss */
-#inner-header {
-  padding-top: 1em;
-}
-
 /* line 30, ../scss/chunks/_layout.scss */
 #main {
   overflow: hidden;
@@ -1356,11 +1351,13 @@ HEADER STYLES
 
 /* line 15, ../scss/chunks/_header.scss */
 #logo {
-  margin: 50px 0px 20px 20px;
+  padding: 65px 0px 20px 20px;
+  background: #ddd;
+  margin: 0;
 }
 /* line 17, ../scss/chunks/_header.scss */
 #logo a {
-  color: white;
+  color: #333333;
 }
 
 /*********************
@@ -1429,12 +1426,12 @@ and more scalable.
 /* end .nav */
 /* line 1, ../scss/chunks/_vcubar.scss */
 .vcubar {
-  background: white;
-  border-top: 3px solid #ccc;
-  border-bottom: 3px solid #ccc;
+  width: 74.28571%;
+  float: right;
+  margin-right: 0;
   position: relative;
 }
-/* line 7, ../scss/chunks/_vcubar.scss */
+/* line 6, ../scss/chunks/_vcubar.scss */
 .vcubar a {
   display: block;
   position: absolute;
@@ -1442,32 +1439,32 @@ and more scalable.
   height: 100%;
   line-height: 40px;
 }
-/* line 14, ../scss/chunks/_vcubar.scss */
+/* line 13, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcu {
   width: 346px;
 }
-/* line 17, ../scss/chunks/_vcubar.scss */
+/* line 16, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcu:hover .vcu-dk {
   opacity: 0;
 }
-/* line 20, ../scss/chunks/_vcubar.scss */
+/* line 19, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcu:hover .vcu-color {
   opacity: 1.0;
 }
-/* line 26, ../scss/chunks/_vcubar.scss */
+/* line 25, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcuarts {
   width: 84px;
   right: 2%;
 }
-/* line 30, ../scss/chunks/_vcubar.scss */
+/* line 29, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcuarts:hover .arts-dk {
   opacity: 0;
 }
-/* line 33, ../scss/chunks/_vcubar.scss */
+/* line 32, ../scss/chunks/_vcubar.scss */
 .vcubar a.vcuarts:hover .arts-color {
   opacity: 1.0;
 }
-/* line 40, ../scss/chunks/_vcubar.scss */
+/* line 39, ../scss/chunks/_vcubar.scss */
 .vcubar .inner-vcubar {
   height: 2em;
   position: relative;
@@ -1477,12 +1474,12 @@ and more scalable.
   padding-right: 1em;
 }
 
-/* line 50, ../scss/chunks/_vcubar.scss */
+/* line 49, ../scss/chunks/_vcubar.scss */
 a.vcu-fallback {
   display: none;
 }
 
-/* line 53, ../scss/chunks/_vcubar.scss */
+/* line 52, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcu-fallback {
   display: block;
   background: url("../images/svg/fallbacks/logo-vcu-dk.png");
@@ -1491,7 +1488,7 @@ a.vcu-fallback {
   max-width: 60px;
 }
 @media (min-width: 481px) {
-  /* line 53, ../scss/chunks/_vcubar.scss */
+  /* line 52, ../scss/chunks/_vcubar.scss */
   .no-svg a.vcu-fallback {
     max-width: 346px;
   }
@@ -1500,17 +1497,17 @@ a.vcu-fallback {
 .no-mediaqueries .no-svg a.vcu-fallback {
   max-width: 346px;
 }
-/* line 62, ../scss/chunks/_vcubar.scss */
+/* line 61, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcu-fallback:hover {
   background: url("../images/svg/fallbacks/logo-vcu-color.png");
 }
 
-/* line 66, ../scss/chunks/_vcubar.scss */
+/* line 65, ../scss/chunks/_vcubar.scss */
 a.vcuarts-fallback {
   display: none;
 }
 
-/* line 69, ../scss/chunks/_vcubar.scss */
+/* line 68, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcuarts-fallback {
   display: block;
   background: url("../images/svg/fallbacks/logo-vcuarts.png");
@@ -1518,28 +1515,28 @@ a.vcuarts-fallback {
   height: 19px;
   right: 2%;
 }
-/* line 75, ../scss/chunks/_vcubar.scss */
+/* line 74, ../scss/chunks/_vcubar.scss */
 .no-svg a.vcuarts-fallback:hover {
   background: url("../images/svg/fallbacks/logo-vcuarts-color.png");
 }
 
-/* line 80, ../scss/chunks/_vcubar.scss */
+/* line 79, ../scss/chunks/_vcubar.scss */
 .vcu-color, .arts-color {
   opacity: 0;
   transition: opacity .15s ease-in-out;
 }
 
-/* line 84, ../scss/chunks/_vcubar.scss */
+/* line 83, ../scss/chunks/_vcubar.scss */
 .vcu-dk, .arts-dk {
   transition: opacity .15s ease-in-out;
 }
 
-/* line 87, ../scss/chunks/_vcubar.scss */
+/* line 86, ../scss/chunks/_vcubar.scss */
 .vcu-name {
   display: none;
 }
 @media (min-width: 481px) {
-  /* line 87, ../scss/chunks/_vcubar.scss */
+  /* line 86, ../scss/chunks/_vcubar.scss */
   .vcu-name {
     display: block;
   }
