@@ -11,6 +11,27 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 
+
+.header-nav {
+
+  // opacity: 0;
+  @include breakpoint($breakpoint-mobile) {
+    display:none;
+  }
+
+  body.active-mobile &{
+    top: 0;
+    left: 0;
+    display:block;
+  }
+
+  @include breakpoint($breakpoint-desktop) {
+
+  }
+
+}
+
+
 .header nav {
   border-bottom: 0;
   margin: 0;
@@ -104,3 +125,32 @@ and more scalable.
   }  /* end current highlighters */
 
 } /* end .nav */
+
+
+
+.show-nav {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  top: 53px;
+  right: 30px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 35px;
+  box-sizing: content-box;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+  &:hover {
+      color:$white;
+  }
+
+  .active-mobile &{
+    transform: rotate(90deg);  
+  }
+  
+  @include breakpoint($breakpoint-desktop) {
+    display: none;
+    visibility: hidden;
+    right: -99999px;
+  }
+}

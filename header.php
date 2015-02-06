@@ -30,6 +30,8 @@
             <meta name="theme-color" content="#121212">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+				<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 
 		<?php // wordpress head functions ?>
 		<?php wp_head(); ?>
@@ -65,28 +67,34 @@
 
 
 
-					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-						<?php
-              $args = array(
-                'child_of'     => 0,
-                'depth'        => 0,
-                'echo'         => 1,
-                'exclude'      => '',
-                'include'      => '',
-                'link_after'   => '',
-                'link_before'  => '',
-                'post_type'    => 'page',
-                'post_status'  => 'publish',
-                'sort_column'  => 'menu_order, post_title',
-                      'sort_order'   => '',
-                'title_li'     => __(''), 
-                'walker' => new skips_walker()
-              ); 
-              wp_list_pages( $args ); 
-            ?>
-					
-          </nav>
+					<nav role="navigation" class="header-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+								<?php
+		              $args = array(
+		                'child_of'     => 0,
+		                'depth'        => 0,
+		                'echo'         => 1,
+		                'exclude'      => '',
+		                'include'      => '',
+		                'link_after'   => '',
+		                'link_before'  => '',
+		                'post_type'    => 'page',
+		                'post_status'  => 'publish',
+		                'sort_column'  => 'menu_order, post_title',
+		                      'sort_order'   => '',
+		                'title_li'     => __(''), 
+		                'walker' => new skips_walker()
+		              ); 
+		              wp_list_pages( $args ); 
+		            ?>
+							
+		          </nav>
+
+		      
 
 				</div>
+
+				<div class="show-nav">
+		          	<i class="fa fa-bars"></i>
+		          </div>
 
 			</header>

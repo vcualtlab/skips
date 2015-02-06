@@ -1381,7 +1381,20 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
-/* line 14, ../scss/chunks/_navigation.scss */
+@media (max-width: 767px) {
+  /* line 15, ../scss/chunks/_navigation.scss */
+  .header-nav {
+    display: none;
+  }
+}
+/* line 22, ../scss/chunks/_navigation.scss */
+body.active-mobile .header-nav {
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+/* line 35, ../scss/chunks/_navigation.scss */
 .header nav {
   border-bottom: 0;
   margin: 0;
@@ -1389,7 +1402,7 @@ and more scalable.
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 18, ../scss/chunks/_navigation.scss */
+/* line 39, ../scss/chunks/_navigation.scss */
 .header nav li {
   list-style-type: none;
   font-family: "Abel", Cambria, Times New Roman, Times, serif;
@@ -1402,7 +1415,7 @@ and more scalable.
   http://www.alistapart.com/articles/organizing-mobile/
   */
 }
-/* line 23, ../scss/chunks/_navigation.scss */
+/* line 44, ../scss/chunks/_navigation.scss */
 .header nav li a {
   display: block;
   color: white;
@@ -1415,12 +1428,12 @@ and more scalable.
   keep this file as small as possible!
   */
 }
-/* line 36, ../scss/chunks/_navigation.scss */
+/* line 57, ../scss/chunks/_navigation.scss */
 .header nav li a:hover, .header nav li a:focus {
   color: white;
   background: #777;
 }
-/* line 58, ../scss/chunks/_navigation.scss */
+/* line 79, ../scss/chunks/_navigation.scss */
 .header nav li ul.sub-menu li a,
 .header nav li ul.children li a {
   padding-left: 50px;
@@ -1428,24 +1441,55 @@ and more scalable.
   font-size: 0.9em;
   line-height: 0.8;
 }
-/* line 88, ../scss/chunks/_navigation.scss */
+/* line 109, ../scss/chunks/_navigation.scss */
 .header nav li.current_page_item a {
   background: white;
   color: #333333;
 }
-/* line 92, ../scss/chunks/_navigation.scss */
+/* line 113, ../scss/chunks/_navigation.scss */
 .header nav li.current_page_item ul li a {
   color: #333333;
   background: #ccc;
   border: none;
 }
-/* line 96, ../scss/chunks/_navigation.scss */
+/* line 117, ../scss/chunks/_navigation.scss */
 .header nav li.current_page_item ul li a:hover {
   color: white;
   background: #888;
 }
 
 /* end .nav */
+/* line 131, ../scss/chunks/_navigation.scss */
+.show-nav {
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  top: 53px;
+  right: 30px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 35px;
+  box-sizing: content-box;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+/* line 143, ../scss/chunks/_navigation.scss */
+.show-nav:hover {
+  color: white;
+}
+/* line 147, ../scss/chunks/_navigation.scss */
+.active-mobile .show-nav {
+  transform: rotate(90deg);
+}
+@media (min-width: 768px) {
+  /* line 131, ../scss/chunks/_navigation.scss */
+  .show-nav {
+    display: none;
+    visibility: hidden;
+    right: -99999px;
+  }
+}
+
 /* line 1, ../scss/chunks/_vcubar.scss */
 .vcubar {
   position: relative;
@@ -2077,7 +2121,7 @@ SIDEBARS & ASIDES
 }
 /* line 48, ../scss/chunks/_sidebars.scss */
 .widget_search input#s {
-  max-width: 90%;
+  max-width: 95%;
   background: #fdedcb;
   border-radius: 5px;
   color: #333333;
