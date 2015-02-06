@@ -14,7 +14,7 @@ require_once( 'library/bones.php' );
 require_once( 'library/tgm-plugin-activation.php' );
 
 // CUSTOMIZE THE WORDPRESS ADMIN (off by default)
-// require_once( 'library/admin.php' );
+require_once( 'library/admin.php' );
 
 /*********************
 LAUNCH BONES
@@ -376,13 +376,6 @@ function get_development_scripts(){
 		'search-form',
 		'comment-form'
 	) );
-
-
-
-
-
-// Strict Standards: Declaration of skips_walker::start_el() should be compatible with Walker_Page::start_el(&$output, $page, $depth = 0, $args = Array, $current_page = 0) in /srv/www/artdocs/htdocs/wp-content/themes/artdocs/functions.php on line 445
-
 
 // Custom walker for Skips theme to spit out anchors instead of permalinks for child pages
 class skips_walker extends Walker_Page {

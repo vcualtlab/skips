@@ -6,23 +6,7 @@
 
 					<main id="main" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
-
-<?php
-/**
-* WordPress Query Comprehensive Reference
-* Compiled by luetkemj - luetkemj.com
-*
-* CODEX: http://codex.wordpress.org/Class_Reference/WP_Query#Parameters
-* Source: https://core.trac.wordpress.org/browser/tags/3.9/src/wp-includes/query.php
-*/
- 
-// figure out what page we are on. 
-// parent or child
-// if we are on a child page redirect to parent
-// if we are on parent show that page
-// show all children below and only children of parent lecture
-
-
+						<?php
 							if ($post->post_parent)	{
 								$ancestors=get_post_ancestors($post->ID);
 								$root=count($ancestors)-1;
@@ -78,45 +62,19 @@
 										</footer>
 									</article>
 
-							<?php endif; ?>
+							<?php endif;
 
+							// Reset Post Data
+							wp_reset_postdata();
 
-<?php 
-
-// Reset Post Data
-wp_reset_postdata();
-
-?>
-
-
-
-
-
-
-<?php
-/**
-* WordPress Query Comprehensive Reference
-* Compiled by luetkemj - luetkemj.com
-*
-* CODEX: http://codex.wordpress.org/Class_Reference/WP_Query#Parameters
-* Source: https://core.trac.wordpress.org/browser/tags/3.9/src/wp-includes/query.php
-*/
- 
-// figure out what page we are on. 
-// parent or child
-// if we are on a child page redirect to parent
-// if we are on parent show that page
-// show all children below and only children of parent lecture
-
-
-$children = wp_list_pages('title_li=&echo=0&child_of=' . $parent);
-if ($children){
-							$args = array( 
-								'posts_per_page' => -1,
-								'post_type' => 'page',
-								// 'page_id' => $parent,
-								'post_parent' => $parent
-							);
+							$children = wp_list_pages('title_li=&echo=0&child_of=' . $parent);
+							if ($children){
+								$args = array( 
+									'posts_per_page' => -1,
+									'post_type' => 'page',
+									// 'page_id' => $parent,
+									'post_parent' => $parent
+								);
 
 							$the_query = new WP_Query( $args );
 
@@ -158,22 +116,12 @@ if ($children){
 										</footer>
 									</article>
 
-							<?php endif; ?>
+							<?php endif; 
+								// Reset Post Data
+								wp_reset_postdata();
+							}
 
-
-<?php 
-
-// Reset Post Data
-wp_reset_postdata();
-
-
-}
-
-?>
-							
-
-
-
+							?>
 
 						</main>
 
