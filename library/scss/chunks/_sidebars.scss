@@ -3,12 +3,14 @@ SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
-  @include span(first 3 of 12);
+  padding:1em;
+  color:$white;
 }
 
   .widgettitle {}
 
   .widget {
+    max-width:100%;
 
     ul {
 
@@ -36,4 +38,17 @@ SIDEBARS & ASIDES
     border: 1px solid $border-color;
     border-radius: 2px;
     margin-bottom: 1.5em;
+  }
+
+  .widget_search {
+    label {
+      display:none;
+    }
+    input#s {
+      max-width:90%;
+      background:#777;
+      border-radius:5px;
+      font-size:0.8em;
+      color:#ccc;
+    }
   }

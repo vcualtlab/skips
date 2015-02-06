@@ -58,6 +58,7 @@
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<p id="logo" class="h2" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
 
+
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php
               $args = array(
@@ -80,8 +81,8 @@
 					
           </nav>
 
-				</div>
+          <?php get_sidebar(); ?>
 
-        <?php get_sidebar(); ?>
+				</div>
 
 			</header>
