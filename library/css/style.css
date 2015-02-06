@@ -27,7 +27,7 @@ the whole project.
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+@import url(http://fonts.googleapis.com/css?family=Abel);
 /* line 12, ../scss/partials/_normalize.scss */
 article,
 aside,
@@ -608,7 +608,7 @@ I've edited it a bit, but it's a nice starting point.
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
-/* line 60, ../scss/partials/_typography.scss */
+/* line 59, ../scss/partials/_typography.scss */
 p {
   -ms-word-wrap: break-word;
   word-break: break-word;
@@ -789,7 +789,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 .blue-btn, .comment-reply-link, #submit {
   display: inline-block;
   position: relative;
-  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
   color: white;
   font-size: 0.9em;
@@ -899,7 +899,7 @@ textarea,
   border: 0;
   width: 100%;
   max-width: 400px;
-  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #ebebeb;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out;
@@ -1165,7 +1165,7 @@ GENERAL STYLES
 *********************/
 /* line 5, ../scss/chunks/_general.scss */
 body {
-  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #333333;
@@ -1294,42 +1294,43 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   text-rendering: optimizelegibility;
   font-weight: 300;
+  font-family: "Abel", Cambria, Times New Roman, Times, serif;
   /*
   if you're going to use webfonts, be sure to check your weights
   http://css-tricks.com/watch-your-font-weight/
   */
   /* removing text decoration from all headline links */
 }
-/* line 14, ../scss/chunks/_headings.scss */
+/* line 15, ../scss/chunks/_headings.scss */
 h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
   text-decoration: none;
 }
 
-/* line 19, ../scss/chunks/_headings.scss */
+/* line 20, ../scss/chunks/_headings.scss */
 h1, .h1 {
   font-size: 2.5em;
   line-height: 1.333em;
 }
 
-/* line 24, ../scss/chunks/_headings.scss */
+/* line 25, ../scss/chunks/_headings.scss */
 h2, .h2 {
   font-size: 1.75em;
   line-height: 1.4em;
   margin-bottom: 0.375em;
 }
 
-/* line 30, ../scss/chunks/_headings.scss */
+/* line 31, ../scss/chunks/_headings.scss */
 h3, .h3 {
   font-size: 1.125em;
 }
 
-/* line 34, ../scss/chunks/_headings.scss */
+/* line 35, ../scss/chunks/_headings.scss */
 h4, .h4 {
   font-size: 1.1em;
   font-weight: 700;
 }
 
-/* line 39, ../scss/chunks/_headings.scss */
+/* line 40, ../scss/chunks/_headings.scss */
 h5, .h5 {
   font-size: 0.846em;
   line-height: 2.09em;
@@ -1352,7 +1353,7 @@ HEADER STYLES
 /* line 15, ../scss/chunks/_header.scss */
 #logo {
   padding: 65px 0px 20px 20px;
-  background: #f4f3e8;
+  background: #ddd;
   margin: 0;
 }
 /* line 17, ../scss/chunks/_header.scss */
@@ -1381,6 +1382,8 @@ and more scalable.
 /* line 18, ../scss/chunks/_navigation.scss */
 .header nav li {
   list-style-type: none;
+  font-family: "Abel", Cambria, Times New Roman, Times, serif;
+  font-size: 1.1em;
   /*
   so you really have to rethink your dropdowns for mobile.
   you don't want to have it expand too much because the
@@ -1389,7 +1392,7 @@ and more scalable.
   http://www.alistapart.com/articles/organizing-mobile/
   */
 }
-/* line 21, ../scss/chunks/_navigation.scss */
+/* line 23, ../scss/chunks/_navigation.scss */
 .header nav li a {
   display: block;
   color: white;
@@ -1402,12 +1405,12 @@ and more scalable.
   keep this file as small as possible!
   */
 }
-/* line 33, ../scss/chunks/_navigation.scss */
+/* line 35, ../scss/chunks/_navigation.scss */
 .header nav li a:hover, .header nav li a:focus {
   color: white;
   background: #777;
 }
-/* line 55, ../scss/chunks/_navigation.scss */
+/* line 57, ../scss/chunks/_navigation.scss */
 .header nav li ul.sub-menu li a,
 .header nav li ul.children li a {
   padding-left: 50px;
@@ -1415,12 +1418,12 @@ and more scalable.
   font-size: 0.9em;
   line-height: 0.8;
 }
-/* line 83, ../scss/chunks/_navigation.scss */
+/* line 85, ../scss/chunks/_navigation.scss */
 .header nav li.current_page_item a {
   background: white;
   color: #333333;
 }
-/* line 87, ../scss/chunks/_navigation.scss */
+/* line 89, ../scss/chunks/_navigation.scss */
 .header nav li.current_page_item ul li a {
   background: #555;
 }
@@ -1578,7 +1581,7 @@ POSTS & CONTENT STYLES
 .single-title::after, .page-title::after, .entry-title::after {
   content: '';
   display: block;
-  border-top: 3px solid #f4f3e8;
+  border-top: 3px solid #dddddd;
   width: 3em;
   margin-top: 0.1em;
   margin-bottom: 0.5em;
