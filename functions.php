@@ -380,6 +380,10 @@ function get_development_scripts(){
 
 
 
+
+// Strict Standards: Declaration of skips_walker::start_el() should be compatible with Walker_Page::start_el(&$output, $page, $depth = 0, $args = Array, $current_page = 0) in /srv/www/artdocs/htdocs/wp-content/themes/artdocs/functions.php on line 445
+
+
 // Custom walker for Skips theme to spit out anchors instead of permalinks for child pages
 class skips_walker extends Walker_Page {
   function start_lvl( &$output, $depth = 0, $args = array() ) {
@@ -392,7 +396,7 @@ class skips_walker extends Walker_Page {
       $output .= "$indent</ul>\n";
   }
 
-  function start_el( &$output, $page, $depth, $args, $current_page = 0 ) {
+  function start_el( &$output, $page, $depth = 0, $args = array(), $current_page = 0 ) {
       if ( $depth )
           $indent = str_repeat("\t", $depth);
       else
@@ -426,8 +430,6 @@ class skips_walker extends Walker_Page {
       } else {
         $output .= $indent . '<li class="' . $css_class . '"><a href="' . get_permalink($page->ID) . '">' . $link_before . apply_filters( 'the_title', $page->post_title, $page->ID ) . $link_after . '</a>';
       }
-
-      
       
       if ( !empty($show_date) ) {
           if ( 'modified' == $show_date )
@@ -443,23 +445,6 @@ class skips_walker extends Walker_Page {
       $output .= "</li>\n";
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
