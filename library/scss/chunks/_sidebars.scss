@@ -3,8 +3,9 @@ SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
-  padding:1em;
   color:$white;
+  font-size:1em;
+  padding-top:1.5em;
 }
 
   .widgettitle {}
@@ -45,10 +46,12 @@ SIDEBARS & ASIDES
       display:none;
     }
     input#s {
-      max-width:90%;
-      background:#777;
+      max-width:93%;
+      background:#fdedcb;
       border-radius:5px;
-      font-size:0.8em;
-      color:#ccc;
+      color:$black;
+    }
+    #searchsubmit {
+      display:none;
     }
   }

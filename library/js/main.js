@@ -116,5 +116,12 @@ jQuery(document).ready(function($) {
   */
   loadGravatars();
 
+    //Mobile menu
+
+    $('.show-nav').click(function(e) {
+    e.preventDefault();  
+    $('body').toggleClass('active-mobile');        
+  });
+
 
 }); /* end of as page load scripts */
