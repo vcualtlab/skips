@@ -1333,14 +1333,32 @@ h2, .h2 {
 h3, .h3 {
   font-size: 1.125em;
 }
+/* line 34, ../scss/chunks/_headings.scss */
+h3:after, .h3:after {
+  content: '';
+  display: block;
+  border-top: 2px solid #fdbb2a;
+  width: 4em;
+  margin-top: 0.5em;
+  margin-bottom: 0.1em;
+}
+/* line 43, ../scss/chunks/_headings.scss */
+h3:before, .h3:before {
+  content: '';
+  display: block;
+  border-top: 2px solid #fdbb2a;
+  width: 4em;
+  margin-top: 0.1em;
+  margin-bottom: 0.5em;
+}
 
-/* line 35, ../scss/chunks/_headings.scss */
+/* line 54, ../scss/chunks/_headings.scss */
 h4, .h4 {
   font-size: 1.1em;
   font-weight: 700;
 }
 
-/* line 40, ../scss/chunks/_headings.scss */
+/* line 59, ../scss/chunks/_headings.scss */
 h5, .h5 {
   font-size: 0.846em;
   line-height: 2.09em;
@@ -1834,6 +1852,12 @@ POSTS & CONTENT STYLES
 /* line 272, ../scss/chunks/_content.scss */
 .paddings {
   padding-left: 1em;
+}
+
+/* line 276, ../scss/chunks/_content.scss */
+.note {
+  background: #fff6e4;
+  padding: 1em;
 }
 
 /******************************************************************
