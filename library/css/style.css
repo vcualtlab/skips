@@ -1412,13 +1412,15 @@ and more scalable.
 .header nav li ul.children li a {
   padding-left: 50px;
   color: #ccc;
+  font-size: 0.9em;
+  line-height: 0.8;
 }
-/* line 81, ../scss/chunks/_navigation.scss */
+/* line 83, ../scss/chunks/_navigation.scss */
 .header nav li.current_page_item a {
   background: white;
   color: #333333;
 }
-/* line 85, ../scss/chunks/_navigation.scss */
+/* line 87, ../scss/chunks/_navigation.scss */
 .header nav li.current_page_item ul li a {
   background: #555;
 }
@@ -2009,6 +2011,10 @@ FOOTER STYLES
 /* line 5, ../scss/chunks/_footer.scss */
 .footer {
   clear: both;
+  font-size: 0.8em;
+  padding-top: 1em;
+  border-top: 1px solid #eee;
+  color: #333;
 }
 
 /*
