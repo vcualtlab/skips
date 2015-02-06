@@ -377,4 +377,90 @@ function get_development_scripts(){
 		'comment-form'
 	) );
 
+
+
+
+// Custom walker for Skips theme to spit out anchors instead of permalinks for child pages
+class skips_walker extends Walker_Page {
+  function start_lvl( &$output, $depth = 0, $args = array() ) {
+      $indent = str_repeat("\t", $depth);
+      $output .= "\n$indent<ul class='children'>\n";
+  }
+
+  function end_lvl( &$output, $depth = 0, $args = array() ) {
+      $indent = str_repeat("\t", $depth);
+      $output .= "$indent</ul>\n";
+  }
+
+  function start_el( &$output, $page, $depth, $args, $current_page = 0 ) {
+      if ( $depth )
+          $indent = str_repeat("\t", $depth);
+      else
+          $indent = '';
+      
+      extract($args, EXTR_SKIP);
+      $css_class = array('page_item', 'page-item-'.$page->ID);
+      if ( !empty($current_page) ) {
+          $_current_page = get_post( $current_page );
+          if ( in_array( $page->ID, $_current_page->ancestors ) )
+              $css_class[] = 'current_page_ancestor';
+          if ( $page->ID == $current_page )
+              $css_class[] = 'current_page_item';
+          elseif ( $_current_page && $page->ID == $_current_page->post_parent )
+              $css_class[] = 'current_page_parent';
+      }
+      elseif ( $page->ID == get_option('page_for_posts') ) {
+          $css_class[] = 'current_page_parent';
+      }
+      
+      $css_class = implode( ' ', apply_filters( 'page_css_class', $css_class, $page, $depth, $args, $current_page ) );
+      
+      if ($page->post_parent){          
+          // figure out the parent such that we will get the right links even if we are not in family tree
+          $ancestors=get_post_ancestors($page->ID);
+          $root=count($ancestors)-1;
+          $parent = $ancestors[$root];
+          $permalink = get_permalink($parent);
+
+        $output .= $indent . '<li class="' . $css_class . '"><a href="' . $permalink . '#post-' . $page->ID . '">' . $link_before . apply_filters( 'the_title', $page->post_title, $page->ID ) . $link_after . '</a>';
+      } else {
+        $output .= $indent . '<li class="' . $css_class . '"><a href="' . get_permalink($page->ID) . '">' . $link_before . apply_filters( 'the_title', $page->post_title, $page->ID ) . $link_after . '</a>';
+      }
+
+      
+      
+      if ( !empty($show_date) ) {
+          if ( 'modified' == $show_date )
+              $time = $page->post_modified;
+          else
+              $time = $page->post_date;
+              
+          $output .= " " . mysql2date($date_format, $time);
+      }
+  }
+
+  function end_el( &$output, $page, $depth = 0, $args = array() ) {
+      $output .= "</li>\n";
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
