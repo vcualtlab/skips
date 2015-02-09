@@ -1310,7 +1310,7 @@ H1, H2, H3, H4, H5 STYLES
 /* line 5, ../scss/chunks/_headings.scss */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   text-rendering: optimizelegibility;
-  font-weight: 300;
+  font-weight: 700;
   font-family: "Abel", Cambria, Times New Roman, Times, serif;
   /*
   if you're going to use webfonts, be sure to check your weights
@@ -1361,11 +1361,29 @@ h3:before, .h3:before {
 
 /* line 55, ../scss/chunks/_headings.scss */
 h4, .h4 {
-  font-size: 1.1em;
-  font-weight: 700;
+  font-size: 1.3em;
+  margin-top: 0;
+}
+/* line 58, ../scss/chunks/_headings.scss */
+h4:after, .h4:after {
+  content: '';
+  display: block;
+  border-top: 2px solid #fdbb2a;
+  width: 5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.1em;
+}
+/* line 67, ../scss/chunks/_headings.scss */
+h4:before, .h4:before {
+  content: '';
+  display: block;
+  border-top: 2px solid #fdbb2a;
+  width: 5em;
+  margin-top: 0em;
+  margin-bottom: 0.5em;
 }
 
-/* line 60, ../scss/chunks/_headings.scss */
+/* line 78, ../scss/chunks/_headings.scss */
 h5, .h5 {
   font-size: 0.846em;
   line-height: 2.09em;
