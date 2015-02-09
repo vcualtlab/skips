@@ -1337,11 +1337,11 @@ h2, .h2 {
 }
 
 /* line 32, ../scss/chunks/_headings.scss */
-h3, .h3 {
+h4, .h4 {
   font-size: 1.125em;
 }
 /* line 35, ../scss/chunks/_headings.scss */
-h3:after, .h3:after {
+h4:after, .h4:after {
   content: '';
   display: block;
   border-top: 2px solid #fdbb2a;
@@ -1350,7 +1350,7 @@ h3:after, .h3:after {
   margin-bottom: 0.1em;
 }
 /* line 44, ../scss/chunks/_headings.scss */
-h3:before, .h3:before {
+h4:before, .h4:before {
   content: '';
   display: block;
   border-top: 2px solid #fdbb2a;
@@ -1360,12 +1360,12 @@ h3:before, .h3:before {
 }
 
 /* line 55, ../scss/chunks/_headings.scss */
-h4, .h4 {
+h3, .h3 {
   font-size: 1.3em;
   margin-top: 0;
 }
 /* line 58, ../scss/chunks/_headings.scss */
-h4:after, .h4:after {
+h3:after, .h3:after {
   content: '';
   display: block;
   border-top: 2px solid #fdbb2a;
@@ -1374,7 +1374,7 @@ h4:after, .h4:after {
   margin-bottom: 0.1em;
 }
 /* line 67, ../scss/chunks/_headings.scss */
-h4:before, .h4:before {
+h3:before, .h3:before {
   content: '';
   display: block;
   border-top: 2px solid #fdbb2a;
