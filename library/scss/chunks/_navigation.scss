@@ -93,6 +93,12 @@ and more scalable.
 
         }
 
+        &.active {
+          a {
+            color:red !important;
+          }
+        }
+
         &:first-child {}
 
         &:last-child {
@@ -158,3 +164,5 @@ and more scalable.
     right: -99999px;
   }
 }
+
+.active a { color:red !important; padding:30px !important;}

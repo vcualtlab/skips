@@ -42,7 +42,7 @@
 
 	</head>
 
-	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
+	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage" data-spy="scroll" data-target=".header-nav">
   
 			<div class="vcubar">
 			    <div class="inner-vcubar">
