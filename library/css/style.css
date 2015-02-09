@@ -1287,7 +1287,7 @@ a, a:visited {
 }
 /* line 11, ../scss/chunks/_links.scss */
 a:hover, a:focus, a:visited:hover, a:visited:focus {
-  color: #996f15;
+  color: #ed3043;
   outline: none;
 }
 /* line 17, ../scss/chunks/_links.scss */
@@ -1310,7 +1310,7 @@ H1, H2, H3, H4, H5 STYLES
 /* line 5, ../scss/chunks/_headings.scss */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   text-rendering: optimizelegibility;
-  font-weight: 700;
+  font-weight: 300;
   font-family: "Abel", Cambria, Times New Roman, Times, serif;
   /*
   if you're going to use webfonts, be sure to check your weights
@@ -1334,13 +1334,14 @@ h2, .h2 {
   font-size: 1.75em;
   line-height: 1.4em;
   margin-bottom: 0.375em;
+  font-weight: 700;
 }
 
-/* line 32, ../scss/chunks/_headings.scss */
+/* line 33, ../scss/chunks/_headings.scss */
 h4, .h4 {
   font-size: 1.125em;
 }
-/* line 35, ../scss/chunks/_headings.scss */
+/* line 36, ../scss/chunks/_headings.scss */
 h4:after, .h4:after {
   content: '';
   display: block;
@@ -1349,7 +1350,7 @@ h4:after, .h4:after {
   margin-top: 0.5em;
   margin-bottom: 0.1em;
 }
-/* line 44, ../scss/chunks/_headings.scss */
+/* line 45, ../scss/chunks/_headings.scss */
 h4:before, .h4:before {
   content: '';
   display: block;
@@ -1359,12 +1360,12 @@ h4:before, .h4:before {
   margin-bottom: 0.5em;
 }
 
-/* line 55, ../scss/chunks/_headings.scss */
+/* line 56, ../scss/chunks/_headings.scss */
 h3, .h3 {
   font-size: 1.3em;
   margin-top: 0;
 }
-/* line 58, ../scss/chunks/_headings.scss */
+/* line 59, ../scss/chunks/_headings.scss */
 h3:after, .h3:after {
   content: '';
   display: block;
@@ -1373,7 +1374,7 @@ h3:after, .h3:after {
   margin-top: 0.5em;
   margin-bottom: 0.1em;
 }
-/* line 67, ../scss/chunks/_headings.scss */
+/* line 68, ../scss/chunks/_headings.scss */
 h3:before, .h3:before {
   content: '';
   display: block;
@@ -1383,7 +1384,7 @@ h3:before, .h3:before {
   margin-bottom: 0.5em;
 }
 
-/* line 78, ../scss/chunks/_headings.scss */
+/* line 79, ../scss/chunks/_headings.scss */
 h5, .h5 {
   font-size: 0.846em;
   line-height: 2.09em;

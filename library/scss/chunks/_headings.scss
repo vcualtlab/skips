@@ -4,7 +4,7 @@ H1, H2, H3, H4, H5 STYLES
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   text-rendering: optimizelegibility;
-  font-weight: 700;
+  font-weight: 300;
   font-family:$serif;
   /*
   if you're going to use webfonts, be sure to check your weights
@@ -26,6 +26,7 @@ h2, .h2 {
   font-size: 1.75em;
   line-height: 1.4em;
   margin-bottom: 0.375em;
+  font-weight: 700;
 }
 
 

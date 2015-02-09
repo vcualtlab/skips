@@ -46,7 +46,7 @@ $gray:				#ebebeb;
 
 
 $link-color:        #c18d1a;
-$link-hover:        darken($link-color, 9%);
+$link-hover:        $f-red;
 
 $border-color:      #ccc;
 $disabled-gray:     #cfcfcf;
