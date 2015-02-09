@@ -44,7 +44,7 @@ and more scalable.
       display:block;
       color: $white;
       text-decoration: none;
-      padding:0.5em 1.5em;
+      padding:0.4em 1.5em;
       transition:0.1s ease;
       outline:none;
 
@@ -84,13 +84,19 @@ and more scalable.
           padding-left: 50px;
           color:#ccc;
           font-size:0.9em;
-          line-height:0.8;
+          line-height:1;
 
           &:hover,
           &:focus {}
 
           &:link {}
 
+        }
+
+        &.active {
+          a {
+            color:red !important;
+          }
         }
 
         &:first-child {}
@@ -137,7 +143,7 @@ and more scalable.
   width: 45px;
   position: absolute;
   top: 53px;
-  right: 30px;
+  right: 15px;
   text-align: center;
   line-height: 35px;
   font-size: 35px;
@@ -158,3 +164,5 @@ and more scalable.
     right: -99999px;
   }
 }
+
+.active a { color:red !important; padding:30px !important;}

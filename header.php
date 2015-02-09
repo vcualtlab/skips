@@ -42,7 +42,7 @@
 
 	</head>
 
-	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
+	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage" data-spy="scroll" data-target=".header-nav">
   
 			<div class="vcubar">
 			    <div class="inner-vcubar">
@@ -61,7 +61,6 @@
 					<div id="logo" itemscope itemtype="http://schema.org/Organization">
 						<a class="h2" href="<?php echo home_url(); ?>" rel="nofollow">
 						<?php bloginfo('name'); ?></a>
-						<?php get_sidebar(); ?>
 					</div>
 
 
@@ -86,10 +85,11 @@
 		              ); 
 		              wp_list_pages( $args ); 
 		            ?>
-							
+								<?php get_sidebar(); ?>
 		          </nav>
 
-		      
+		      					
+
 
 				</div>
 

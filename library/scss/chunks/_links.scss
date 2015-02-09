@@ -5,14 +5,17 @@ LINK STYLES
 a, a:visited {
   color: $link-color;
   text-decoration: none;
+  outline:none;
 
   /* on hover */
   &:hover, &:focus {
     color: $link-hover;
+    outline:none;
   }
 
   /* on click */
   &:active {
+    outline:none;
 
   }
 

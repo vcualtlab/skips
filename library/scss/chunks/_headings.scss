@@ -28,7 +28,8 @@ h2, .h2 {
   margin-bottom: 0.375em;
 }
 
-h3, .h3 {
+
+h4, .h4 {
   font-size: 1.125em;
 
   &:after {
@@ -51,9 +52,27 @@ h3, .h3 {
 
 }
 
-h4, .h4 {
-  font-size: 1.1em;
-  font-weight: 700;
+h3, .h3 {
+  font-size: 1.3em;
+  margin-top:0;
+  &:after {
+  content: '';
+  display: block;
+  border-top:2px solid $gold;
+  width:5em;
+  margin-top:0.5em;
+  margin-bottom:0.1em;
+  }
+
+  &:before {
+  content: '';
+  display: block;
+  border-top:2px solid $gold;
+  width:5em;
+  margin-top:0em;
+  margin-bottom:0.5em;
+  }
+
 }
 
 h5, .h5 {

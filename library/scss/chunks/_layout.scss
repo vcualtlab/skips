@@ -11,6 +11,7 @@ LAYOUT & GRID STYLES
     @include span(first 3 of 12 );
     position:fixed;
     height: 100vh;
+    overflow:auto;
   }
 }
 
