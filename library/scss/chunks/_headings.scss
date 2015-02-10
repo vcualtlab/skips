@@ -34,7 +34,7 @@ h3, .h3 {
   &:after {
   content: '';
   display: block;
-  border-top:2px solid $gold;
+  border-top:2px solid #ddd;
   width:5em;
   margin-top:0.5em;
   margin-bottom:0.1em;
@@ -43,7 +43,7 @@ h3, .h3 {
   &:before {
   content: '';
   display: block;
-  border-top:2px solid $gold;
+  border-top:2px solid #ddd;
   width:5em;
   margin-top:0em;
   margin-bottom:0.5em;
@@ -58,7 +58,7 @@ h4, .h4 {
   &:after {
   content: '';
   display: block;
-  border-top:2px solid $gold;
+  border-top:2px solid #ddd;
   width:4em;
   margin-top:0.5em;
   margin-bottom:0.1em;
@@ -67,7 +67,7 @@ h4, .h4 {
   &:before {
   content: '';
   display: block;
-  border-top:2px solid $gold;
+  border-top:2px solid #ddd;
   width:4em;
   margin-top:0.1em;
   margin-bottom:0.5em;

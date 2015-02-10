@@ -1474,7 +1474,7 @@ LINK STYLES
 
 a,
 a:visited {
-	color: #c18d1a;
+	color: #ed3043;
 	text-decoration: none;
 	outline: none; /* on hover */ /* on click */ /* mobile tap color */
 }
@@ -1485,7 +1485,7 @@ a:hover,
 a:focus,
 a:visited:hover,
 a:visited:focus {
-	color: #ed3043;
+	color: #fdbb2a;
 	outline: none;
 }
 
@@ -1577,7 +1577,7 @@ h3:after,
 .h3:after {
 	content: '';
 	display: block;
-	border-top: 2px solid #fdbb2a;
+	border-top: 2px solid #ddd;
 	width: 5em;
 	margin-top: 0.5em;
 	margin-bottom: 0.1em;
@@ -1589,7 +1589,7 @@ h3:before,
 .h3:before {
 	content: '';
 	display: block;
-	border-top: 2px solid #fdbb2a;
+	border-top: 2px solid #ddd;
 	width: 5em;
 	margin-top: 0em;
 	margin-bottom: 0.5em;
@@ -1608,7 +1608,7 @@ h4:after,
 .h4:after {
 	content: '';
 	display: block;
-	border-top: 2px solid #fdbb2a;
+	border-top: 2px solid #ddd;
 	width: 4em;
 	margin-top: 0.5em;
 	margin-bottom: 0.1em;
@@ -1620,7 +1620,7 @@ h4:before,
 .h4:before {
 	content: '';
 	display: block;
-	border-top: 2px solid #fdbb2a;
+	border-top: 2px solid #ddd;
 	width: 4em;
 	margin-top: 0.1em;
 	margin-bottom: 0.5em;
@@ -1656,21 +1656,22 @@ HEADER STYLES
 
 #logo {
 	padding: 20px 20px 20px 20px;
-	background: #ed3043;
+	background: #eee;
+	border-top: 5px solid #ed3043;
 	margin: 0;
-	transition: background-color 0.7s ease;
+	transition: 0.7s ease;
 }
 
 /* line 17, ../scss/chunks/_header.scss */
 
 #logo a {
-	color: white;
+	color: #333333;
 }
 
-/* line 26, ../scss/chunks/_header.scss */
+/* line 27, ../scss/chunks/_header.scss */
 
 #logo:hover {
-	background: #fdbb2a;
+	border-top-color: #fdbb2a;
 }
 
 /*********************
