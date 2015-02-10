@@ -8,10 +8,12 @@ FOOTER STYLES
   padding-top:1em;
   border-top:1px solid #eee;
   color:#333;
+  
     @include breakpoint($breakpoint-mobile) {
-    padding-left:1em;
-    padding-right:1em;
-  }
+      padding-left:1em;
+      padding-right:1em;
+    }
+
 }
 
   /*

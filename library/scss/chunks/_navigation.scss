@@ -25,9 +25,6 @@ and more scalable.
     display:block;
   }
 
-  @include breakpoint($breakpoint-desktop) {
-  }
-
 }
 
 
@@ -48,13 +45,6 @@ and more scalable.
       transition:0.1s ease;
       outline:none;
 
-
-      /*
-      remember this is for mobile ONLY, so there's no need
-      to even declare hover styles here, you can do it in
-      the style.scss file where it's relevant. We want to
-      keep this file as small as possible!
-      */
       &:hover, &:focus {
         color:$white;
         background:#777;
@@ -68,13 +58,7 @@ and more scalable.
 
     &:last-child {}
 
-    /*
-    so you really have to rethink your dropdowns for mobile.
-    you don't want to have it expand too much because the
-    screen is so small. How you manage your menu should
-    depend on the project. Here's some great info on it:
-    http://www.alistapart.com/articles/organizing-mobile/
-    */
+
     ul.sub-menu,
     ul.children {
 
@@ -141,7 +125,7 @@ and more scalable.
 } /* end .nav */
 
 
-
+/* mobile nav */
 .show-nav {
   height: 45px;
   width: 45px;
@@ -168,5 +152,3 @@ and more scalable.
     right: -99999px;
   }
 }
-
-.active a { color:red !important; padding:30px !important;}

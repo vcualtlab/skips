@@ -60,11 +60,9 @@
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<div id="logo" itemscope itemtype="http://schema.org/Organization">
 						<a class="h2" href="<?php echo home_url(); ?>" rel="nofollow">
-						<?php bloginfo('name'); ?></a>
+							<?php bloginfo('name'); ?>
+						</a>
 					</div>
-
-
-
 
 					<nav role="navigation" class="header-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
 								<?php
@@ -85,12 +83,12 @@
 		              ); 
 		              wp_list_pages( $args ); 
 		            ?>
-								<?php get_sidebar(); ?>
+					
+		            <!-- Sidebar start -->
+					<?php get_sidebar(); ?>
+
+
 		          </nav>
-
-		      					
-
-
 				</div>
 
 				<div class="show-nav">

@@ -1,7 +1,6 @@
 /*********************
 LAYOUT & GRID STYLES
 *********************/
-// What does all of this mean? so many ids and other junk get that mess out of here!!
 #container {
   @include container();
 }
@@ -26,19 +25,4 @@ LAYOUT & GRID STYLES
     @include span(last 9 of 12);
   }
      padding-left:0.5em;
-}
-
-#footer {
-}
-
-#inner-header {
-	
-}
-
-#main {
-  overflow: hidden;
-}
-
-.article-footer {
-  overflow: hidden;
 }
