@@ -1172,6 +1172,7 @@ body {
   color: #333333;
   background-color: white;
   -webkit-font-smoothing: antialiased;
+  position: relative;
 }
 
 /********************
@@ -1516,9 +1517,14 @@ body.active-mobile .header-nav {
   color: white;
   background: #888;
 }
+/* line 132, ../scss/chunks/_navigation.scss */
+.header nav li.current_page_item ul li.current a {
+  color: white;
+  background: #888;
+}
 
 /* end .nav */
-/* line 141, ../scss/chunks/_navigation.scss */
+/* line 145, ../scss/chunks/_navigation.scss */
 .show-nav {
   height: 45px;
   width: 45px;
@@ -1532,16 +1538,16 @@ body.active-mobile .header-nav {
   cursor: pointer;
   transition: .2s ease-in-out;
 }
-/* line 153, ../scss/chunks/_navigation.scss */
+/* line 157, ../scss/chunks/_navigation.scss */
 .show-nav:hover {
   color: white;
 }
-/* line 157, ../scss/chunks/_navigation.scss */
+/* line 161, ../scss/chunks/_navigation.scss */
 .active-mobile .show-nav {
   transform: rotate(90deg);
 }
 @media (min-width: 768px) {
-  /* line 141, ../scss/chunks/_navigation.scss */
+  /* line 145, ../scss/chunks/_navigation.scss */
   .show-nav {
     display: none;
     visibility: hidden;
@@ -1549,7 +1555,7 @@ body.active-mobile .header-nav {
   }
 }
 
-/* line 168, ../scss/chunks/_navigation.scss */
+/* line 172, ../scss/chunks/_navigation.scss */
 .active a {
   color: red !important;
   padding: 30px !important;

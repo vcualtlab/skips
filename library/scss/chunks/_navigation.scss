@@ -114,7 +114,7 @@ and more scalable.
   /* highlight current page */
   li.current-menu-item {
   }
-
+  
   li.current_page_item {
     a {
       background:$white;
@@ -129,6 +129,10 @@ and more scalable.
           background:#888;
         }
     }
+    ul li.current a{
+      color:$white;
+      background:#888;
+    } 
   }
 
   li.current_page_ancestor {

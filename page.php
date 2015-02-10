@@ -82,7 +82,7 @@
 							if ( $the_query->have_posts() ) :
 							while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+							<article id="page-item-<?php the_ID(); ?>" <?php post_class(); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 								<header class="article-header">
 
