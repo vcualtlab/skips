@@ -265,10 +265,10 @@ function initScrollSpy(){
       min: position.top - 10,
       max: position.top - 10 + $(this).height(),
       onEnter: function(element, position) {
+        $('.page_item').each(function(i){
+          $(this).removeClass('current');
+        });
         $('.'+element.id).addClass('current');
-      },
-      onLeave: function(element, position) {
-        $('.'+element.id).removeClass('current');
       }
     });
   });
@@ -278,7 +278,7 @@ function initScrollSpy(){
 initScrollSpy();
 
 // on resize clear current, wait for resize to complete and then init scrollspy again
-$(window).resize(function () {
+  $(window).resize(function () {
     $('.page_item').each(function(i){
       $(this).removeClass('current');
     });
@@ -286,6 +286,17 @@ $(window).resize(function () {
    waitForFinalEvent( function() {
     initScrollSpy();     
    }, timeToWaitForLast, "setup that scrollspy again but not until we are done resizing that window"); 
- });
+  });
+
+  $('.children .page_item').on('click', function(){
+    $this = $(this);
+    $('.children .page_item').each(function(i){
+      $(this).removeClass('current');
+    });
+    $this.addClass('current');
+  });
+  
+  
+
 
 }); /* end of as page load scripts */
