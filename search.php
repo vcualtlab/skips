@@ -11,11 +11,31 @@
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
+							<?php 
+
+							if ($post->post_parent)	{
+								$ancestors=get_post_ancestors($post->ID);
+								$root=count($ancestors)-1;
+								$parent = $ancestors[$root];
+							} else {
+								$parent = $post->ID;
+							} 
+
+
+
+							$permalink = get_permalink( $parent );
+							$sectionlink = ( $parent == $post->ID ? '' : '#page-item-' . $post->ID );
+							?>
+
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> role="article">
 
 								<header class="entry-header article-header">
 
-									<h2 class="search-title entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+
+
+
+
+									<h2 class="search-title entry-title"><a href="<?php echo $permalink . $sectionlink; ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
                   						
 
