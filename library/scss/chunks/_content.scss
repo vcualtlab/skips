@@ -96,8 +96,8 @@ POSTS & CONTENT STYLES
         margin-bottom:1.5em;
 
         li {
-          font-size:1.2em;
-          line-height:1.8em;
+
+          padding-bottom:0.5em;
           padding-left:0.7em; 
           text-indent: -.7em;
 
@@ -163,9 +163,8 @@ POSTS & CONTENT STYLES
       }
 
       blockquote {
-        margin:0;
-        padding:0 0 0 10px;
-        border-left: 2px solid #ddd;
+        margin:0 0 40px 0;
+        padding:0 0 0 0;
         font-size:1em;
         font-family:$serif;
         span {

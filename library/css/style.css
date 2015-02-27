@@ -1327,12 +1327,12 @@ h2, .h2 {
   margin-bottom: 0.375em;
 }
 
-/* line 31, ../scss/chunks/_headings.scss */
+/* line 35, ../scss/chunks/_headings.scss */
 h3, .h3 {
   font-size: 1.3em;
   margin-top: 0;
 }
-/* line 34, ../scss/chunks/_headings.scss */
+/* line 38, ../scss/chunks/_headings.scss */
 h3:after, .h3:after {
   content: '';
   display: block;
@@ -1341,7 +1341,7 @@ h3:after, .h3:after {
   margin-top: 0.5em;
   margin-bottom: 0.1em;
 }
-/* line 43, ../scss/chunks/_headings.scss */
+/* line 47, ../scss/chunks/_headings.scss */
 h3:before, .h3:before {
   content: '';
   display: block;
@@ -1351,11 +1351,11 @@ h3:before, .h3:before {
   margin-bottom: 0.5em;
 }
 
-/* line 55, ../scss/chunks/_headings.scss */
+/* line 59, ../scss/chunks/_headings.scss */
 h4, .h4 {
   font-size: 1.125em;
 }
-/* line 58, ../scss/chunks/_headings.scss */
+/* line 62, ../scss/chunks/_headings.scss */
 h4:after, .h4:after {
   content: '';
   display: block;
@@ -1364,7 +1364,7 @@ h4:after, .h4:after {
   margin-top: 0.5em;
   margin-bottom: 0.1em;
 }
-/* line 67, ../scss/chunks/_headings.scss */
+/* line 71, ../scss/chunks/_headings.scss */
 h4:before, .h4:before {
   content: '';
   display: block;
@@ -1374,7 +1374,7 @@ h4:before, .h4:before {
   margin-bottom: 0.5em;
 }
 
-/* line 78, ../scss/chunks/_headings.scss */
+/* line 82, ../scss/chunks/_headings.scss */
 h5, .h5 {
   font-size: 0.846em;
   line-height: 2.09em;
@@ -1760,8 +1760,7 @@ POSTS & CONTENT STYLES
 }
 /* line 98, ../scss/chunks/_content.scss */
 .entry-content ul li {
-  font-size: 1.2em;
-  line-height: 1.8em;
+  padding-bottom: 0.5em;
   padding-left: 0.7em;
   text-indent: -.7em;
 }
@@ -1819,30 +1818,29 @@ POSTS & CONTENT STYLES
 }
 /* line 165, ../scss/chunks/_content.scss */
 .entry-content blockquote {
-  margin: 0;
-  padding: 0 0 0 10px;
-  border-left: 2px solid #ddd;
+  margin: 0 0 40px 0;
+  padding: 0 0 0 0;
   font-size: 1em;
   font-family: "Abel", Cambria, Times New Roman, Times, serif;
 }
-/* line 171, ../scss/chunks/_content.scss */
+/* line 170, ../scss/chunks/_content.scss */
 .entry-content blockquote span {
   color: #777;
 }
-/* line 183, ../scss/chunks/_content.scss */
+/* line 182, ../scss/chunks/_content.scss */
 .entry-content dd {
   margin-left: 0;
   font-size: 0.9em;
   color: #787878;
   margin-bottom: 1.5em;
 }
-/* line 190, ../scss/chunks/_content.scss */
+/* line 189, ../scss/chunks/_content.scss */
 .entry-content img {
   margin: 0 0 1.5em 0;
   max-width: 100%;
   height: auto;
 }
-/* line 206, ../scss/chunks/_content.scss */
+/* line 205, ../scss/chunks/_content.scss */
 .entry-content .size-auto,
 .entry-content .size-full,
 .entry-content .size-large,
@@ -1851,7 +1849,7 @@ POSTS & CONTENT STYLES
   max-width: 100%;
   height: auto;
 }
-/* line 215, ../scss/chunks/_content.scss */
+/* line 214, ../scss/chunks/_content.scss */
 .entry-content pre {
   background: #333333;
   color: #f8f9fa;
@@ -1862,20 +1860,20 @@ POSTS & CONTENT STYLES
 }
 
 /* end .entry-content */
-/* line 226, ../scss/chunks/_content.scss */
+/* line 225, ../scss/chunks/_content.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
   /* images inside wp-caption */
 }
-/* line 232, ../scss/chunks/_content.scss */
+/* line 231, ../scss/chunks/_content.scss */
 .wp-caption img {
   max-width: 100%;
   margin-bottom: 0;
   width: 100%;
 }
-/* line 238, ../scss/chunks/_content.scss */
+/* line 237, ../scss/chunks/_content.scss */
 .wp-caption p.wp-caption-text {
   font-size: 0.85em;
   margin: 4px 0 7px;
@@ -1886,39 +1884,39 @@ POSTS & CONTENT STYLES
 /* image gallery styles */
 /* end .gallery */
 /* gallery caption styles */
-/* line 272, ../scss/chunks/_content.scss */
+/* line 271, ../scss/chunks/_content.scss */
 .tags {
   margin: 0;
 }
 
-/* line 277, ../scss/chunks/_content.scss */
+/* line 276, ../scss/chunks/_content.scss */
 .archive-title em {
   font-style: normal;
   border-bottom: 2px dashed #fdbb2a;
 }
-/* line 281, ../scss/chunks/_content.scss */
+/* line 280, ../scss/chunks/_content.scss */
 .archive-title span {
   color: #777;
 }
 
-/* line 286, ../scss/chunks/_content.scss */
+/* line 285, ../scss/chunks/_content.scss */
 .paddings {
   padding-left: 0em;
 }
 
-/* line 290, ../scss/chunks/_content.scss */
+/* line 289, ../scss/chunks/_content.scss */
 .note {
   background: #fff6e4;
   padding: 1em;
 }
 
-/* line 295, ../scss/chunks/_content.scss */
+/* line 294, ../scss/chunks/_content.scss */
 .never {
   background: #fcddd6;
   padding: 1em;
 }
 
-/* line 299, ../scss/chunks/_content.scss */
+/* line 298, ../scss/chunks/_content.scss */
 .ok {
   background: #eef5c1;
   padding: 1em;
