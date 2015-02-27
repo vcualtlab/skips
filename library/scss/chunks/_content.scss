@@ -164,11 +164,14 @@ POSTS & CONTENT STYLES
       }
 
       blockquote {
-        margin: 0 0 1.5em 0.75em;
-        padding: 0 0 0 0.75em;
-        border-left: 3px solid $blue;
-        font-style: italic;
-        color: $meta-gray;
+        margin:0;
+        padding:0 0 0 10px;
+        border-left: 2px solid #ddd;
+        font-size:1em;
+        font-family:$serif;
+        span {
+         color:#777;
+        }
 
         &:before {}
 
