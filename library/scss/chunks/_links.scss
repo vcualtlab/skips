@@ -39,5 +39,6 @@ a.button {
   transition:all 0.4s ease;
   &:hover {
     background:$gold;
+    color:$white;
   }
 }
