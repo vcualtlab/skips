@@ -1316,6 +1316,20 @@ a:link, a:visited:link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
 }
 
+/* line 33, ../scss/chunks/_links.scss */
+a.button {
+  background: #ed3043;
+  color: white;
+  padding: 10px 20px;
+  font-family: "Abel", Cambria, Times New Roman, Times, serif;
+  font-size: 1.3em;
+  transition: all 0.4s ease;
+}
+/* line 40, ../scss/chunks/_links.scss */
+a.button:hover {
+  background: #fdbb2a;
+}
+
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
