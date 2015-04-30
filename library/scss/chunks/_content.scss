@@ -203,7 +203,9 @@ POSTS & CONTENT STYLES
       */
       .alignleft, img.alignleft {}
       .alignright, img.alignright {}
-      .aligncenter, img.aligncenter {}
+      .aligncenter, img.aligncenter {
+        text-align:center;
+      }
 
       .size-auto,
       .size-full,

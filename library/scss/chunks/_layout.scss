@@ -26,3 +26,11 @@ LAYOUT & GRID STYLES
   }
      padding-left:0.5em;
 }
+
+.col2{
+  .column{
+    @include breakpoint($breakpoint-desktop){ 
+      @include gallery(6 of 12);
+    }
+  }
+}
