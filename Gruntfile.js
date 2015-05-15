@@ -122,7 +122,26 @@ module.exports = function(grunt) {
                     logConcurrentOutput: true
                 }
             }
-        }
+        },
+
+        copy: {
+		  main: {
+		    files: [
+		      // includes files within path
+		      // {expand: true, src: ['path/*'], dest: 'dest/', filter: 'isFile'},
+
+		      // includes files within path and its sub-directories
+		      {expand: true, src: ['**','!bower_components/**','!node_modules/**','!.git/**'], dest: 'build/'},
+
+		      // makes all src relative to cwd
+		      // {expand: true, cwd: 'path/', src: ['**'], dest: 'dest/'},
+
+		      // flattens results to a single level
+		      // {expand: true, flatten: true, src: ['path/**'], dest: 'dest/', filter: 'isFile'},
+		    ],
+		  },
+		},
+
     });
 
     // 3. Where we tell Grunt what plugins to use
@@ -146,8 +165,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
 
+    // Build Related
+    grunt.loadNpmTasks('grunt-contrib-copy');
+
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask('init', ['build']);
     grunt.registerTask('dev', ['browserSync','watch']);
-    grunt.registerTask('build', ['sass', 'autoprefixer', 'cmq', 'cssmin', 'concat', 'uglify']);
+    grunt.registerTask('build', ['sass', 'autoprefixer', 'cmq', 'cssmin', 'concat', 'uglify', 'copy']);
 };

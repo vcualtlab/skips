@@ -4,13 +4,15 @@ A simple wordpress for documentation.
 *Usage:*
 
 ```bash
-grunt init
+npm install
 ```
 
-make a copy of library/dev-scripts.example.php at library/dev-scripts.php
+```bash
+bower install
+```
 
 ```bash
-cp library/dev-scripts.example.php library/dev-scripts.php
+grunt init
 ```
 
 ```bash
