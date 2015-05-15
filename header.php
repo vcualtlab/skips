@@ -43,15 +43,6 @@
 	</head>
 
 	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
-  
-			<div class="vcubar">
-			    <div class="inner-vcubar">
-			      <a href="http://vcu.edu" target="_blank" class="vcu"><?php include (TEMPLATEPATH . '/library/images/svg/logo-vcu.svg'); ?></a>
-			      <a href="http://vcu.edu" target="_blank" class="vcu-fallback"></a>
-			      <a href="http://arts.vcu.edu" target="_blank" class="vcuarts"><?php include (TEMPLATEPATH . '/library/images/svg/logo-vcuarts.svg'); ?></a>
-			      <a href="http://arts.vcu.edu" target="_blank" class="vcuarts-fallback"></a>
-			    </div>
- 			 </div>
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
@@ -78,12 +69,12 @@
 		                'post_status'  => 'publish',
 		                'sort_column'  => 'menu_order, post_title',
 		                      'sort_order'   => '',
-		                'title_li'     => __(''), 
+		                'title_li'     => __(''),
 		                'walker' => new skips_walker()
-		              ); 
-		              wp_list_pages( $args ); 
+		              );
+		              wp_list_pages( $args );
 		            ?>
-					
+
 		            <!-- Sidebar start -->
 					<?php get_sidebar(); ?>
 
