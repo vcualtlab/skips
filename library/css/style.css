@@ -33,8 +33,6 @@ the whole project.
  * Correct `block` display not defined in IE 8/9.
  */
 
-/* line 12, ../scss/partials/_normalize.scss */
-
 article,
 aside,
 details,
@@ -54,8 +52,6 @@ summary {
  * Correct `inline-block` display not defined in IE 8/9.
  */
 
-/* line 31, ../scss/partials/_normalize.scss */
-
 audio,
 canvas,
 video {
@@ -67,8 +63,6 @@ video {
  * Remove excess height in iOS 5 devices.
  */
 
-/* line 42, ../scss/partials/_normalize.scss */
-
 audio:not([controls]) {
 	display: none;
 	height: 0;
@@ -78,8 +72,6 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9.
  * Hide the `template` element in IE, Safari, and Firefox < 22.
  */
-
-/* line 52, ../scss/partials/_normalize.scss */
 
 [hidden],
 template {
@@ -96,8 +88,6 @@ template {
  *    user zoom.
  */
 
-/* line 67, ../scss/partials/_normalize.scss */
-
 html {
 	font-family: sans-serif; /* 1 */
 	-ms-text-size-adjust: 100%; /* 2 */
@@ -107,8 +97,6 @@ html {
 /**
  * Remove default margin.
  */
-
-/* line 77, ../scss/partials/_normalize.scss */
 
 body {
 	margin: 0;
@@ -122,8 +110,6 @@ body {
  * Remove the gray background color from active links in IE 10.
  */
 
-/* line 89, ../scss/partials/_normalize.scss */
-
 a {
 	background: transparent;
 }
@@ -132,8 +118,6 @@ a {
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 
-/* line 97, ../scss/partials/_normalize.scss */
-
 a:focus {
 	outline: thin dotted;
 }
@@ -141,8 +125,6 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-
-/* line 105, ../scss/partials/_normalize.scss */
 
 a:active,
 a:hover {
@@ -158,8 +140,6 @@ a:hover {
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
 
-/* line 119, ../scss/partials/_normalize.scss */
-
 h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
@@ -169,8 +149,6 @@ h1 {
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
 
-/* line 128, ../scss/partials/_normalize.scss */
-
 abbr[title] {
 	border-bottom: 1px dotted;
 }
@@ -178,8 +156,6 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-
-/* line 136, ../scss/partials/_normalize.scss */
 
 b,
 strong,
@@ -191,8 +167,6 @@ strong,
  * Address styling not present in Safari 5 and Chrome.
  */
 
-/* line 146, ../scss/partials/_normalize.scss */
-
 dfn,
 em,
 .em {
@@ -203,10 +177,7 @@ em,
  * Address differences between Firefox and other browsers.
  */
 
-/* line 156, ../scss/partials/_normalize.scss */
-
 hr {
-	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 	height: 0;
 }
@@ -214,8 +185,6 @@ hr {
 /*
  * proper formatting (http://blog.fontdeck.com/post/9037028497/hyphens)
 */
-
-/* line 166, ../scss/partials/_normalize.scss */
 
 p {
 	-webkit-hyphens: auto;
@@ -229,8 +198,6 @@ p {
  * Addresses margins set differently in IE6/7.
  */
 
-/* line 177, ../scss/partials/_normalize.scss */
-
 pre {
 	margin: 0;
 }
@@ -238,8 +205,6 @@ pre {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-
-/* line 185, ../scss/partials/_normalize.scss */
 
 code,
 kbd,
@@ -253,8 +218,6 @@ samp {
  * Improve readability of pre-formatted text in all browsers.
  */
 
-/* line 197, ../scss/partials/_normalize.scss */
-
 pre {
 	white-space: pre-wrap;
 }
@@ -262,8 +225,6 @@ pre {
 /**
  * Set consistent quote types.
  */
-
-/* line 205, ../scss/partials/_normalize.scss */
 
 q {
 	quotes: "\201C" "\201D" "\2018" "\2019";
@@ -273,15 +234,11 @@ q {
  * Address inconsistent and variable font size in all browsers.
  */
 
-/* line 212, ../scss/partials/_normalize.scss */
-
 q:before,
 q:after {
 	content: '';
 	content: none;
 }
-
-/* line 218, ../scss/partials/_normalize.scss */
 
 small,
 .small {
@@ -292,8 +249,6 @@ small,
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
 
-/* line 226, ../scss/partials/_normalize.scss */
-
 sub,
 sup {
 	font-size: 75%;
@@ -302,13 +257,9 @@ sup {
 	vertical-align: baseline;
 }
 
-/* line 234, ../scss/partials/_normalize.scss */
-
 sup {
 	top: -0.5em;
 }
-
-/* line 238, ../scss/partials/_normalize.scss */
 
 sub {
 	bottom: -0.25em;
@@ -322,16 +273,12 @@ sub {
  * Addresses margins set differently in IE6/7.
  */
 
-/* line 250, ../scss/partials/_normalize.scss */
-
 dl,
 menu,
 ol,
 ul {
 	margin: 0em 0;
 }
-
-/* line 257, ../scss/partials/_normalize.scss */
 
 dd {
 	margin: 0;
@@ -341,13 +288,9 @@ dd {
  * Addresses paddings set differently in IE6/7.
  */
 
-/* line 265, ../scss/partials/_normalize.scss */
-
 menu {
 	padding: 0 0 0 40px;
 }
-
-/* line 269, ../scss/partials/_normalize.scss */
 
 ol,
 ul {
@@ -358,8 +301,6 @@ ul {
 /*
  * Corrects list images handled incorrectly in IE7.
  */
-
-/* line 279, ../scss/partials/_normalize.scss */
 
 nav ul,
 nav ol {
@@ -375,8 +316,6 @@ nav ol {
  * Remove border when inside `a` element in IE 8/9.
  */
 
-/* line 293, ../scss/partials/_normalize.scss */
-
 img {
 	border: 0;
 }
@@ -384,8 +323,6 @@ img {
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-
-/* line 301, ../scss/partials/_normalize.scss */
 
 svg:not(:root) {
 	overflow: hidden;
@@ -399,8 +336,6 @@ svg:not(:root) {
  * Address margin not present in IE 8/9 and Safari 5.
  */
 
-/* line 313, ../scss/partials/_normalize.scss */
-
 figure {
 	margin: 0;
 }
@@ -413,8 +348,6 @@ figure {
  * Define consistent border, margin, and padding.
  */
 
-/* line 325, ../scss/partials/_normalize.scss */
-
 fieldset {
 	border: 1px solid #c0c0c0;
 	margin: 0 2px;
@@ -426,8 +359,6 @@ fieldset {
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
 
-/* line 336, ../scss/partials/_normalize.scss */
-
 legend {
 	border: 0; /* 1 */
 	padding: 0; /* 2 */
@@ -438,8 +369,6 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-
-/* line 347, ../scss/partials/_normalize.scss */
 
 button,
 input,
@@ -455,8 +384,6 @@ textarea {
  * the UA stylesheet.
  */
 
-/* line 361, ../scss/partials/_normalize.scss */
-
 button,
 input {
 	line-height: normal;
@@ -468,8 +395,6 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-
-/* line 373, ../scss/partials/_normalize.scss */
 
 button,
 select {
@@ -484,8 +409,6 @@ select {
  *    `input` and others.
  */
 
-/* line 386, ../scss/partials/_normalize.scss */
-
 button,
 html input[type="button"],
 input[type="reset"],
@@ -498,8 +421,6 @@ input[type="submit"] {
  * Re-set default cursor for disabled elements.
  */
 
-/* line 398, ../scss/partials/_normalize.scss */
-
 button[disabled],
 html input[disabled] {
 	cursor: default;
@@ -510,11 +431,8 @@ html input[disabled] {
  * 2. Remove excess padding in IE 8/9/10.
  */
 
-/* line 408, ../scss/partials/_normalize.scss */
-
 input[type="checkbox"],
 input[type="radio"] {
-	-moz-box-sizing: border-box;
 	box-sizing: border-box; /* 1 */
 	padding: 0; /* 2 */
 }
@@ -525,11 +443,8 @@ input[type="radio"] {
  *    (include `-moz` to future-proof).
  */
 
-/* line 420, ../scss/partials/_normalize.scss */
-
 input[type="search"] {
-	-webkit-appearance: textfield; /* 1 */
-	-moz-box-sizing: content-box; /* 2 */
+	-webkit-appearance: textfield; /* 1 */ /* 2 */
 	box-sizing: content-box;
 }
 
@@ -537,8 +452,6 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-
-/* line 432, ../scss/partials/_normalize.scss */
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
@@ -548,8 +461,6 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-
-/* line 441, ../scss/partials/_normalize.scss */
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
@@ -561,8 +472,6 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-
-/* line 452, ../scss/partials/_normalize.scss */
 
 textarea {
 	overflow: auto; /* 1 */
@@ -577,21 +486,14 @@ textarea {
  * Remove most spacing between table cells.
  */
 
-/* line 465, ../scss/partials/_normalize.scss */
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-/* line 472, ../scss/partials/_normalize.scss */
-
 * {
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
-/* line 479, ../scss/partials/_normalize.scss */
 
 .image-replacement,
 .ir {
@@ -600,15 +502,11 @@ table {
 	overflow: hidden;
 }
 
-/* line 487, ../scss/partials/_normalize.scss */
-
 .clearfix,
 .cf,
 .comment-respond {
 	zoom: 1;
 }
-
-/* line 489, ../scss/partials/_normalize.scss */
 
 .clearfix:before,
 .clearfix:after,
@@ -620,8 +518,6 @@ table {
 	display: table;
 }
 
-/* line 490, ../scss/partials/_normalize.scss */
-
 .clearfix:after,
 .cf:after,
 .comment-respond:after {
@@ -632,8 +528,6 @@ table {
 use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
-
-/* line 497, ../scss/partials/_normalize.scss */
 
 span.amp {
 	font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
@@ -716,8 +610,6 @@ I've edited it a bit, but it's a nice starting point.
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
-
-/* line 59, ../scss/partials/_typography.scss */
 
 p {
 	-ms-word-wrap: break-word;
@@ -854,8 +746,6 @@ you can just remove this stylesheet.
 
 ******************************************************************/
 
-/* line 15, ../scss/modules/_alerts.scss */
-
 .alert-help,
 .alert-info,
 .alert-error,
@@ -865,28 +755,20 @@ you can just remove this stylesheet.
 	border: 1px solid;
 }
 
-/* line 21, ../scss/modules/_alerts.scss */
-
 .alert-help {
 	border-color: #e8dc59;
 	background: #ebe16f;
 }
-
-/* line 27, ../scss/modules/_alerts.scss */
 
 .alert-info {
 	border-color: #bfe4f4;
 	background: #d5edf8;
 }
 
-/* line 33, ../scss/modules/_alerts.scss */
-
 .alert-error {
 	border-color: #f8cdce;
 	background: #fbe3e4;
 }
-
-/* line 39, ../scss/modules/_alerts.scss */
 
 .alert-success {
 	border-color: #deeaae;
@@ -919,8 +801,6 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
 
-/* line 27, ../scss/modules/_buttons.scss */
-
 .blue-btn,
 .comment-reply-link,
 #submit {
@@ -928,7 +808,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 	position: relative;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-decoration: none;
-	color: white;
+	color: #fff;
 	font-size: 0.9em;
 	font-size: 34px;
 	line-height: 34px;
@@ -937,10 +817,9 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 	border-radius: 4px;
 	border: 0;
 	cursor: pointer;
+	-webkit-transition: background-color 0.14s ease-in-out;
 	transition: background-color 0.14s ease-in-out;
 }
-
-/* line 44, ../scss/modules/_buttons.scss */
 
 .blue-btn:hover,
 .comment-reply-link:hover,
@@ -948,11 +827,9 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 .blue-btn:focus,
 .comment-reply-link:focus,
 #submit:focus {
-	color: white;
+	color: #fff;
 	text-decoration: none;
 }
-
-/* line 50, ../scss/modules/_buttons.scss */
 
 .blue-btn:active,
 .comment-reply-link:active,
@@ -966,15 +843,11 @@ You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
 
-/* line 61, ../scss/modules/_buttons.scss */
-
 .blue-btn,
 .comment-reply-link,
 #submit {
 	background-color: #2980b9;
 }
-
-/* line 65, ../scss/modules/_buttons.scss */
 
 .blue-btn:hover,
 .comment-reply-link:hover,
@@ -985,15 +858,11 @@ and it will create a button dependant on those variables.
 	background-color: #2574a8;
 }
 
-/* line 70, ../scss/modules/_buttons.scss */
-
 .blue-btn:active,
 .comment-reply-link:active,
 #submit:active {
 	background-color: #2472a4;
 }
-
-/* line 78, ../scss/modules/_buttons.scss */
 
 .ux {
 	border: 3px solid #ed3043;
@@ -1003,13 +872,9 @@ and it will create a button dependant on those variables.
 	height: 65px;
 }
 
-/* line 85, ../scss/modules/_buttons.scss */
-
 .ux svg {
 	cursor: pointer;
 }
-
-/* line 89, ../scss/modules/_buttons.scss */
 
 .ux:hover {
 	background-color: #ed3043;
@@ -1036,8 +901,6 @@ http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/
 /*********************
 INPUTS
 *********************/
-
-/* line 24, ../scss/modules/_forms.scss */
 
 input[type="text"],
 input[type="password"],
@@ -1071,10 +934,9 @@ textarea,
 	max-width: 400px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color: #ebebeb;
+	-webkit-transition: background-color 0.24s ease-in-out;
 	transition: background-color 0.24s ease-in-out;
 }
-
-/* line 59, ../scss/modules/_forms.scss */
 
 input[type="text"]:focus,
 input[type="text"]:active,
@@ -1114,8 +976,6 @@ textarea:active,
 	outline: none;
 }
 
-/* line 66, ../scss/modules/_forms.scss */
-
 input[type="text"].error,
 input[type="text"].is-invalid,
 input[type="password"].error,
@@ -1152,14 +1012,12 @@ textarea.is-invalid,
 .field.is-invalid {
 	color: #fbe3e4;
 	border-color: #fbe3e4;
-	background-color: white;
+	background-color: #fff;
 	background-position: 99% center;
 	background-repeat: no-repeat;
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDREQkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDREQ0YwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ3ODRGRkE2RjA0QTExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERBRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+U8iT5wAAAedJREFUeNqk1U9I02Ecx/HtV3aIFAc1hcRDUoGXRAq0oNLA2CrsEFmHbikZu0iQYIFGYAiegkCpLipBxPpDEBMUzB0EhSG2LhG7hMR2GviPgUTvB57Bw8P3+U23B16HPX8+e/b8nt93wezZSMCnhXETF3AcB5BDCnH8Dq98ExcGHcFn8Ah3cdDni+fxnPDv9oAnTB7CKu6VCFXtChZy56LxUjt+jfuB8toSOth9wd7xWAWhqrUjYR/FRTwWJm+iIPT/w7bQf5ljiZnBg45dtKFX6H+LU8gIY8OEV6vgTkStwXWE8BPTGDHGPqNPz2mCfSOOYkA99TvCt1bhGPL68zMcwmncMuape10jrI+q4BbHi/FLn31S9z2x5tRhTc+1W506ipM+T3oRD4X+8+qtc4SqFvL0z/Fr14S+Szjis8bz9Lvvaq8cwS/wwGfdlqfPSWqTiFlX77o13u9Ym1PBs8JAytpRoy44X9Ft9E/gvbA+rYKn8NcaaMVc8UHgBw4b9/iqUQZ6hOAJFbyDcUflmsEX4a6+wTtHGfhAIUqa1U29Zc2BytouThD8x6xuN5CtMPi2CrXLZkZf/HyZoRFCP7n+QVR4PV7uI/AjGghN7OU/r1ilnqILtfpNC+o6vIFljBKYlhb/F2AAgaBsWR5wRiIAAAAASUVORK5CYII=);
 	outline-color: #fbe3e4;
 }
-
-/* line 78, ../scss/modules/_forms.scss */
 
 input[type="text"].success,
 input[type="text"].is-valid,
@@ -1197,14 +1055,12 @@ textarea.is-valid,
 .field.is-valid {
 	color: #e6efc2;
 	border-color: #e6efc2;
-	background-color: white;
+	background-color: #fff;
 	background-position: 99% center;
 	background-repeat: no-repeat;
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDRERkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDRFMEYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY0MzQ0NERERjA0QjExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERFRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+7olkTQAAAfhJREFUeNqklU9oE0EUhzdroWjw0tBeWlDxkEaIp55TsCU9VKIgCrHBelA8CQ1Kr1WPbZrQ3gqtQqvGqxpQc2jBk6BIIaAGD4qNCKURpDSKiPi98gLDsJt//uBjsztvfnk7895sIPAw6/joGMThFJyAXn2+A+9gA57/TaY/eU0OeBgfhGm4DiGnsb7DAszxBz/NAdcKjMJLuNWCqagHbsscN5+L+hmH4QkMOe1L5jzFfNA2PgT34ajTuY7AGuZB0/hmh5m+gS0r8xv1zRvg+gGCHZiOwnF4DP3iB3sQkYxPd2C6CWfhB9Xwlus5+K1j4jXuaq3a+gM1H9OPcAa+7q9lPidZJqHbiIm7Wg22rsEI7FrPSzAMX/T+ADyAKSsu7Fr1KplehLvwCs5DvfBf65p+MypqRbO1FXK9utH4/QKuaqYTsG3E3INJv00Q46px3+XxanJ/Ute2/vqP4FKDza2KcdljIKdnhS0xXYULTaqmLMZFn8FFSFtvt6x70ExFCS5oUXspq2ssa7oEl1swFa+CGFdgtkHgPDyDKy02zyxNU6lXRUZb1EuHYayNNs+Yh5B0WQo+/8fpJnNTZFuzz2OpjoQ2QruSOQlMy35fEGmEGMxY9e1brxobw7TkWA1h6xfckUPb+JhGoE/Hpfvew7qUld/H9J8AAwDpw3WYrxcZ3QAAAABJRU5ErkJggg==);
 	outline-color: #e6efc2;
 }
-
-/* line 90, ../scss/modules/_forms.scss */
 
 input[type="text"][disabled],
 input[type="text"].is-disabled,
@@ -1244,8 +1100,6 @@ textarea.is-disabled,
 	border-color: #cfcfcf;
 	opacity: 0.6;
 }
-
-/* line 96, ../scss/modules/_forms.scss */
 
 input[type="text"][disabled]:focus,
 input[type="text"][disabled]:active,
@@ -1318,21 +1172,15 @@ textarea.is-disabled:active,
 	background-color: #d5edf8;
 }
 
-/* line 106, ../scss/modules/_forms.scss */
-
 input[type="password"] {
 	letter-spacing: 0.3em;
 }
-
-/* line 111, ../scss/modules/_forms.scss */
 
 textarea {
 	max-width: 100%;
 	min-height: 120px;
 	line-height: 1.5em;
 }
-
-/* line 118, ../scss/modules/_forms.scss */
 
 select {
 	-webkit-appearance: none; /* 1 */
@@ -1345,7 +1193,7 @@ select {
 IMPORTING CHUNKS
 I'm calling these chunks cause I don't the proper term if one even exists.
 Just breaking up the main file into smaller bits for easier digestion.
-Breakpoints are now just mixed right into everything with Breakpoint so no 
+Breakpoints are now just mixed right into everything with Breakpoint so no
 need to have all the breakpoint files.
 *********************/
 
@@ -1353,14 +1201,12 @@ need to have all the breakpoint files.
 GENERAL STYLES
 *********************/
 
-/* line 5, ../scss/chunks/_general.scss */
-
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 100%;
 	line-height: 1.5;
 	color: #333333;
-	background-color: white;
+	background-color: #fff;
 	-webkit-font-smoothing: antialiased;
 	position: relative;
 }
@@ -1444,23 +1290,17 @@ style a page via class
 LAYOUT & GRID STYLES
 *********************/
 
-/* line 4, ../scss/chunks/_layout.scss */
-
 #container {
 	max-width: 1382px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-/* line 12, ../../../../../../../../.rvm/gems/ruby-2.1.2/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
-
 #container:after {
 	content: " ";
 	display: block;
 	clear: both;
 }
-
-/* line 23, ../scss/chunks/_layout.scss */
 
 #inner-footer {
 	padding-left: 0.5em;
@@ -1470,16 +1310,12 @@ LAYOUT & GRID STYLES
 LINK STYLES
 *********************/
 
-/* line 5, ../scss/chunks/_links.scss */
-
 a,
 a:visited {
 	color: #ed3043;
 	text-decoration: none;
 	outline: none; /* on hover */ /* on click */ /* mobile tap color */
 }
-
-/* line 11, ../scss/chunks/_links.scss */
 
 a:hover,
 a:focus,
@@ -1489,47 +1325,38 @@ a:visited:focus {
 	outline: none;
 }
 
-/* line 17, ../scss/chunks/_links.scss */
-
 a:active,
 a:visited:active {
 	outline: none;
 }
 
-/* line 23, ../scss/chunks/_links.scss */
-
 a:link,
 a:visited:link { /*
-  this highlights links on iPhones/iPads.
-  so it basically works like the :hover selector
-  for mobile devices.
-  */
+    this highlights links on iPhones/iPads.
+    so it basically works like the :hover selector
+    for mobile devices.
+    */
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
 }
 
-/* line 33, ../scss/chunks/_links.scss */
-
 a.button {
 	background: #ed3043;
-	color: white;
+	color: #fff;
 	padding: 10px 20px;
 	font-family: "Abel", Cambria, Times New Roman, Times, serif;
 	font-size: 1.3em;
+	-webkit-transition: all 0.4s ease;
 	transition: all 0.4s ease;
 }
 
-/* line 40, ../scss/chunks/_links.scss */
-
 a.button:hover {
 	background: #fdbb2a;
-	color: white;
+	color: #fff;
 }
 
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
-
-/* line 5, ../scss/chunks/_headings.scss */
 
 h1,
 .h1,
@@ -1549,8 +1376,6 @@ h5,
   */ /* removing text decoration from all headline links */
 }
 
-/* line 15, ../scss/chunks/_headings.scss */
-
 h1 a,
 .h1 a,
 h2 a,
@@ -1564,15 +1389,11 @@ h5 a,
 	text-decoration: none;
 }
 
-/* line 20, ../scss/chunks/_headings.scss */
-
 h1,
 .h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
 }
-
-/* line 25, ../scss/chunks/_headings.scss */
 
 h2,
 .h2 {
@@ -1581,15 +1402,11 @@ h2,
 	margin-bottom: 0.375em;
 }
 
-/* line 35, ../scss/chunks/_headings.scss */
-
 h3,
 .h3 {
 	font-size: 1.3em;
 	margin-top: 0;
 }
-
-/* line 38, ../scss/chunks/_headings.scss */
 
 h3:after,
 .h3:after {
@@ -1601,8 +1418,6 @@ h3:after,
 	margin-bottom: 0.1em;
 }
 
-/* line 47, ../scss/chunks/_headings.scss */
-
 h3:before,
 .h3:before {
 	content: '';
@@ -1613,14 +1428,10 @@ h3:before,
 	margin-bottom: 0.5em;
 }
 
-/* line 59, ../scss/chunks/_headings.scss */
-
 h4,
 .h4 {
 	font-size: 1.125em;
 }
-
-/* line 62, ../scss/chunks/_headings.scss */
 
 h4:after,
 .h4:after {
@@ -1632,8 +1443,6 @@ h4:after,
 	margin-bottom: 0.1em;
 }
 
-/* line 71, ../scss/chunks/_headings.scss */
-
 h4:before,
 .h4:before {
 	content: '';
@@ -1643,8 +1452,6 @@ h4:before,
 	margin-top: 0.1em;
 	margin-bottom: 0.5em;
 }
-
-/* line 82, ../scss/chunks/_headings.scss */
 
 h5,
 .h5 {
@@ -1658,35 +1465,26 @@ h5,
 HEADER STYLES
 *********************/
 
-/* line 5, ../scss/chunks/_header.scss */
-
 .header {
 	background-color: #333333;
 }
 
-/* line 9, ../scss/chunks/_header.scss */
-
 .header nav a {
 	color: #f8f9fa;
 }
-
-/* line 15, ../scss/chunks/_header.scss */
 
 #logo {
 	padding: 20px 20px 20px 20px;
 	background: #eee;
 	border-top: 5px solid #ed3043;
 	margin: 0;
+	-webkit-transition: 0.7s ease;
 	transition: 0.7s ease;
 }
-
-/* line 17, ../scss/chunks/_header.scss */
 
 #logo a {
 	color: #333333;
 }
-
-/* line 27, ../scss/chunks/_header.scss */
 
 #logo:hover {
 	border-top-color: #fdbb2a;
@@ -1704,22 +1502,16 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 
-/* line 22, ../scss/chunks/_navigation.scss */
-
 body.active-mobile .header-nav {
 	top: 0;
 	left: 0;
 	display: block;
 }
 
-/* line 31, ../scss/chunks/_navigation.scss */
-
 .header nav {
 	border-bottom: 0;
 	margin: 0; /* end .menu li */ /* highlight current page */ /* end current highlighters */
 }
-
-/* line 35, ../scss/chunks/_navigation.scss */
 
 .header nav li {
 	list-style-type: none;
@@ -1727,32 +1519,25 @@ body.active-mobile .header-nav {
 	font-size: 1.1em;
 }
 
-/* line 40, ../scss/chunks/_navigation.scss */
-
 .header nav li a {
 	display: block;
-	color: white;
+	color: #fff;
 	text-decoration: none;
 	padding: 0.4em 1.5em;
+	-webkit-transition: 0.1s ease;
 	transition: 0.1s ease;
 	outline: none;
 }
 
-/* line 48, ../scss/chunks/_navigation.scss */
-
 .header nav li a:hover,
 .header nav li a:focus {
-	color: white;
+	color: #fff;
 	background: #777;
 }
-
-/* line 52, ../scss/chunks/_navigation.scss */
 
 .header nav li a:active {
 	background: #fdbb2a;
 }
-
-/* line 67, ../scss/chunks/_navigation.scss */
 
 .header nav li ul.sub-menu li a,
 .header nav li ul.children li a {
@@ -1762,21 +1547,15 @@ body.active-mobile .header-nav {
 	line-height: 1;
 }
 
-/* line 81, ../scss/chunks/_navigation.scss */
-
 .header nav li ul.sub-menu li.active a,
 .header nav li ul.children li.active a {
 	color: red !important;
 }
 
-/* line 103, ../scss/chunks/_navigation.scss */
-
 .header nav li.current_page_item a {
-	background: white;
+	background: #fff;
 	color: #333333;
 }
-
-/* line 107, ../scss/chunks/_navigation.scss */
 
 .header nav li.current_page_item ul li a {
 	color: #333333;
@@ -1784,25 +1563,19 @@ body.active-mobile .header-nav {
 	border: none;
 }
 
-/* line 111, ../scss/chunks/_navigation.scss */
-
 .header nav li.current_page_item ul li a:hover {
-	color: white;
+	color: #fff;
 	background: #888;
 }
 
-/* line 116, ../scss/chunks/_navigation.scss */
-
 .header nav li.current_page_item ul li.current a {
-	color: white;
+	color: #fff;
 	background: #888;
 }
 
 /* end .nav */
 
 /* mobile nav */
-
-/* line 129, ../scss/chunks/_navigation.scss */
 
 .show-nav {
 	height: 45px;
@@ -1813,19 +1586,15 @@ body.active-mobile .header-nav {
 	text-align: center;
 	line-height: 35px;
 	font-size: 35px;
-	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 	cursor: pointer;
+	-webkit-transition: .2s ease-in-out;
 	transition: .2s ease-in-out;
 }
 
-/* line 141, ../scss/chunks/_navigation.scss */
-
 .show-nav:hover {
-	color: white;
+	color: #fff;
 }
-
-/* line 145, ../scss/chunks/_navigation.scss */
 
 .active-mobile .show-nav {
 	-webkit-transform: rotate(90deg);
@@ -1833,13 +1602,9 @@ body.active-mobile .header-nav {
 	transform: rotate(90deg);
 }
 
-/* line 1, ../scss/chunks/_vcubar.scss */
-
 .vcubar {
 	position: relative;
 }
-
-/* line 8, ../scss/chunks/_vcubar.scss */
 
 .vcubar a {
 	display: block;
@@ -1849,62 +1614,44 @@ body.active-mobile .header-nav {
 	line-height: 40px;
 }
 
-/* line 15, ../scss/chunks/_vcubar.scss */
-
 .vcubar a.vcu {
 	width: 346px;
 }
-
-/* line 18, ../scss/chunks/_vcubar.scss */
 
 .vcubar a.vcu:hover .vcu-dk {
 	opacity: 0;
 }
 
-/* line 21, ../scss/chunks/_vcubar.scss */
-
 .vcubar a.vcu:hover .vcu-color {
 	opacity: 1.0;
 }
-
-/* line 27, ../scss/chunks/_vcubar.scss */
 
 .vcubar a.vcuarts {
 	width: 84px;
 	right: 2%;
 }
 
-/* line 31, ../scss/chunks/_vcubar.scss */
-
 .vcubar a.vcuarts:hover .arts-dk {
 	opacity: 0;
 }
-
-/* line 34, ../scss/chunks/_vcubar.scss */
 
 .vcubar a.vcuarts:hover .arts-color {
 	opacity: 1.0;
 }
 
-/* line 41, ../scss/chunks/_vcubar.scss */
-
 .vcubar .inner-vcubar {
 	height: 2em;
 	position: relative;
 	overflow: hidden;
-	background: white;
+	background: #fff;
 	padding-left: 0em;
 	padding-right: 0em;
 	padding-top: 5px;
 }
 
-/* line 56, ../scss/chunks/_vcubar.scss */
-
 a.vcu-fallback {
 	display: none;
 }
-
-/* line 59, ../scss/chunks/_vcubar.scss */
 
 .no-svg a.vcu-fallback {
 	display: block;
@@ -1914,25 +1661,17 @@ a.vcu-fallback {
 	max-width: 60px;
 }
 
-/* line 92, ../../../../../../../../.rvm/gems/ruby-2.1.2/gems/breakpoint-2.4.2/stylesheets/_breakpoint.scss */
-
 .no-mediaqueries .no-svg a.vcu-fallback {
 	max-width: 346px;
 }
-
-/* line 68, ../scss/chunks/_vcubar.scss */
 
 .no-svg a.vcu-fallback:hover {
 	background: url("../images/svg/fallbacks/logo-vcu-color.png");
 }
 
-/* line 72, ../scss/chunks/_vcubar.scss */
-
 a.vcuarts-fallback {
 	display: none;
 }
-
-/* line 75, ../scss/chunks/_vcubar.scss */
 
 .no-svg a.vcuarts-fallback {
 	display: block;
@@ -1942,34 +1681,26 @@ a.vcuarts-fallback {
 	right: 2%;
 }
 
-/* line 81, ../scss/chunks/_vcubar.scss */
-
 .no-svg a.vcuarts-fallback:hover {
 	background: url("../images/svg/fallbacks/logo-vcuarts-color.png");
 }
 
-/* line 86, ../scss/chunks/_vcubar.scss */
-
 .vcu-color,
 .arts-color {
 	opacity: 0;
-	transition: opacity .15s ease-in-out;
+	-webkit-transition: opacity 0.15s ease-in-out;
+	transition: opacity 0.15s ease-in-out;
 }
-
-/* line 90, ../scss/chunks/_vcubar.scss */
 
 .vcu-dk,
 .arts-dk {
-	transition: opacity .15s ease-in-out;
+	-webkit-transition: opacity 0.15s ease-in-out;
+	transition: opacity 0.15s ease-in-out;
 }
-
-/* line 93, ../scss/chunks/_vcubar.scss */
 
 .vcu-name {
 	display: none;
 }
-
-/* line 92, ../../../../../../../../.rvm/gems/ruby-2.1.2/gems/breakpoint-2.4.2/stylesheets/_breakpoint.scss */
 
 .no-mediaqueries .vcu-name {
 	display: block;
@@ -1979,14 +1710,10 @@ a.vcuarts-fallback {
 POSTS & CONTENT STYLES
 *********************/
 
-/* line 7, ../scss/chunks/_content.scss */
-
 #content {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 }
-
-/* line 16, ../scss/chunks/_content.scss */
 
 .hentry {
 	margin-bottom: 0em;
@@ -1994,13 +1721,9 @@ POSTS & CONTENT STYLES
 	max-width: 900px;
 }
 
-/* line 21, ../scss/chunks/_content.scss */
-
 .hentry header {
 	padding: 1em 1.5em 0em 0.5em;
 }
-
-/* line 27, ../scss/chunks/_content.scss */
 
 .hentry footer p {
 	margin: 0;
@@ -2008,23 +1731,17 @@ POSTS & CONTENT STYLES
 
 /* end .hentry */
 
-/* line 34, ../scss/chunks/_content.scss */
-
 .single-title,
 .page-title,
 .entry-title {
 	margin: 0;
 }
 
-/* line 43, ../scss/chunks/_content.scss */
-
 .page-title-head {
 	font-size: 2.5em;
 	padding: 0;
 	margin: 0;
 }
-
-/* line 49, ../scss/chunks/_content.scss */
 
 .page-title,
 h2 {
@@ -2052,8 +1769,6 @@ h2 {
 
 /* post meta */
 
-/* line 69, ../scss/chunks/_content.scss */
-
 .byline {
 	color: #9fa6b4;
 	font-style: italic;
@@ -2062,31 +1777,23 @@ h2 {
 
 /* entry content */
 
-/* line 78, ../scss/chunks/_content.scss */
-
 .entry-content {
 	padding: 1.5em 0.5em 0;
 	overflow: hidden; /*
-  image alignment on a screen this size may be
-  a bit difficult. It's set to start aligning
-  and floating images at the next breakpoint,
-  but it's up to you. Feel free to change it up.
-  */
+      image alignment on a screen this size may be
+      a bit difficult. It's set to start aligning
+      and floating images at the next breakpoint,
+      but it's up to you. Feel free to change it up.
+      */
 }
-
-/* line 82, ../scss/chunks/_content.scss */
 
 .entry-content p {
 	margin: 0 0 1.5em;
 }
 
-/* line 95, ../scss/chunks/_content.scss */
-
 .entry-content ul {
 	margin-bottom: 1.5em;
 }
-
-/* line 98, ../scss/chunks/_content.scss */
 
 .entry-content ul li {
 	padding-bottom: 0.5em;
@@ -2094,14 +1801,10 @@ h2 {
 	text-indent: -.7em;
 }
 
-/* line 104, ../scss/chunks/_content.scss */
-
 .entry-content ul li:before {
 	content: "• ";
 	color: #fdbb2a;
 }
-
-/* line 109, ../scss/chunks/_content.scss */
 
 .entry-content ul li em {
 	font-size: 0.8em;
@@ -2109,15 +1812,11 @@ h2 {
 	padding-bottom: 0.8em;
 }
 
-/* line 124, ../scss/chunks/_content.scss */
-
 .entry-content table {
 	width: 100%;
 	border: 1px solid #ebebeb;
 	margin-bottom: 1.5em;
 }
-
-/* line 129, ../scss/chunks/_content.scss */
 
 .entry-content table caption {
 	margin: 0 0 7px;
@@ -2127,32 +1826,22 @@ h2 {
 	letter-spacing: 1px;
 }
 
-/* line 138, ../scss/chunks/_content.scss */
-
 .entry-content tr {
 	border-bottom: 1px solid #ebebeb;
 }
 
-/* line 141, ../scss/chunks/_content.scss */
-
 .entry-content tr:nth-child(even) {
 	background-color: #f8f9fa;
 }
-
-/* line 146, ../scss/chunks/_content.scss */
 
 .entry-content td {
 	padding: 7px;
 	border-right: 1px solid #ebebeb;
 }
 
-/* line 150, ../scss/chunks/_content.scss */
-
 .entry-content td:last-child {
 	border-right: 0;
 }
-
-/* line 155, ../scss/chunks/_content.scss */
 
 .entry-content th {
 	background-color: #f8f9fa;
@@ -2160,13 +1849,9 @@ h2 {
 	border-right: 1px solid #ebebeb;
 }
 
-/* line 160, ../scss/chunks/_content.scss */
-
 .entry-content th:last-child {
 	border-right: 0;
 }
-
-/* line 165, ../scss/chunks/_content.scss */
 
 .entry-content blockquote {
 	margin: 0 0 40px 0;
@@ -2175,19 +1860,13 @@ h2 {
 	font-family: "Abel", Cambria, Times New Roman, Times, serif;
 }
 
-/* line 170, ../scss/chunks/_content.scss */
-
 .entry-content blockquote span {
 	color: #777;
 }
 
-/* line 173, ../scss/chunks/_content.scss */
-
 .entry-content blockquote a {
 	color: #333333;
 }
-
-/* line 185, ../scss/chunks/_content.scss */
 
 .entry-content dd {
 	margin-left: 0;
@@ -2196,22 +1875,16 @@ h2 {
 	margin-bottom: 1.5em;
 }
 
-/* line 192, ../scss/chunks/_content.scss */
-
 .entry-content img {
 	margin: 0 0 1.5em 0;
 	max-width: 100%;
 	height: auto;
 }
 
-/* line 206, ../scss/chunks/_content.scss */
-
 .entry-content .aligncenter,
 .entry-content img.aligncenter {
 	text-align: center;
 }
-
-/* line 210, ../scss/chunks/_content.scss */
 
 .entry-content .size-auto,
 .entry-content .size-full,
@@ -2221,8 +1894,6 @@ h2 {
 	max-width: 100%;
 	height: auto;
 }
-
-/* line 219, ../scss/chunks/_content.scss */
 
 .entry-content pre {
 	background: #333333;
@@ -2235,23 +1906,17 @@ h2 {
 
 /* end .entry-content */
 
-/* line 230, ../scss/chunks/_content.scss */
-
 .wp-caption {
 	max-width: 100%;
 	background: #eee;
 	padding: 5px; /* images inside wp-caption */
 }
 
-/* line 236, ../scss/chunks/_content.scss */
-
 .wp-caption img {
 	max-width: 100%;
 	margin-bottom: 0;
 	width: 100%;
 }
-
-/* line 242, ../scss/chunks/_content.scss */
 
 .wp-caption p.wp-caption-text {
 	font-size: 0.85em;
@@ -2267,46 +1932,32 @@ h2 {
 
 /* gallery caption styles */
 
-/* line 276, ../scss/chunks/_content.scss */
-
 .tags {
 	margin: 0;
 }
-
-/* line 281, ../scss/chunks/_content.scss */
 
 .archive-title em {
 	font-style: normal;
 	border-bottom: 2px dashed #fdbb2a;
 }
 
-/* line 285, ../scss/chunks/_content.scss */
-
 .archive-title span {
 	color: #777;
 }
 
-/* line 290, ../scss/chunks/_content.scss */
-
 .paddings {
 	padding-left: 0em;
 }
-
-/* line 294, ../scss/chunks/_content.scss */
 
 .note {
 	background: #fff6e4;
 	padding: 1em;
 }
 
-/* line 299, ../scss/chunks/_content.scss */
-
 .never {
 	background: #fcddd6;
 	padding: 1em;
 }
-
-/* line 303, ../scss/chunks/_content.scss */
 
 .ok {
 	background: #eef5c1;
@@ -2317,31 +1968,23 @@ h2 {
 PAGE NAVI STYLES
 ******************************************************************/
 
-/* line 6, ../scss/chunks/_page-navi.scss */
-
 .pagination,
 .wp-prev-next {
 	margin: 1.5em 0;
 }
 
-/* line 10, ../scss/chunks/_page-navi.scss */
-
 .pagination {
 	text-align: center;
 }
 
-/* line 13, ../scss/chunks/_page-navi.scss */
-
 .pagination ul {
 	display: inline-block;
-	background-color: white;
+	background-color: #fff;
 	white-space: nowrap;
 	padding: 0;
 	clear: both;
 	border-radius: 3px;
 }
-
-/* line 22, ../scss/chunks/_page-navi.scss */
 
 .pagination li {
 	padding: 0;
@@ -2350,8 +1993,6 @@ PAGE NAVI STYLES
 	display: inline;
 	overflow: hidden;
 }
-
-/* line 30, ../scss/chunks/_page-navi.scss */
 
 .pagination a,
 .pagination span {
@@ -2366,28 +2007,22 @@ PAGE NAVI STYLES
 	display: block;
 }
 
-/* line 41, ../scss/chunks/_page-navi.scss */
-
 .pagination a:hover,
 .pagination a:focus,
 .pagination span:hover,
 .pagination span:focus {
 	background-color: #ed3043;
-	color: white;
+	color: #fff;
 }
-
-/* line 47, ../scss/chunks/_page-navi.scss */
 
 .pagination .current {
 	cursor: default;
 	color: #333333;
 }
 
-/* line 51, ../scss/chunks/_page-navi.scss */
-
 .pagination .current:hover,
 .pagination .current:focus {
-	background-color: white;
+	background-color: #fff;
 	color: #333333;
 }
 
@@ -2395,13 +2030,9 @@ PAGE NAVI STYLES
 
 /* fallback previous & next links */
 
-/* line 64, ../scss/chunks/_page-navi.scss */
-
 .wp-prev-next .prev-link {
 	float: left;
 }
-
-/* line 68, ../scss/chunks/_page-navi.scss */
 
 .wp-prev-next .next-link {
 	float: right;
@@ -2415,22 +2046,16 @@ COMMENT STYLES
 
 /* h3 comment title */
 
-/* line 7, ../scss/chunks/_comments.scss */
-
 #comments-title {
 	padding: 0.75em;
 	margin: 0;
 	border-top: 1px solid #f8f9fa; /* number of comments span */
 }
 
-/* line 28, ../scss/chunks/_comments.scss */
-
 .commentlist {
 	margin: 0;
 	list-style-type: none;
 }
-
-/* line 33, ../scss/chunks/_comments.scss */
 
 .comment {
 	position: relative;
@@ -2440,27 +2065,19 @@ COMMENT STYLES
 	border-bottom: 1px solid #f8f9fa; /* vcard */ /* end .commentlist .vcard */ /* end children */ /* general comment classes */
 }
 
-/* line 40, ../scss/chunks/_comments.scss */
-
 .comment .comment-author {
 	padding: 7px;
 	border: 0;
 }
 
-/* line 46, ../scss/chunks/_comments.scss */
-
 .comment .vcard {
 	margin-left: 50px;
 }
-
-/* line 49, ../scss/chunks/_comments.scss */
 
 .comment .vcard cite.fn {
 	font-weight: 700;
 	font-style: normal;
 }
-
-/* line 57, ../scss/chunks/_comments.scss */
 
 .comment .vcard time {
 	display: block;
@@ -2468,20 +2085,14 @@ COMMENT STYLES
 	font-style: italic;
 }
 
-/* line 62, ../scss/chunks/_comments.scss */
-
 .comment .vcard time a {
 	color: #9fa6b4;
 	text-decoration: none;
 }
 
-/* line 66, ../scss/chunks/_comments.scss */
-
 .comment .vcard time a:hover {
 	text-decoration: underline;
 }
-
-/* line 76, ../scss/chunks/_comments.scss */
 
 .comment .vcard .avatar {
 	position: absolute;
@@ -2489,32 +2100,22 @@ COMMENT STYLES
 	border-radius: 50%;
 }
 
-/* line 84, ../scss/chunks/_comments.scss */
-
 .comment:last-child {
 	margin-bottom: 0;
 }
-
-/* line 88, ../scss/chunks/_comments.scss */
 
 .comment .children {
 	margin: 0; /* variations */ /* change number for different depth */
 }
 
-/* line 106, ../scss/chunks/_comments.scss */
-
 .comment[class*=depth-] {
 	margin-top: 1.1em;
 }
-
-/* line 110, ../scss/chunks/_comments.scss */
 
 .comment.depth-1 {
 	margin-left: 0;
 	margin-top: 0;
 }
-
-/* line 115, ../scss/chunks/_comments.scss */
 
 .comment:not(.depth-1) {
 	margin-top: 0;
@@ -2522,13 +2123,9 @@ COMMENT STYLES
 	padding: 7px;
 }
 
-/* line 128, ../scss/chunks/_comments.scss */
-
 .comment.odd {
-	background-color: white;
+	background-color: #fff;
 }
-
-/* line 131, ../scss/chunks/_comments.scss */
 
 .comment.even {
 	background: #f8f9fa;
@@ -2537,8 +2134,6 @@ COMMENT STYLES
 /* comment meta */
 
 /* comment content */
-
-/* line 165, ../scss/chunks/_comments.scss */
 
 .comment_content p {
 	margin: 0.7335em 0 1.5em;
@@ -2550,8 +2145,6 @@ COMMENT STYLES
 
 /* comment reply link */
 
-/* line 174, ../scss/chunks/_comments.scss */
-
 .comment-reply-link {
 	font-size: 0.9em;
 	float: right;
@@ -2560,8 +2153,6 @@ COMMENT STYLES
 /* end .commentlist .comment-reply-link */
 
 /* edit comment link */
-
-/* line 186, ../scss/chunks/_comments.scss */
 
 .comment-edit-link {
 	font-style: italic;
@@ -2574,20 +2165,14 @@ COMMENT STYLES
 COMMENT FORM STYLES
 ******************************************************************/
 
-/* line 5, ../scss/chunks/_comment-form.scss */
-
 .comment-respond {
 	padding: 1.5em;
 	border-top: 1px solid #f8f9fa;
 }
 
-/* line 11, ../scss/chunks/_comment-form.scss */
-
 #reply-title {
 	margin: 0;
 }
-
-/* line 15, ../scss/chunks/_comment-form.scss */
 
 .logged-in-as {
 	color: #9fa6b4;
@@ -2595,19 +2180,13 @@ COMMENT FORM STYLES
 	margin: 0;
 }
 
-/* line 20, ../scss/chunks/_comment-form.scss */
-
 .logged-in-as a {
 	color: #333333;
 }
 
-/* line 25, ../scss/chunks/_comment-form.scss */
-
 .comment-form-comment {
 	margin: 1.5em 0 0.75em;
 }
-
-/* line 29, ../scss/chunks/_comment-form.scss */
 
 .form-allowed-tags {
 	padding: 1.5em;
@@ -2617,16 +2196,12 @@ COMMENT FORM STYLES
 
 /* comment submit button */
 
-/* line 36, ../scss/chunks/_comment-form.scss */
-
 #submit {
 	float: right;
 	font-size: 1em;
 }
 
 /* comment form title */
-
-/* line 43, ../scss/chunks/_comment-form.scss */
 
 #comment-form-title {
 	margin: 0 0 1.1em;
@@ -2638,15 +2213,11 @@ COMMENT FORM STYLES
 
 /* allowed tags */
 
-/* line 56, ../scss/chunks/_comment-form.scss */
-
 #allowed_tags {
 	margin: 1.5em 10px 0.7335em 0;
 }
 
 /* no comments */
-
-/* line 61, ../scss/chunks/_comment-form.scss */
 
 .nocomments {
 	margin: 0 20px 1.1em;
@@ -2656,54 +2227,40 @@ COMMENT FORM STYLES
 SIDEBARS & ASIDES
 *********************/
 
-/* line 5, ../scss/chunks/_sidebars.scss */
-
 .sidebar {
-	color: white;
+	color: #fff;
 	font-size: 1em;
 	padding: 1.5em;
 	margin-bottom: 1em;
 }
 
-/* line 14, ../scss/chunks/_sidebars.scss */
-
 .widget {
 	max-width: 100%;
 }
 
-/* line 19, ../scss/chunks/_sidebars.scss */
-
 .widget ul li { /* deep nesting */
 }
 
-/* line 36, ../scss/chunks/_sidebars.scss */
-
 .no-widgets {
-	background-color: white;
+	background-color: #fff;
 	padding: 1.5em;
 	text-align: center;
-	border: 1px solid #cccccc;
+	border: 1px solid #ccc;
 	border-radius: 2px;
 	margin-bottom: 1.5em;
 }
-
-/* line 46, ../scss/chunks/_sidebars.scss */
 
 .widget_search label {
 	display: none;
 }
 
-/* line 49, ../scss/chunks/_sidebars.scss */
-
 .widget_search input#s {
 	max-width: 93%;
 	background: #555;
 	border-radius: 5px;
-	color: white;
+	color: #fff;
 	font-size: 0.8em;
 }
-
-/* line 56, ../scss/chunks/_sidebars.scss */
 
 .widget_search #searchsubmit {
 	display: none;
@@ -2712,8 +2269,6 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-
-/* line 5, ../scss/chunks/_footer.scss */
 
 .footer {
 	clear: both;
@@ -2724,18 +2279,16 @@ FOOTER STYLES
 }
 
 /*
-if you checked out the link above:
-http://www.alistapart.com/articles/organizing-mobile/
-you'll want to style the footer nav
-a bit more in-depth. Remember to keep
-it simple because you'll have to
-override these styles for the desktop
-view.
-*/
+  if you checked out the link above:
+  http://www.alistapart.com/articles/organizing-mobile/
+  you'll want to style the footer nav
+  a bit more in-depth. Remember to keep
+  it simple because you'll have to
+  override these styles for the desktop
+  view.
+  */
 
 /* end .footer-links */
-
-/* line 41, ../scss/chunks/_footer.scss */
 
 .lmf_generated_text {
 	display: none;
@@ -2757,13 +2310,9 @@ be set to display none.
 
 @media (min-width: 481px) {
 
-/* line 59, ../scss/chunks/_vcubar.scss */
-
 .no-svg a.vcu-fallback {
 	max-width: 346px;
 }
-
-/* line 93, ../scss/chunks/_vcubar.scss */
 
 .vcu-name {
 	display: block;
@@ -2773,41 +2322,31 @@ be set to display none.
 
 @media (min-width: 768px) {
 
-/* line 8, ../scss/chunks/_layout.scss */
-
 .header {
-	width: 22.85714%;
+	width: 22.8571428571%;
 	float: left;
-	margin-right: 2.85714%;
+	margin-right: 2.8571428571%;
 	position: fixed;
 	height: 100vh;
 	overflow: auto;
 }
 
-/* line 17, ../scss/chunks/_layout.scss */
-
 #content {
-	width: 74.28571%;
+	width: 74.2857142857%;
 	float: right;
 	margin-right: 0;
 }
-
-/* line 23, ../scss/chunks/_layout.scss */
 
 #inner-footer {
-	width: 74.28571%;
+	width: 74.2857142857%;
 	float: right;
 	margin-right: 0;
 }
 
-/* line 31, ../scss/chunks/_layout.scss */
-
 .col2 .column {
-	width: 48.57143%;
+	width: 48.5714285714%;
 	float: left;
 }
-
-/* line 63, ../../../../../../../../.rvm/gems/ruby-2.1.2/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
 
 .col2 .column:nth-child(2n + 1) {
 	margin-left: 0;
@@ -2816,15 +2355,11 @@ be set to display none.
 	margin-left: 0;
 }
 
-/* line 63, ../../../../../../../../.rvm/gems/ruby-2.1.2/gems/susy-2.1.2/sass/susy/language/susy/_gallery.scss */
-
 .col2 .column:nth-child(2n + 2) {
-	margin-left: 51.42857%;
+	margin-left: 51.4285714286%;
 	margin-right: -100%;
 	clear: none;
 }
-
-/* line 129, ../scss/chunks/_navigation.scss */
 
 .show-nav {
 	display: none;
@@ -2832,10 +2367,8 @@ be set to display none.
 	right: -99999px;
 }
 
-/* line 1, ../scss/chunks/_vcubar.scss */
-
 .vcubar {
-	width: 74.28571%;
+	width: 74.2857142857%;
 	float: right;
 	margin-right: 0;
 }
@@ -2844,27 +2377,19 @@ be set to display none.
 
 @media (max-width: 767px) {
 
-/* line 15, ../scss/chunks/_navigation.scss */
-
 .header-nav {
 	display: none;
 }
-
-/* line 41, ../scss/chunks/_vcubar.scss */
 
 .vcubar .inner-vcubar {
 	padding-left: 1em;
 	padding-right: 1em;
 }
 
-/* line 7, ../scss/chunks/_content.scss */
-
 #content {
 	padding-left: 1em;
 	padding-right: 1em;
 }
-
-/* line 5, ../scss/chunks/_footer.scss */
 
 .footer {
 	padding-left: 1em;
@@ -2876,18 +2401,16 @@ be set to display none.
 @media print {
 
 /******************************************************************
-  Site Name:
-  Author:
-  
-  Stylesheet: Print Stylesheet
-  
-  This is the print stylesheet. There's probably not a lot
-  of reasons to edit this stylesheet. If you want to
-  though, go for it.
-  
-  ******************************************************************/
+Site Name:
+Author:
 
-/* line 13, ../scss/partials/_print.scss */
+Stylesheet: Print Stylesheet
+
+This is the print stylesheet. There's probably not a lot
+of reasons to edit this stylesheet. If you want to
+though, go for it.
+
+******************************************************************/
 
 * {
 	background: transparent !important;
@@ -2898,29 +2421,21 @@ be set to display none.
 	-ms-filter: none !important;
 }
 
-/* line 21, ../scss/partials/_print.scss */
-
 a,
 a:visited {
 	color: #444 !important;
 	text-decoration: underline;
 }
 
-/* line 26, ../scss/partials/_print.scss */
-
 a:after,
 a:visited:after {
 	content: " (" attr(href) ")";
 }
 
-/* line 31, ../scss/partials/_print.scss */
-
 a abbr[title]:after,
 a:visited abbr[title]:after {
 	content: " (" attr(title) ")";
 }
-
-/* line 36, ../scss/partials/_print.scss */
 
 .ir a:after,
 a[href^="javascript:"]:after,
@@ -2928,34 +2443,24 @@ a[href^="#"]:after {
 	content: "";
 }
 
-/* line 42, ../scss/partials/_print.scss */
-
 pre,
 blockquote {
 	border: 1px solid #999;
 	page-break-inside: avoid;
 }
 
-/* line 47, ../scss/partials/_print.scss */
-
 thead {
 	display: table-header-group;
 }
-
-/* line 51, ../scss/partials/_print.scss */
 
 tr,
 img {
 	page-break-inside: avoid;
 }
 
-/* line 55, ../scss/partials/_print.scss */
-
 img {
 	max-width: 100% !important;
 }
-
-/* line 63, ../scss/partials/_print.scss */
 
 p,
 h2,
@@ -2964,14 +2469,10 @@ h3 {
 	widows: 3;
 }
 
-/* line 68, ../scss/partials/_print.scss */
-
 h2,
 h3 {
 	page-break-after: avoid;
 }
-
-/* line 74, ../scss/partials/_print.scss */
 
 .sidebar,
 .page-navigation,

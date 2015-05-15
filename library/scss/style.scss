@@ -16,6 +16,38 @@ http://thesassway.com/advanced/modular-css-naming-conventions
 
 ******************************************************************/
 
+
+@import "../../bower_components/susy/sass/susy";
+@import "../../bower_components/breakpoint-sass/stylesheets/breakpoint";
+
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  container: 1382px,
+  container-position: center,
+  columns: 12,
+  gutters: .5,
+  column-width: false,
+  global-box-sizing: content-box,
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);
+
+
 /*********************
 IMPORTING PARTIALS
 These files are needed at the beginning so that we establish all
@@ -62,7 +94,7 @@ you hate oysters, then the world is your peanut butter & jelly sandwich.
 IMPORTING CHUNKS
 I'm calling these chunks cause I don't the proper term if one even exists.
 Just breaking up the main file into smaller bits for easier digestion.
-Breakpoints are now just mixed right into everything with Breakpoint so no 
+Breakpoints are now just mixed right into everything with Breakpoint so no
 need to have all the breakpoint files.
 *********************/
 
