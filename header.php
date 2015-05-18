@@ -56,23 +56,49 @@
 					</div>
 
 					<nav role="navigation" class="header-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
-								<?php
-		              $args = array(
-		                'child_of'     => 0,
-		                'depth'        => 0,
-		                'echo'         => 1,
-		                'exclude'      => '',
-		                'include'      => '',
-		                'link_after'   => '',
-		                'link_before'  => '',
-		                'post_type'    => 'page',
-		                'post_status'  => 'publish',
-		                'sort_column'  => 'menu_order, post_title',
-		                      'sort_order'   => '',
-		                'title_li'     => __(''),
-		                'walker' => new skips_walker()
-		              );
-		              wp_list_pages( $args );
+					<?php
+
+					$defaults = array(
+						'theme_location'  => 'main-nav',
+						'menu'            => '',
+						'container'       => 'div',
+						'container_class' => '',
+						'container_id'    => '',
+						'menu_class'      => 'menu',
+						'menu_id'         => '',
+						'echo'            => true,
+						'fallback_cb'     => 'wp_page_menu',
+						'before'          => '',
+						'after'           => '',
+						'link_before'     => '',
+						'link_after'      => '',
+						'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+						'depth'           => 0,
+						'walker'          => ''
+					);
+
+		            $args = array(
+		              'child_of'     => 0,
+		              'depth'        => 0,
+		              'echo'         => 1,
+		              'exclude'      => '',
+		              'include'      => '',
+		              'link_after'   => '',
+		              'link_before'  => '',
+		              'post_type'    => 'page',
+		              'post_status'  => 'publish',
+		              'sort_column'  => 'menu_order, post_title',
+		                    'sort_order'   => '',
+		              'title_li'     => __(''),
+		              'walker' => new skips_walker()
+		            );
+
+					if ( has_nav_menu( 'main-nav' ) ) {
+					     wp_nav_menu( $defaults );
+					} else {
+						wp_list_pages( $args );
+					}
+
 		            ?>
 
 		            <!-- Sidebar start -->
