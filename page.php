@@ -15,7 +15,7 @@
 								$parent = $post->ID;
 							}
 
-							$args = array( 
+							$args = array(
 								'posts_per_page' => 1,
 								'post_type' => 'page',
 								'page_id' => $parent,
@@ -69,11 +69,11 @@
 
 							$children = wp_list_pages('title_li=&echo=0&child_of=' . $parent);
 							if ($children){
-								$args = array( 
+								$args = array(
 									'posts_per_page' => -1,
 									'post_type' => 'page',
-									// 'page_id' => $parent,
-									'post_parent' => $parent
+									'post_parent' => $parent,
+									'orderby' => 'menu_order'
 								);
 
 							$the_query = new WP_Query( $args );
@@ -116,7 +116,7 @@
 										</footer>
 									</article>
 
-							<?php endif; 
+							<?php endif;
 								// Reset Post Data
 								wp_reset_postdata();
 							}
