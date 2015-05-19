@@ -67,8 +67,8 @@
 		                'link_before'  => '',
 		                'post_type'    => 'page',
 		                'post_status'  => 'publish',
-		                'sort_column'  => 'menu_order, post_title',
-		                      'sort_order'   => '',
+		                'sort_column'  => 'menu_order',
+		                'sort_order'   => '',
 		                'title_li'     => __(''),
 		                'walker' => new skips_walker()
 		              );

@@ -73,7 +73,8 @@
 									'posts_per_page' => -1,
 									'post_type' => 'page',
 									'post_parent' => $parent,
-									'orderby' => 'menu_order'
+									'orderby' => 'menu_order',
+									'order' => 'ASC'
 								);
 
 							$the_query = new WP_Query( $args );
