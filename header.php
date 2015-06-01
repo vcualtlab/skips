@@ -56,24 +56,51 @@
 					</div>
 
 					<nav role="navigation" class="header-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
-								<?php
-		              $args = array(
-		                'child_of'     => 0,
-		                'depth'        => 0,
-		                'echo'         => 1,
-		                'exclude'      => '',
-		                'include'      => '',
-		                'link_after'   => '',
-		                'link_before'  => '',
-		                'post_type'    => 'page',
-		                'post_status'  => 'publish',
-		                'sort_column'  => 'menu_order',
-		                'sort_order'   => '',
-		                'title_li'     => __(''),
-		                'walker' => new skips_walker()
-		              );
-		              wp_list_pages( $args );
+					<?php
+
+		              function my_wp_list_pages(){
+			              $list_pages_args = array(
+			                'child_of'     => 0,
+			                'depth'        => 0,
+			                'echo'         => 1,
+			                'exclude'      => '',
+			                'include'      => '',
+			                'link_after'   => '',
+			                'link_before'  => '',
+			                'post_type'    => 'page',
+			                'post_status'  => 'publish',
+			                'sort_column'  => 'menu_order, post_title',
+			                      'sort_order'   => '',
+			                'title_li'     => __(''),
+			                'walker' => new skips_walker()
+			              );
+
+		              	  wp_list_pages( $list_pages_args );
+		              }
+
+		              $main_nav_args = array(
+    					'container' => false,                           // remove nav container
+    					'container_class' => 'menu cf',                 // class of container (should you choose to use it)
+    					'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
+    					'menu_class' => 'nav top-nav cf',               // adding custom nav class
+    					'theme_location' => 'main-nav',                 // where it's located in the theme
+    					'before' => '',                                 // before the menu
+        			      'after' => '',                                  // after the menu
+        			      'link_before' => '',                            // before each link
+        			      'link_after' => '',                             // after each link
+        			      'depth' => 0,                                   // limit the depth of the nav
+    					'fallback_cb' => 'my_wp_list_pages'                             // fallback function (if there is one)
+					  );
+
+		              wp_nav_menu( $main_nav_args );
+
 		            ?>
+
+
+
+
+
+
 
 		            <!-- Sidebar start -->
 					<?php get_sidebar(); ?>
